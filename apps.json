@@ -1,8 +1,8 @@
 {
   "name": "NullDev Apps",
-  "subtitle": "NullSign, Lineup, and Aether",
-  "description": "Unsigned iOS IPAs published after successful main-branch builds.",
-  "iconURL": "https://raw.githubusercontent.com/nulldev85/NullSign/main/Feather/Resources/Assets.xcassets/NullSignBlue.appiconset/nullsign.png",
+  "subtitle": "NullSign, Lineup for iPhone and Apple TV, and Aether",
+  "description": "Unsigned iOS and tvOS app builds published after successful main-branch builds.",
+  "iconURL": "https://raw.githubusercontent.com/nulldev85/AppSource/main/icons/nullsign.png",
   "tintColor": "#148BF4",
   "website": "https://github.com/nulldev85",
   "featuredApps": [
