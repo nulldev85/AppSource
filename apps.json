@@ -7,6 +7,7 @@
   "website": "https://github.com/nulldev85",
   "featuredApps": [
     "com.elmat.NullSign",
+    "com.nulldev85.NullSports.iOS",
     "com.example.IPTVRadio"
   ],
   "apps": [
@@ -28,6 +29,27 @@
           "downloadURL": "https://github.com/nulldev85/NullSign/releases/download/source-39530787902/NullSign-unsigned.ipa",
           "size": 19396928,
           "minOSVersion": "16.0"
+        }
+      ]
+    },
+    {
+      "name": "Lineup",
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "developerName": "NullDev85",
+      "subtitle": "Live TV, sports, and your media library",
+      "localizedDescription": "Live television, sports, and library playback in one app. Inspired by Janky and Stadium-Sync. Shoutout to Hippo and Streamers86.",
+      "iconURL": "https://raw.githubusercontent.com/nulldev85/NullSports/main/iPhone/Assets.xcassets/LineupAppIcon.appiconset/LineupAppIcon.png",
+      "tintColor": "#168CFF",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "126",
+          "date": "2026-10-21T02:27:48Z",
+          "localizedDescription": "Unsigned IPA from successful main build 879065e. Sign before installing.",
+          "downloadURL": "https://github.com/nulldev85/NullSports/releases/download/source-39530865422/Lineup-iPhone-unsigned.ipa",
+          "size": 63256668,
+          "minOSVersion": "18.0"
         }
       ]
     },
