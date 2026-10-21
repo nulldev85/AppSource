@@ -34,6 +34,17 @@ REPOSITORIES = [
         "asset": "Lineup-iPhone-unsigned.ipa",
     },
     {
+        "repo": "NullSports",
+        "name": "Lineup tvOS",
+        "bundle": "com.nulldev85.NullSports",
+        "subtitle": "Live television, sports, and your media library on Apple TV",
+        "description": "Live television, sports, and library playback on Apple TV. Inspired by Janky and Stadium-Sync. Shoutout to Hippo and Streamers86.",
+        "icon": "https://raw.githubusercontent.com/nulldev85/NullSports/main/iPhone/Assets.xcassets/LineupAppIcon.appiconset/LineupAppIcon.png",
+        "tint": "#168CFF",
+        "category": "entertainment",
+        "asset": "Lineup-tvOS-unsigned.ipa",
+    },
+    {
         "repo": "Aether",
         "name": "Aether",
         "bundle": "com.example.IPTVRadio",
