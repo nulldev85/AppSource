@@ -31,7 +31,7 @@ REPOSITORIES = [
         "icon": "https://raw.githubusercontent.com/nulldev85/NullSports/main/iPhone/Assets.xcassets/LineupAppIcon.appiconset/LineupAppIcon.png",
         "tint": "#168CFF",
         "category": "entertainment",
-        "asset": "Lineup.ipa",
+        "asset": "Lineup-iPhone-unsigned.ipa",
     },
     {
         "repo": "Aether",
