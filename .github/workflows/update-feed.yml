@@ -1,0 +1,36 @@
+name: Update app source feed
+
+on:
+  schedule:
+    - cron: "17,47 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source feed
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Build feed from public source releases
+        run: python scripts/update_feed.py
+
+      - name: Commit feed changes
+        run: |
+          if git diff --quiet -- apps.json; then
+            echo "No new completed app releases."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps.json
+          git commit -m "Update app source feed"
+          git push
