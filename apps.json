@@ -8,6 +8,7 @@
   "featuredApps": [
     "com.elmat.NullSign",
     "com.nulldev85.NullSports.iOS",
+    "com.nulldev85.NullSports",
     "com.example.IPTVRadio"
   ],
   "apps": [
@@ -49,6 +50,27 @@
           "localizedDescription": "Unsigned IPA from successful main build 879065e. Sign before installing.",
           "downloadURL": "https://github.com/nulldev85/NullSports/releases/download/source-39530865422/Lineup-iPhone-unsigned.ipa",
           "size": 63256668,
+          "minOSVersion": "18.0"
+        }
+      ]
+    },
+    {
+      "name": "Lineup tvOS",
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "developerName": "NullDev85",
+      "subtitle": "Live television, sports, and your media library on Apple TV",
+      "localizedDescription": "Live television, sports, and library playback on Apple TV. Inspired by Janky and Stadium-Sync. Shoutout to Hippo and Streamers86.",
+      "iconURL": "https://raw.githubusercontent.com/nulldev85/NullSports/main/iPhone/Assets.xcassets/LineupAppIcon.appiconset/LineupAppIcon.png",
+      "tintColor": "#168CFF",
+      "category": "entertainment",
+      "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "86",
+          "date": "2026-10-21T02:49:23Z",
+          "localizedDescription": "Unsigned IPA from successful main build 879065e. Sign before installing.",
+          "downloadURL": "https://github.com/nulldev85/NullSports/releases/download/source-tvos-39530865389/Lineup-tvOS-unsigned.ipa",
+          "size": 31957244,
           "minOSVersion": "18.0"
         }
       ]
