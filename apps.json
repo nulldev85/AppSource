@@ -18,7 +18,7 @@
       "developerName": "NullDev85",
       "subtitle": "Sign and install iOS apps",
       "localizedDescription": "A local iOS IPA signer and installer.",
-      "iconURL": "https://raw.githubusercontent.com/nulldev85/NullSign/main/Feather/Resources/Assets.xcassets/NullSignBlue.appiconset/nullsign.png",
+      "iconURL": "https://raw.githubusercontent.com/nulldev85/AppSource/main/icons/nullsign.png",
       "tintColor": "#148BF4",
       "category": "utilities",
       "versions": [
@@ -27,7 +27,7 @@
           "buildVersion": "29",
           "date": "2026-10-21T02:11:55Z",
           "localizedDescription": "Unsigned IPA from successful main build 31298ea. Sign before installing.",
-          "downloadURL": "https://github.com/nulldev85/NullSign/releases/download/source-39530787902/NullSign-unsigned.ipa",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-39530787902/NullSign-unsigned.ipa",
           "size": 19396928,
           "minOSVersion": "16.0"
         }
@@ -39,7 +39,7 @@
       "developerName": "NullDev85",
       "subtitle": "Live TV, sports, and your media library",
       "localizedDescription": "Live television, sports, and library playback in one app. Inspired by Janky and Stadium-Sync. Shoutout to Hippo and Streamers86.",
-      "iconURL": "https://raw.githubusercontent.com/nulldev85/NullSports/main/iPhone/Assets.xcassets/LineupAppIcon.appiconset/LineupAppIcon.png",
+      "iconURL": "https://raw.githubusercontent.com/nulldev85/AppSource/main/icons/lineup.png",
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
@@ -48,7 +48,7 @@
           "buildVersion": "126",
           "date": "2026-10-21T02:27:48Z",
           "localizedDescription": "Unsigned IPA from successful main build 879065e. Sign before installing.",
-          "downloadURL": "https://github.com/nulldev85/NullSports/releases/download/source-39530865422/Lineup-iPhone-unsigned.ipa",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39530865422/Lineup-iPhone-unsigned.ipa",
           "size": 63256668,
           "minOSVersion": "18.0"
         }
@@ -60,7 +60,7 @@
       "developerName": "NullDev85",
       "subtitle": "Live television, sports, and your media library on Apple TV",
       "localizedDescription": "Live television, sports, and library playback on Apple TV. Inspired by Janky and Stadium-Sync. Shoutout to Hippo and Streamers86.",
-      "iconURL": "https://raw.githubusercontent.com/nulldev85/NullSports/main/iPhone/Assets.xcassets/LineupAppIcon.appiconset/LineupAppIcon.png",
+      "iconURL": "https://raw.githubusercontent.com/nulldev85/AppSource/main/icons/lineup.png",
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
@@ -69,7 +69,7 @@
           "buildVersion": "86",
           "date": "2026-10-21T02:49:23Z",
           "localizedDescription": "Unsigned IPA from successful main build 879065e. Sign before installing.",
-          "downloadURL": "https://github.com/nulldev85/NullSports/releases/download/source-tvos-39530865389/Lineup-tvOS-unsigned.ipa",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39530865389/Lineup-tvOS-unsigned.ipa",
           "size": 31957244,
           "minOSVersion": "18.0"
         }
@@ -81,7 +81,7 @@
       "developerName": "NullDev85",
       "subtitle": "IPTV Radio",
       "localizedDescription": "A radio-only streaming app for IPTV audio channels. Inspired by Orbitrr. Shoutout to Keeb.",
-      "iconURL": "https://raw.githubusercontent.com/nulldev85/Aether/main/IPTVRadio/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+      "iconURL": "https://raw.githubusercontent.com/nulldev85/AppSource/main/icons/aether.png",
       "tintColor": "#5277E8",
       "category": "entertainment",
       "versions": [
@@ -90,7 +90,7 @@
           "buildVersion": "1",
           "date": "2026-10-21T02:15:44Z",
           "localizedDescription": "Unsigned IPA from successful main build f403d74. Sign before installing.",
-          "downloadURL": "https://github.com/nulldev85/Aether/releases/download/source-39529689019/IPTVRadio-unsigned-device.ipa",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-aether-source-39529689019/IPTVRadio-unsigned-device.ipa",
           "size": 11810160,
           "minOSVersion": "18.0"
         }
