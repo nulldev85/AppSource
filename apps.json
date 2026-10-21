@@ -36,7 +36,7 @@
       "bundleIdentifier": "com.example.IPTVRadio",
       "developerName": "NullDev85",
       "subtitle": "IPTV Radio",
-      "localizedDescription": "A radio-only streaming app for IPTV audio channels.",
+      "localizedDescription": "A radio-only streaming app for IPTV audio channels. Inspired by Orbitrr. Shoutout to Keeb.",
       "iconURL": "https://raw.githubusercontent.com/nulldev85/Aether/main/IPTVRadio/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
       "tintColor": "#5277E8",
       "category": "entertainment",
