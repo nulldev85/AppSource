@@ -1,6 +1,12 @@
 name: Update app source feed
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/update-feed.yml"
+      - "scripts/**"
   schedule:
     - cron: "17,47 * * * *"
   workflow_dispatch:
@@ -20,17 +26,20 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Build feed from public source releases
+      - name: Mirror app releases and generate signer feed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SOURCE_REPOS_TOKEN: ${{ secrets.SOURCE_REPOS_TOKEN }}
         run: python scripts/update_feed.py
 
-      - name: Commit feed changes
+      - name: Commit feed and icon changes
         run: |
-          if git diff --quiet -- apps.json; then
-            echo "No new completed app releases."
+          git add apps.json icons/
+          if git diff --cached --quiet; then
+            echo "No distribution changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add apps.json
           git commit -m "Update app source feed"
           git push
