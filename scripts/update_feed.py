@@ -20,7 +20,7 @@ REPOSITORIES = [
         "icon": "https://raw.githubusercontent.com/nulldev85/NullSign/main/Feather/Resources/Assets.xcassets/NullSignBlue.appiconset/nullsign.png",
         "tint": "#148BF4",
         "category": "utilities",
-        "asset": "NullSign.ipa",
+        "asset": "NullSign-unsigned.ipa",
     },
     {
         "repo": "NullSports",
@@ -42,7 +42,7 @@ REPOSITORIES = [
         "icon": "https://raw.githubusercontent.com/nulldev85/Aether/main/IPTVRadio/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
         "tint": "#5277E8",
         "category": "entertainment",
-        "asset": "Aether.ipa",
+        "asset": "IPTVRadio-unsigned-device.ipa",
     },
 ]
 
@@ -127,6 +127,7 @@ def main() -> None:
     apps = []
     for config in REPOSITORIES:
         versions = app_versions(config)
+        print(f"{config['name']}: {len(versions)} published main build(s)")
         if not versions:
             continue
         apps.append(
