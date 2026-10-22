@@ -22,6 +22,7 @@ REPOSITORIES = [
         "repo": "NullSign",
         "name": "NullSign",
         "bundle": "com.elmat.NullSign",
+        "private": True,
         "subtitle": "Sign and install iOS apps",
         "description": "A local iOS IPA signer and installer.",
         "iconPath": "Feather/Resources/Assets.xcassets/NullSignBlue.appiconset/nullsign.png",
@@ -67,6 +68,10 @@ REPOSITORIES = [
         "asset": "IPTVRadio-unsigned-device.ipa",
     },
 ]
+
+
+class SourceReleaseUnavailable(RuntimeError):
+    """A source repo has no eligible release visible to this feed run."""
 
 
 def request(
@@ -267,9 +272,16 @@ def eligible_source_releases(releases: list[dict], app: dict) -> list[tuple]:
 def app_versions(app: dict) -> list[dict]:
     url = f"{API_ROOT}/repos/{OWNER}/{app['repo']}/releases?per_page=100"
     token = source_token()
-    releases = request_json(url, token=token)
+    try:
+        releases = request_json(url, token=token)
+    except urllib.error.HTTPError as error:
+        if app.get("private") and error.code in (401, 403, 404):
+            raise SourceReleaseUnavailable(
+                f"No access to private source releases for {app['name']} ({error.code})."
+            ) from error
+        raise
     eligible = eligible_source_releases(releases, app)
-    if not eligible and token:
+    if not eligible and token and not app.get("private"):
         # SOURCE_REPOS_TOKEN can be scoped to only some repositories. For a
         # public source repo, retry without credentials so a restricted token
         # can't hide releases that the feed can read anonymously.
@@ -277,7 +289,7 @@ def app_versions(app: dict) -> list[dict]:
         releases = request_json(url)
         eligible = eligible_source_releases(releases, app)
     if not eligible:
-        raise RuntimeError(f"No completed main-branch source release found for {app['name']}.")
+        raise SourceReleaseUnavailable(f"No eligible source release found for {app['name']}.")
 
     versions = []
     for published, source_release, metadata, asset in eligible[:RELEASE_LIMIT]:
@@ -304,6 +316,26 @@ def app_versions(app: dict) -> list[dict]:
     return [version for _, version in versions]
 
 
+def app_versions_or_existing(app: dict, existing_apps: list[dict]) -> list[dict]:
+    try:
+        return app_versions(app)
+    except SourceReleaseUnavailable as error:
+        if not app.get("private"):
+            raise
+        existing = next(
+            (item for item in existing_apps if item.get("bundleIdentifier") == app["bundle"]),
+            None,
+        )
+        versions = existing.get("versions") if existing else None
+        if not versions:
+            raise
+        print(
+            f"{app['name']}: private source unavailable; preserving "
+            f"{len(versions)} existing feed build(s). ({error})"
+        )
+        return versions
+
+
 def main() -> None:
     current = json.loads(FEED_PATH.read_text(encoding="utf-8"))
     apps = []
@@ -311,7 +343,7 @@ def main() -> None:
     for config in REPOSITORIES:
         if config["iconFile"] not in icon_urls:
             icon_urls[config["iconFile"]] = sync_icon(config)
-        versions = app_versions(config)
+        versions = app_versions_or_existing(config, current.get("apps", []))
         apps.append(
             {
                 "name": config["name"],
