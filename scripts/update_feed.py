@@ -227,9 +227,7 @@ def distribution_release(app: dict, source_release: dict, metadata: dict[str, st
     return request_json(release_url, token=target_token)
 
 
-def app_versions(app: dict) -> list[dict]:
-    url = f"{API_ROOT}/repos/{OWNER}/{app['repo']}/releases?per_page=100"
-    releases = request_json(url, token=source_token())
+def eligible_source_releases(releases: list[dict], app: dict) -> list[tuple]:
     eligible = []
     for release in releases:
         if release.get("draft") or release.get("prerelease"):
@@ -263,6 +261,21 @@ def app_versions(app: dict) -> list[dict]:
         eligible.append((published, release, metadata, asset))
 
     eligible.sort(key=lambda item: item[0], reverse=True)
+    return eligible
+
+
+def app_versions(app: dict) -> list[dict]:
+    url = f"{API_ROOT}/repos/{OWNER}/{app['repo']}/releases?per_page=100"
+    token = source_token()
+    releases = request_json(url, token=token)
+    eligible = eligible_source_releases(releases, app)
+    if not eligible and token:
+        # SOURCE_REPOS_TOKEN can be scoped to only some repositories. For a
+        # public source repo, retry without credentials so a restricted token
+        # can't hide releases that the feed can read anonymously.
+        print(f"{app['name']}: no eligible release with source token; retrying public release lookup.")
+        releases = request_json(url)
+        eligible = eligible_source_releases(releases, app)
     if not eligible:
         raise RuntimeError(f"No completed main-branch source release found for {app['name']}.")
 
