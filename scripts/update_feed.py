@@ -57,6 +57,7 @@ REPOSITORIES = [
     },
     {
         "repo": "Aether",
+        "private": True,
         "name": "Aether",
         "bundle": "com.example.IPTVRadio",
         "subtitle": "IPTV Radio",
