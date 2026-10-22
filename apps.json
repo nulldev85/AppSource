@@ -75,6 +75,15 @@
       "versions": [
         {
           "version": "0.19.0",
+          "buildVersion": "87",
+          "date": "2026-10-22T15:55:55Z",
+          "localizedDescription": "Unsigned IPA from successful main build c5bc676. Sign before installing.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39762082363/Lineup-tvOS-unsigned.ipa",
+          "size": 46565766,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
           "buildVersion": "86",
           "date": "2026-10-21T02:49:23Z",
           "localizedDescription": "Unsigned IPA from successful main build 879065e. Sign before installing.",
