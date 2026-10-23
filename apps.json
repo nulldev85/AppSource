@@ -46,6 +46,15 @@
         {
           "version": "0.19.0",
           "buildVersion": "127",
+          "date": "2026-10-23T04:43:28Z",
+          "localizedDescription": "Unsigned IPA from successful main build 62c3de7. Sign before installing.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39899666495/Lineup-iPhone-unsigned.ipa",
+          "size": 80312718,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
+          "buildVersion": "127",
           "date": "2026-10-22T10:39:58Z",
           "localizedDescription": "Unsigned IPA from successful main build c5bc676. Sign before installing.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39762082362/Lineup-iPhone-unsigned.ipa",
