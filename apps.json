@@ -46,6 +46,15 @@
         {
           "version": "0.19.0",
           "buildVersion": "127",
+          "date": "2026-10-23T05:11:24Z",
+          "localizedDescription": "Unsigned IPA from successful main build 68fca59. Sign before installing.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39901711703/Lineup-iPhone-unsigned.ipa",
+          "size": 80312724,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
+          "buildVersion": "127",
           "date": "2026-10-23T04:43:28Z",
           "localizedDescription": "Unsigned IPA from successful main build 62c3de7. Sign before installing.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39899666495/Lineup-iPhone-unsigned.ipa",
@@ -82,6 +91,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "87",
+          "date": "2026-10-23T04:55:50Z",
+          "localizedDescription": "Unsigned IPA from successful main build 68fca59. Sign before installing.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39901711704-1/Lineup-tvOS-unsigned.ipa",
+          "size": 46565742,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.19.0",
           "buildVersion": "87",
