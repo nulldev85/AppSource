@@ -33,7 +33,7 @@ class ReleaseNotesTests(unittest.TestCase):
         ios = feed.human_release_notes(phone_app, self.release, phone)
         self.assertTrue(any("Search again" in note for note in ios))
         self.assertFalse(any("Search again" in note for note in tv))
-        self.assertEqual(len(records), 15)
+        self.assertEqual(len(records), 17)
 
     def test_same_version_and_build_with_a_different_commit_does_not_borrow_notes(self):
         other = {**self.metadata, "Source-SHA": "a" * 40}

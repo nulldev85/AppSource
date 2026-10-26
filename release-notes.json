@@ -4,6 +4,30 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "943",
+      "sourceSHAs": [
+        "2e60ec03a228bcc93e55dd7b27b4795e5819f66a"
+      ],
+      "notes": [
+        "Text across the app now uses Apple's own rounded system font instead of one bundled with Lineup, so the download is a little smaller.",
+        "From now on, every build has its own number, so your signing app will always offer a new release as an update. That's why this one jumps from 155 to 943."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "674",
+      "sourceSHAs": [
+        "2e60ec03a228bcc93e55dd7b27b4795e5819f66a"
+      ],
+      "notes": [
+        "Text across the app now uses Apple's own rounded system font instead of one bundled with Lineup, so the download is a little smaller.",
+        "From now on, every build has its own number, so your signing app will always offer a new release as an update. That's why this one jumps from 100 to 674."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "155",
       "sourceSHAs": [
         "bf3bd7fefe33f806228026f5b9978ed8effca0d9"
