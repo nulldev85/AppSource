@@ -26,7 +26,7 @@
           "version": "1.4.0",
           "buildVersion": "29",
           "date": "2026-10-21T02:11:55Z",
-          "localizedDescription": "Unsigned IPA from successful main build 31298ea. Sign before installing.",
+          "localizedDescription": "• Fixed signing failures caused by unreadable files inside an imported app.\n• Imported apps now stay clear of the bottom navigation bar.\n• Refreshed the dark interface, with more consistent cards, menus and controls.\n• Improved artwork when importing Apple TV apps.\n• Removed repeated Apple TV installation prompts.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-39530787902/NullSign-unsigned.ipa",
           "size": 19396928,
           "minOSVersion": "16.0"
@@ -47,7 +47,7 @@
           "version": "0.19.0",
           "buildVersion": "154",
           "date": "2026-10-26T00:29:24Z",
-          "localizedDescription": "Unsigned IPA from successful main build e5fd885. Sign before installing.",
+          "localizedDescription": "• Use more than one IPTV provider at a time, with provider names shown alongside channels so you know where each feed comes from.\n• Added Seerr for discovering and requesting titles, plus Silo as another way to connect your media library.\n• Choose local tracking, MDBList, or both. Continue Watching also handles MDBList-only progress more reliably.\n• Movie and show logos can appear as soon as one artwork source is ready, and previously loaded logos are reused when you return.\n• Opening a title from Nullfin no longer starts an unnecessary stream lookup before showing its details.\n• Search genres are now in A–Z order. Tapping Search again takes you back to the main genre screen.\n• Refreshed Library pages, cast photos, sign-in screens and menus. Similar Movies and Shows now comes from TMDB.\n• Added a Native player option with a clearly labeled AetherEngine fallback, ATP/WTA following, and more control over TV Guide categories.\n• Lineup has a new red play icon, and the welcome screen now uses a subtle animated background.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-40247680927/Lineup-iPhone-unsigned.ipa",
           "size": 85127299,
           "minOSVersion": "18.0"
@@ -56,7 +56,7 @@
           "version": "0.19.0",
           "buildVersion": "127",
           "date": "2026-10-23T08:57:53Z",
-          "localizedDescription": "Unsigned IPA from successful main build 0bdda07. Sign before installing.",
+          "localizedDescription": "• The TV Guide and Sports lists have a new look, with row colors drawn from each channel's logo.\n• Browse movies and shows by genre in Search, with separate movie and series results.\n• Library hero content and title logos are centered, with matching TMDB artwork available when Fanart.tv has no logo.\n• The welcome screen shows official movie and show posters, and its sign-in form is easier to read.\n• Library row panels take up less space while keeping the artwork at its original size.\n• Fixed removing IPTV providers and media servers from Settings.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39926297532/Lineup-iPhone-unsigned.ipa",
           "size": 80313296,
           "minOSVersion": "18.0"
@@ -65,7 +65,7 @@
           "version": "0.19.0",
           "buildVersion": "127",
           "date": "2026-10-23T05:11:24Z",
-          "localizedDescription": "Unsigned IPA from successful main build 68fca59. Sign before installing.",
+          "localizedDescription": "• The TV Guide and Sports lists have a new look, with row colors drawn from each channel's logo.\n• Browse movies and shows by genre in Search, with separate movie and series results.\n• Library hero content and title logos are centered, with matching TMDB artwork available when Fanart.tv has no logo.\n• The welcome screen shows official movie and show posters, and its sign-in form is easier to read.\n• Library row panels take up less space while keeping the artwork at its original size.\n• Fixed removing IPTV providers and media servers from Settings.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39901711703/Lineup-iPhone-unsigned.ipa",
           "size": 80312724,
           "minOSVersion": "18.0"
@@ -74,7 +74,7 @@
           "version": "0.19.0",
           "buildVersion": "127",
           "date": "2026-10-23T04:43:28Z",
-          "localizedDescription": "Unsigned IPA from successful main build 62c3de7. Sign before installing.",
+          "localizedDescription": "• The TV Guide and Sports lists have a new look, with row colors drawn from each channel's logo.\n• Browse movies and shows by genre in Search, with separate movie and series results.\n• Library hero content and title logos are centered, with matching TMDB artwork available when Fanart.tv has no logo.\n• The welcome screen shows official movie and show posters, and its sign-in form is easier to read.\n• Library row panels take up less space while keeping the artwork at its original size.\n• Fixed removing IPTV providers and media servers from Settings.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39899666495/Lineup-iPhone-unsigned.ipa",
           "size": 80312718,
           "minOSVersion": "18.0"
@@ -83,7 +83,7 @@
           "version": "0.19.0",
           "buildVersion": "127",
           "date": "2026-10-22T10:39:58Z",
-          "localizedDescription": "Unsigned IPA from successful main build c5bc676. Sign before installing.",
+          "localizedDescription": "• Choose List or TV Guide layouts in the TV Guide tab. Sports now uses the new list style while keeping its video preview.\n• Channel rows pick up colors from their logos, with a darker look and a more subtle way to show live-program progress.\n• Browse movies and shows by genre in Search, with artwork and separate results for each.\n• Library hero content and title logos are centered. TMDB can supply a matching logo when Fanart.tv has none.\n• Added MPVKit as another playback option and updated AetherEngine to 7.45.0.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39762082362/Lineup-iPhone-unsigned.ipa",
           "size": 79748464,
           "minOSVersion": "18.0"
@@ -92,7 +92,7 @@
           "version": "0.19.0",
           "buildVersion": "126",
           "date": "2026-10-21T02:27:48Z",
-          "localizedDescription": "Unsigned IPA from successful main build 879065e. Sign before installing.",
+          "localizedDescription": "• Organize your Library with collections and rearrange the shelves to suit you.\n• Movie and show pages can use matching Fanart.tv title logos, with regular title text kept as a fallback.\n• Added more subtitle choices, including online subtitle search and saved display preferences.\n• Skip Intro and Skip Recap appear when timing data is available, with notices for movies that have a scene after the credits.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39530865422/Lineup-iPhone-unsigned.ipa",
           "size": 63256668,
           "minOSVersion": "18.0"
@@ -113,7 +113,7 @@
           "version": "0.19.0",
           "buildVersion": "99",
           "date": "2026-10-26T00:21:53Z",
-          "localizedDescription": "Unsigned IPA from successful main build e5fd885. Sign before installing.",
+          "localizedDescription": "• Movie and show logos now load independently of the rest of the page, so a slow artwork source does not hold up the others.\n• Returning to a title reuses its loaded logo. Matching artwork links are also remembered between app launches.\n• Opening a title from Nullfin no longer starts a stream lookup that the details page does not need.\n• Added Seerr discovery and requests, plus Silo library connections, with sign-in screens styled for each service.\n• Choose local tracking, MDBList, or both. Improved how saved progress and watched status are kept in step.\n• Updated menus and supporting screens to match the darker Sports and TV Guide look.\n• Apple TV gets the new red play icon, including matching Home Screen and Top Shelf artwork.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-40247680985-1/Lineup-tvOS-unsigned.ipa",
           "size": 50465184,
           "minOSVersion": "18.0"
@@ -122,7 +122,7 @@
           "version": "0.19.0",
           "buildVersion": "87",
           "date": "2026-10-23T08:53:41Z",
-          "localizedDescription": "Unsigned IPA from successful main build 0bdda07. Sign before installing.",
+          "localizedDescription": "• TV Guide program rows now keep their channel's logo colors while still showing how far the live program has progressed.\n• The Library hero is centered lower on the screen, with larger text and a rectangular Play button.\n• The Play button now changes between Movie and Series to match the title you are browsing.\n• Added genre browsing to Search.\n• Improved how the navigation bar stays visible while browsing the Library.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39926297402-1/Lineup-tvOS-unsigned.ipa",
           "size": 48454933,
           "minOSVersion": "18.0"
@@ -131,7 +131,7 @@
           "version": "0.19.0",
           "buildVersion": "87",
           "date": "2026-10-23T04:55:50Z",
-          "localizedDescription": "Unsigned IPA from successful main build 68fca59. Sign before installing.",
+          "localizedDescription": "• Sports and TV Guide now use the updated channel-colored layouts designed for Apple TV.\n• The guide's left edge fades into the darker background, including the timeline above it.\n• Library hero content is centered while keeping the existing playback and browsing options.\n• Refined the guide's row spacing and live-program progress display.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39901711704-1/Lineup-tvOS-unsigned.ipa",
           "size": 46565742,
           "minOSVersion": "18.0"
@@ -140,7 +140,7 @@
           "version": "0.19.0",
           "buildVersion": "87",
           "date": "2026-10-23T04:42:40Z",
-          "localizedDescription": "Unsigned IPA from successful main build 62c3de7. Sign before installing.",
+          "localizedDescription": "• Sports and TV Guide now use the updated channel-colored layouts designed for Apple TV.\n• The guide's left edge fades into the darker background, including the timeline above it.\n• Library hero content is centered while keeping the existing playback and browsing options.\n• Refined the guide's row spacing and live-program progress display.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39899666642/Lineup-tvOS-unsigned.ipa",
           "size": 46565738,
           "minOSVersion": "18.0"
@@ -149,7 +149,7 @@
           "version": "0.19.0",
           "buildVersion": "87",
           "date": "2026-10-22T15:55:55Z",
-          "localizedDescription": "Unsigned IPA from successful main build c5bc676. Sign before installing.",
+          "localizedDescription": "• Added MPVKit as another playback option alongside VLC and AetherEngine.\n• Fixed the Apple TV screensaver appearing during MPVKit playback.\n• Refreshed the player controls and restored 15-second remote skips.\n• Updated AetherEngine to 7.45.0.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39762082363/Lineup-tvOS-unsigned.ipa",
           "size": 46565766,
           "minOSVersion": "18.0"
@@ -158,7 +158,7 @@
           "version": "0.19.0",
           "buildVersion": "86",
           "date": "2026-10-21T02:49:23Z",
-          "localizedDescription": "Unsigned IPA from successful main build 879065e. Sign before installing.",
+          "localizedDescription": "• Lineup is now available through the shared app repo on Apple TV.\n• Browse live TV, sports and your media library with controls designed for the remote.\n• Choose VLC or AetherEngine for playback and keep your existing provider connections.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39530865389/Lineup-tvOS-unsigned.ipa",
           "size": 31957244,
           "minOSVersion": "18.0"
@@ -179,7 +179,7 @@
           "version": "1.0.0",
           "buildVersion": "1",
           "date": "2026-10-21T02:15:44Z",
-          "localizedDescription": "Unsigned IPA from successful main build f403d74. Sign before installing.",
+          "localizedDescription": "• Radio playback now uses AetherEngine, with improvements to how streams start, stop and recover.\n• Refreshed station browsing and discovery controls to make finding something to listen to feel simpler.\n• Now Playing has a centered vinyl display and controls that stay within easy reach at the bottom.\n• The darker interface and rounded text now feel more consistent throughout the app.\n• Improved playback recovery after phone calls.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-aether-source-39529689019/IPTVRadio-unsigned-device.ipa",
           "size": 11810160,
           "minOSVersion": "18.0"
