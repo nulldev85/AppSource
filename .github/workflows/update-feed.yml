@@ -29,7 +29,7 @@ jobs:
           python-version: "3.x"
 
       - name: Validate release notes and publishing contracts
-        run: python -m unittest discover -s tests
+        run: python -m unittest discover -s tests -b
 
       - name: Mirror app releases and generate signer feed
         env:
