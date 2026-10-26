@@ -4,6 +4,32 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "155",
+      "sourceSHAs": [
+        "bf3bd7fefe33f806228026f5b9978ed8effca0d9"
+      ],
+      "notes": [
+        "Your watch history and favorites take up far less space. Resume points, watched marks and favorites are all kept, and a title's cast, trailers and other details still load from your server when you open it.",
+        "Subtitles you download while watching no longer pile up on your phone after you close the app.",
+        "If the last update didn't show up in your signing app, this one will. It has a new build number."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "100",
+      "sourceSHAs": [
+        "bf3bd7fefe33f806228026f5b9978ed8effca0d9"
+      ],
+      "notes": [
+        "Your watch history and favorites take up far less space, so a long history no longer runs into Apple TV's limit on saved settings. Resume points, watched marks and favorites are all kept.",
+        "Subtitles you download while watching no longer pile up after you close the app.",
+        "If the last update didn't show up in your signing app, this one will. It has a new build number."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "154",
       "sourceSHAs": [
         "ea20b578404e4827165c41277bd610d8da5bafb0"
