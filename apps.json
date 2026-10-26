@@ -45,6 +45,15 @@
       "versions": [
         {
           "version": "0.19.0",
+          "buildVersion": "155",
+          "date": "2026-10-26T19:37:54Z",
+          "localizedDescription": "• Your watch history and favorites take up far less space. Resume points, watched marks and favorites are all kept, and a title's cast, trailers and other details still load from your server when you open it.\n• Subtitles you download while watching no longer pile up on your phone after you close the app.\n• If the last update didn't show up in your signing app, this one will. It has a new build number.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-40385820085/Lineup-iPhone-unsigned.ipa",
+          "size": 85181324,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
           "buildVersion": "154",
           "date": "2026-10-26T18:44:18Z",
           "localizedDescription": "• Menus are now dark and see-through, like the welcome screen's sign-in card, so you can see what's behind them while every row stays easy to read. Settings has the same look.\n• The league menu on the Sports tab shows each league as a card in its logo's colors.\n• The Library shows Trending and the streaming-service rows before you connect a media server. Open one of those titles to see its details and a button for adding a server.\n• In the TV Guide, adding, removing or moving a favorite no longer jumps the list back to the top, and each move in the reorder sheet is saved as soon as you make it.\n• Seerr has moved out of the TV Guide menu. You'll still find it in the Library.\n• Signing in to Silo now works like Jellyfin and Emby, with a choice between your account and an API key.\n• The local network permission prompt now names Jellyfin, Emby, Plex and Silo.",
@@ -118,6 +127,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "100",
+          "date": "2026-10-26T19:41:37Z",
+          "localizedDescription": "• Your watch history and favorites take up far less space, so a long history no longer runs into Apple TV's limit on saved settings. Resume points, watched marks and favorites are all kept.\n• Subtitles you download while watching no longer pile up after you close the app.\n• If the last update didn't show up in your signing app, this one will. It has a new build number.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-40385820113-1/Lineup-tvOS-unsigned.ipa",
+          "size": 50488681,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.19.0",
           "buildVersion": "99",
