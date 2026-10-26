@@ -46,6 +46,15 @@
         {
           "version": "0.19.0",
           "buildVersion": "154",
+          "date": "2026-10-26T18:44:18Z",
+          "localizedDescription": "• Menus are now dark and see-through, like the welcome screen's sign-in card, so you can see what's behind them while every row stays easy to read. Settings has the same look.\n• The league menu on the Sports tab shows each league as a card in its logo's colors.\n• The Library shows Trending and the streaming-service rows before you connect a media server. Open one of those titles to see its details and a button for adding a server.\n• In the TV Guide, adding, removing or moving a favorite no longer jumps the list back to the top, and each move in the reorder sheet is saved as soon as you make it.\n• Seerr has moved out of the TV Guide menu. You'll still find it in the Library.\n• Signing in to Silo now works like Jellyfin and Emby, with a choice between your account and an API key.\n• The local network permission prompt now names Jellyfin, Emby, Plex and Silo.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-40378158642/Lineup-iPhone-unsigned.ipa",
+          "size": 85175007,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
+          "buildVersion": "154",
           "date": "2026-10-26T00:29:24Z",
           "localizedDescription": "• Use more than one IPTV provider at a time, with provider names shown alongside channels so you know where each feed comes from.\n• Added Seerr for discovering and requesting titles, plus Silo as another way to connect your media library.\n• Choose local tracking, MDBList, or both. Continue Watching also handles MDBList-only progress more reliably.\n• Movie and show logos can appear as soon as one artwork source is ready, and previously loaded logos are reused when you return.\n• Opening a title from Nullfin no longer starts an unnecessary stream lookup before showing its details.\n• Search genres are now in A–Z order. Tapping Search again takes you back to the main genre screen.\n• Refreshed Library pages, cast photos, sign-in screens and menus. Similar Movies and Shows now comes from TMDB.\n• Added a Native player option with a clearly labeled AetherEngine fallback, ATP/WTA following, and more control over TV Guide categories.\n• Lineup has a new red play icon, and the welcome screen now uses a subtle animated background.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-40247680927/Lineup-iPhone-unsigned.ipa",
@@ -109,6 +118,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "99",
+          "date": "2026-10-26T18:49:22Z",
+          "localizedDescription": "• Game rows on the Sports tab now read like a scoreboard: each team's crest, name and record at either end, the score in the middle, and the arena and its city underneath.\n• Crests, team names, scores and arena details are much larger, so a game is easy to read from across the room.\n• Signing in to Silo now works like Jellyfin and Emby, with a choice between your account and an API key.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-40378158595-1/Lineup-tvOS-unsigned.ipa",
+          "size": 50485013,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.19.0",
           "buildVersion": "99",
