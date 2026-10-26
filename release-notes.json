@@ -6,6 +6,36 @@
       "version": "0.19.0",
       "buildVersion": "154",
       "sourceSHAs": [
+        "ea20b578404e4827165c41277bd610d8da5bafb0"
+      ],
+      "notes": [
+        "Menus are now dark and see-through, like the welcome screen's sign-in card, so you can see what's behind them while every row stays easy to read. Settings has the same look.",
+        "The league menu on the Sports tab shows each league as a card in its logo's colors.",
+        "The Library shows Trending and the streaming-service rows before you connect a media server. Open one of those titles to see its details and a button for adding a server.",
+        "In the TV Guide, adding, removing or moving a favorite no longer jumps the list back to the top, and each move in the reorder sheet is saved as soon as you make it.",
+        "Seerr has moved out of the TV Guide menu. You'll still find it in the Library.",
+        "Signing in to Silo now works like Jellyfin and Emby, with a choice between your account and an API key.",
+        "The local network permission prompt now names Jellyfin, Emby, Plex and Silo."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "99",
+      "sourceSHAs": [
+        "ea20b578404e4827165c41277bd610d8da5bafb0"
+      ],
+      "notes": [
+        "Game rows on the Sports tab now read like a scoreboard: each team's crest, name and record at either end, the score in the middle, and the arena and its city underneath.",
+        "Crests, team names, scores and arena details are much larger, so a game is easy to read from across the room.",
+        "Signing in to Silo now works like Jellyfin and Emby, with a choice between your account and an API key."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
+      "buildVersion": "154",
+      "sourceSHAs": [
         "e5fd885cd9db65ac2984db6142f0757bfbab43ef"
       ],
       "notes": [
