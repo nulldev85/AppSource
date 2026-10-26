@@ -13,6 +13,27 @@ icons here, so signer downloads do not depend on the app source repositories
 being public. Pull request builds, manual branch builds, simulator packages,
 and failed or unfinished builds are not included.
 
+## Release notes
+
+Every distributed build needs a short, written list of what changed for users.
+Keep the wording natural and specific: say what someone can do now or which
+problem they should stop running into. Avoid commit titles, compiler errors,
+internal implementation details, vague polish claims and promises about things
+that were not tested. Keep iPhone and Apple TV changes separate.
+
+Add notes to `release-notes.json` before a build reaches distribution. Match the
+bundle identifier, version, build number and **full source commit SHA**; a build
+number alone is not enough because it can be reused. Alternatively, the source
+release can include an explicitly written `## What's new` section with bullets.
+The updater never manufactures notes from a commit log or build output.
+
+These notes are used for the public release, the signer feed and the website.
+Older mirrored releases receive note-only corrections without replacing their
+IPAs, tags or release dates. If a new build has no written notes, the updater
+leaves it out of the feed, reports the missing notes in Actions, and keeps the
+previous published builds available. Add its notes and rerun the feed update;
+there is no need to rebuild the app. Scheduled updates still run every 30 minutes.
+
 ## Making the app source repositories private
 
 Before changing `NullSign`, `NullSports`, or `Aether` to private, add a fine-

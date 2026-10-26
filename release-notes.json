@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "releases": [
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
+      "buildVersion": "154",
+      "sourceSHAs": [
+        "e5fd885cd9db65ac2984db6142f0757bfbab43ef"
+      ],
+      "notes": [
+        "Use more than one IPTV provider at a time, with provider names shown alongside channels so you know where each feed comes from.",
+        "Added Seerr for discovering and requesting titles, plus Silo as another way to connect your media library.",
+        "Choose local tracking, MDBList, or both. Continue Watching also handles MDBList-only progress more reliably.",
+        "Movie and show logos can appear as soon as one artwork source is ready, and previously loaded logos are reused when you return.",
+        "Opening a title from Nullfin no longer starts an unnecessary stream lookup before showing its details.",
+        "Search genres are now in A–Z order. Tapping Search again takes you back to the main genre screen.",
+        "Refreshed Library pages, cast photos, sign-in screens and menus. Similar Movies and Shows now comes from TMDB.",
+        "Added a Native player option with a clearly labeled AetherEngine fallback, ATP/WTA following, and more control over TV Guide categories.",
+        "Lineup has a new red play icon, and the welcome screen now uses a subtle animated background."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "99",
+      "sourceSHAs": [
+        "e5fd885cd9db65ac2984db6142f0757bfbab43ef"
+      ],
+      "notes": [
+        "Movie and show logos now load independently of the rest of the page, so a slow artwork source does not hold up the others.",
+        "Returning to a title reuses its loaded logo. Matching artwork links are also remembered between app launches.",
+        "Opening a title from Nullfin no longer starts a stream lookup that the details page does not need.",
+        "Added Seerr discovery and requests, plus Silo library connections, with sign-in screens styled for each service.",
+        "Choose local tracking, MDBList, or both. Improved how saved progress and watched status are kept in step.",
+        "Updated menus and supporting screens to match the darker Sports and TV Guide look.",
+        "Apple TV gets the new red play icon, including matching Home Screen and Top Shelf artwork."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
+      "buildVersion": "127",
+      "sourceSHAs": [
+        "0bdda07b3000a1804893bdc91c635cdbae991cba",
+        "68fca5906bc5af4a9548e33753379a2d16619fd6",
+        "62c3de74a5692c3dbf287cbb64d3aab405fe107e"
+      ],
+      "notes": [
+        "The TV Guide and Sports lists have a new look, with row colors drawn from each channel's logo.",
+        "Browse movies and shows by genre in Search, with separate movie and series results.",
+        "Library hero content and title logos are centered, with matching TMDB artwork available when Fanart.tv has no logo.",
+        "The welcome screen shows official movie and show posters, and its sign-in form is easier to read.",
+        "Library row panels take up less space while keeping the artwork at its original size.",
+        "Fixed removing IPTV providers and media servers from Settings."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
+      "buildVersion": "127",
+      "sourceSHAs": [
+        "c5bc676e3aa1fe6e2781ecd8f971abc539e034db"
+      ],
+      "notes": [
+        "Choose List or TV Guide layouts in the TV Guide tab. Sports now uses the new list style while keeping its video preview.",
+        "Channel rows pick up colors from their logos, with a darker look and a more subtle way to show live-program progress.",
+        "Browse movies and shows by genre in Search, with artwork and separate results for each.",
+        "Library hero content and title logos are centered. TMDB can supply a matching logo when Fanart.tv has none.",
+        "Added MPVKit as another playback option and updated AetherEngine to 7.45.0."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
+      "buildVersion": "126",
+      "sourceSHAs": [
+        "879065eae33655dcb272f3d3941ebe189a6807d3"
+      ],
+      "notes": [
+        "Organize your Library with collections and rearrange the shelves to suit you.",
+        "Movie and show pages can use matching Fanart.tv title logos, with regular title text kept as a fallback.",
+        "Added more subtitle choices, including online subtitle search and saved display preferences.",
+        "Skip Intro and Skip Recap appear when timing data is available, with notices for movies that have a scene after the credits."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "87",
+      "sourceSHAs": [
+        "0bdda07b3000a1804893bdc91c635cdbae991cba"
+      ],
+      "notes": [
+        "TV Guide program rows now keep their channel's logo colors while still showing how far the live program has progressed.",
+        "The Library hero is centered lower on the screen, with larger text and a rectangular Play button.",
+        "The Play button now changes between Movie and Series to match the title you are browsing.",
+        "Added genre browsing to Search.",
+        "Improved how the navigation bar stays visible while browsing the Library."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "87",
+      "sourceSHAs": [
+        "68fca5906bc5af4a9548e33753379a2d16619fd6",
+        "62c3de74a5692c3dbf287cbb64d3aab405fe107e"
+      ],
+      "notes": [
+        "Sports and TV Guide now use the updated channel-colored layouts designed for Apple TV.",
+        "The guide's left edge fades into the darker background, including the timeline above it.",
+        "Library hero content is centered while keeping the existing playback and browsing options.",
+        "Refined the guide's row spacing and live-program progress display."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "87",
+      "sourceSHAs": [
+        "c5bc676e3aa1fe6e2781ecd8f971abc539e034db"
+      ],
+      "notes": [
+        "Added MPVKit as another playback option alongside VLC and AetherEngine.",
+        "Fixed the Apple TV screensaver appearing during MPVKit playback.",
+        "Refreshed the player controls and restored 15-second remote skips.",
+        "Updated AetherEngine to 7.45.0."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "86",
+      "sourceSHAs": [
+        "879065eae33655dcb272f3d3941ebe189a6807d3"
+      ],
+      "notes": [
+        "Lineup is now available through the shared app repo on Apple TV.",
+        "Browse live TV, sports and your media library with controls designed for the remote.",
+        "Choose VLC or AetherEngine for playback and keep your existing provider connections."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.example.IPTVRadio",
+      "version": "1.0.0",
+      "buildVersion": "1",
+      "sourceSHAs": [
+        "f403d745e7d5accc99a5028269b331e29603efc6"
+      ],
+      "notes": [
+        "Radio playback now uses AetherEngine, with improvements to how streams start, stop and recover.",
+        "Refreshed station browsing and discovery controls to make finding something to listen to feel simpler.",
+        "Now Playing has a centered vinyl display and controls that stay within easy reach at the bottom.",
+        "The darker interface and rounded text now feel more consistent throughout the app.",
+        "Improved playback recovery after phone calls."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
+      "version": "1.4.0",
+      "buildVersion": "29",
+      "sourceSHAs": [
+        "31298eac9520233d4b683bc04b98faee317368be"
+      ],
+      "notes": [
+        "Fixed signing failures caused by unreadable files inside an imported app.",
+        "Imported apps now stay clear of the bottom navigation bar.",
+        "Refreshed the dark interface, with more consistent cards, menus and controls.",
+        "Improved artwork when importing Apple TV apps.",
+        "Removed repeated Apple TV installation prompts."
+      ]
+    }
+  ]
+}
