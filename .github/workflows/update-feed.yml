@@ -7,6 +7,8 @@ on:
     paths:
       - ".github/workflows/update-feed.yml"
       - "scripts/**"
+      - "release-notes.json"
+      - "tests/**"
   schedule:
     - cron: "17,47 * * * *"
   workflow_dispatch:
@@ -25,6 +27,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+
+      - name: Validate release notes and publishing contracts
+        run: python -m unittest discover -s tests
 
       - name: Mirror app releases and generate signer feed
         env:

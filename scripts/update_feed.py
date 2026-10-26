@@ -4,6 +4,7 @@
 import base64
 import json
 import os
+import re
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -13,6 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 FEED_PATH = ROOT / "apps.json"
 ICON_DIR = ROOT / "icons"
+NOTES_PATH = ROOT / "release-notes.json"
 OWNER = "nulldev85"
 DIST_REPO = os.environ.get("GITHUB_REPOSITORY", f"{OWNER}/AppSource")
 RELEASE_LIMIT = 20
@@ -73,6 +75,83 @@ REPOSITORIES = [
 
 class SourceReleaseUnavailable(RuntimeError):
     """A source repo has no eligible release visible to this feed run."""
+
+
+class ReleaseNotesUnavailable(SourceReleaseUnavailable):
+    """A build is valid, but its user-facing changes have not been written."""
+
+
+def checked_notes(notes) -> list[str]:
+    if not isinstance(notes, list) or not 1 <= len(notes) <= 12:
+        raise ValueError("Release notes need between one and twelve short bullets.")
+    result = []
+    for note in notes:
+        if not isinstance(note, str) or not 12 <= len(note.strip()) <= 600:
+            raise ValueError("Each release note must be a short, readable sentence.")
+        note = note.strip()
+        if re.search(r"[\r\n]|Source-[A-Za-z-]+:|Traceback \(|(?:fatal )?error:|xcodebuild|being prepared", note, re.I):
+            raise ValueError("Build metadata, compiler output and placeholders are not release notes.")
+        result.append(note)
+    return result
+
+
+def release_note_catalog() -> list[dict]:
+    catalog = json.loads(NOTES_PATH.read_text(encoding="utf-8"))
+    if catalog.get("schemaVersion") != 1 or not isinstance(catalog.get("releases"), list):
+        raise ValueError("Unsupported release-note catalog.")
+    seen = set()
+    for record in catalog["releases"]:
+        checked_notes(record.get("notes"))
+        if not all(isinstance(record.get(field), str) and record[field] for field in ("bundleIdentifier", "version", "buildVersion")):
+            raise ValueError("Release notes must identify their app, version and build.")
+        if not isinstance(record.get("sourceSHAs"), list) or not record["sourceSHAs"]:
+            raise ValueError("Release notes must name the exact source commit.")
+        for sha in record["sourceSHAs"]:
+            if not isinstance(sha, str) or not re.fullmatch(r"[0-9a-f]{40}", sha):
+                raise ValueError("Release-note source commits must be full Git SHAs.")
+            key = (record["bundleIdentifier"], record["version"], record["buildVersion"], sha)
+            if key in seen:
+                raise ValueError("Conflicting release notes for the same build and commit.")
+            seen.add(key)
+    return catalog["releases"]
+
+
+def human_release_notes(app: dict, source_release: dict, metadata: dict) -> list[str]:
+    for record in release_note_catalog():
+        if (record["bundleIdentifier"] == app["bundle"]
+                and record["version"] == metadata["Source-Version"]
+                and record["buildVersion"] == metadata["Source-Build-Version"]
+                and metadata["Source-SHA"] in record["sourceSHAs"]):
+            return checked_notes(record["notes"])
+    # Future source releases can carry explicitly written notes themselves.
+    # Never turn commit titles, CI diagnostics or the Source-* block into copy.
+    body = source_release.get("body") or ""
+    heading = re.search(r"(?im)^#{1,3}\s+(?:what['’]s new|release notes)\s*$", body)
+    if heading:
+        section = re.split(r"(?m)^#{1,3}\s+", body[heading.end():], maxsplit=1)[0]
+        notes = [re.sub(r"^\s*[-*•]\s+", "", line).strip()
+                 for line in section.splitlines() if re.match(r"^\s*[-*•]\s+", line)]
+        try:
+            return checked_notes(notes)
+        except ValueError:
+            pass
+    raise ReleaseNotesUnavailable(
+        f"Write release notes for {app['name']} {metadata['Source-Version']} "
+        f"build {metadata['Source-Build-Version']} ({metadata['Source-SHA'][:7]}) "
+        "in release-notes.json or the source release's What's new section."
+    )
+
+
+def distribution_notes(app: dict, source_release: dict, metadata: dict, notes: list[str]) -> str:
+    public_notes = "\n".join(f"- {note}" for note in checked_notes(notes))
+    details = [f"Source-{field}: {metadata['Source-' + field]}" for field in
+               ("App", "Bundle-Identifier", "Version", "Build-Version", "Branch", "SHA")]
+    details.insert(4, f"Source-Minimum-OS-Version: {metadata.get('Source-Minimum-OS-Version', 'unknown')}")
+    details += [f"Source-Origin-Repository: {OWNER}/{app['repo']}",
+                f"Source-Origin-Tag: {source_release['tag_name']}"]
+    return ("## What's new\n\n" + public_notes
+            + "\n\nSign this IPA with your preferred signer before installing."
+            + "\n\n## Build details\n\n" + "\n".join(details) + "\n")
 
 
 def request(
@@ -157,29 +236,16 @@ def release_metadata(body: str) -> dict[str, str]:
     return values
 
 
-def distribution_release(app: dict, source_release: dict, metadata: dict[str, str], asset: dict) -> dict:
+def distribution_release(app: dict, source_release: dict, metadata: dict[str, str], asset: dict,
+                         notes: list[str]) -> dict:
     target_token = distribution_token()
     tag = f"dist-{app['repo'].lower()}-{source_release['tag_name']}"
     encoded_tag = urllib.parse.quote(tag, safe="")
     release_url = f"{API_ROOT}/repos/{DIST_REPO}/releases/tags/{encoded_tag}"
     release = maybe_json(release_url, token=target_token)
+    body = distribution_notes(app, source_release, metadata, notes)
 
     if release is None:
-        body = "\n".join(
-            [
-                f"Source-App: {metadata['Source-App']}",
-                f"Source-Bundle-Identifier: {metadata['Source-Bundle-Identifier']}",
-                f"Source-Version: {metadata['Source-Version']}",
-                f"Source-Build-Version: {metadata['Source-Build-Version']}",
-                f"Source-Minimum-OS-Version: {metadata.get('Source-Minimum-OS-Version', 'unknown')}",
-                f"Source-Branch: {metadata['Source-Branch']}",
-                f"Source-SHA: {metadata['Source-SHA']}",
-                f"Source-Origin-Repository: {OWNER}/{app['repo']}",
-                f"Source-Origin-Tag: {source_release['tag_name']}",
-                "",
-                "Mirrored from a successful main-branch source build for public signer distribution.",
-            ]
-        )
         payload = {
             "tag_name": tag,
             "target_commitish": "main",
@@ -207,6 +273,9 @@ def distribution_release(app: dict, source_release: dict, metadata: dict[str, st
             raise RuntimeError(
                 f"Distribution asset size mismatch for {tag}/{app['asset']}; refusing to replace it."
             )
+        if release.get("body") != body:
+            request_json(f"{API_ROOT}/repos/{DIST_REPO}/releases/{release['id']}", token=target_token,
+                         data=json.dumps({"body": body}).encode("utf-8"), method="PATCH")
         return release
 
     print(f"Copying {app['name']} {metadata['Source-Version']} build {metadata['Source-Build-Version']} ({asset['size']} bytes).")
@@ -294,7 +363,12 @@ def app_versions(app: dict) -> list[dict]:
 
     versions = []
     for published, source_release, metadata, asset in eligible[:RELEASE_LIMIT]:
-        mirrored = distribution_release(app, source_release, metadata, asset)
+        try:
+            notes = human_release_notes(app, source_release, metadata)
+        except ReleaseNotesUnavailable as error:
+            print(f"::warning::{error}")
+            continue
+        mirrored = distribution_release(app, source_release, metadata, asset, notes)
         download_url = (
             f"https://github.com/{DIST_REPO}/releases/download/"
             f"{urllib.parse.quote(mirrored['tag_name'], safe='')}/"
@@ -304,7 +378,7 @@ def app_versions(app: dict) -> list[dict]:
             "version": metadata["Source-Version"],
             "buildVersion": metadata["Source-Build-Version"],
             "date": published,
-            "localizedDescription": f"Unsigned IPA from successful main build {metadata['Source-SHA'][:7]}. Sign before installing.",
+            "localizedDescription": "\n".join(f"• {note}" for note in notes),
             "downloadURL": download_url,
             "size": asset["size"],
         }
@@ -313,7 +387,9 @@ def app_versions(app: dict) -> list[dict]:
             version["minOSVersion"] = minimum_os
         versions.append((published, version))
 
-    print(f"{app['name']}: {len(versions)} mirrored main build(s)")
+    if not versions:
+        raise ReleaseNotesUnavailable(f"No release with written notes is ready for {app['name']}.")
+    print(f"{app['name']}: {len(versions)} mirrored main build(s) with written release notes")
     return [version for _, version in versions]
 
 
@@ -321,7 +397,7 @@ def app_versions_or_existing(app: dict, existing_apps: list[dict]) -> list[dict]
     try:
         return app_versions(app)
     except SourceReleaseUnavailable as error:
-        if not app.get("private"):
+        if not app.get("private") and not isinstance(error, ReleaseNotesUnavailable):
             raise
         existing = next(
             (item for item in existing_apps if item.get("bundleIdentifier") == app["bundle"]),
@@ -331,7 +407,7 @@ def app_versions_or_existing(app: dict, existing_apps: list[dict]) -> list[dict]
         if not versions:
             raise
         print(
-            f"{app['name']}: private source unavailable; preserving "
+            f"{app['name']}: no publishable update; preserving "
             f"{len(versions)} existing feed build(s). ({error})"
         )
         return versions
