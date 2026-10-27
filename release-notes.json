@@ -4,6 +4,19 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "960",
+      "sourceSHAs": [
+        "6c9e5ca7e8c00bbc241217077808e8e7229929db"
+      ],
+      "notes": [
+        "Settings is now the same black as the rest of the app. The glow in your accent colour stays in the top corner, and the blue tint lower down is gone.",
+        "The bar and title across the top of Settings are gone, so your settings start right under the clock.",
+        "Pages you open from Settings still have their title and back button."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "955",
       "sourceSHAs": [
         "a00096e94858317334c60b13f17ec12ffb4871c0"
