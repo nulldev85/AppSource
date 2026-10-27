@@ -23,6 +23,15 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "1.4.2",
+          "buildVersion": "31",
+          "date": "2026-10-27T20:34:23Z",
+          "localizedDescription": "• Check for Updates in your Library now says what it does, then tells you whether everything is up to date or how many updates it found.\n• The Signer tab shows a red count when apps have updates, so you can see them from any tab.\n• NullSign checks again when you come back to it after a while, so you hear about new builds even if it stays open for days.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-40577778152/NullSign-1.4.2-31.ipa",
+          "size": 19405270,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.4.1",
           "buildVersion": "30",
           "date": "2026-10-27T19:38:47Z",
