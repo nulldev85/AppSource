@@ -23,6 +23,15 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "1.4.3",
+          "buildVersion": "32",
+          "date": "2026-10-27T22:03:28Z",
+          "localizedDescription": "• NullSign can now update itself. When a new version is out, the Signer tab shows a banner with an Update button; tap it, then tap Install when iOS asks.\n• NullSign signs its own update with the certificate shown on the Signer tab, then steps out to the Home Screen while iOS installs it. Open it again once its icon finishes.\n• Check for Updates now looks for a new NullSign as well as your apps, and it has its own button, apart from the + button.\n• Apps you imported from Files now get updates when one of your sources lists a newer version.\n• From this version on, NullSign updates from inside the app, so you won't need to download it again by hand.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-40590566286/NullSign-1.4.3-32.ipa",
+          "size": 19430165,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.4.2",
           "buildVersion": "31",
           "date": "2026-10-27T20:34:23Z",
