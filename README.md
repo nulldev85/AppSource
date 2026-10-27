@@ -13,6 +13,10 @@ icons here, so signer downloads do not depend on the app source repositories
 being public. Pull request builds, manual branch builds, simulator packages,
 and failed or unfinished builds are not included.
 
+Each IPA is published under its app, version and build, such as
+`Lineup-iPhone-0.19.0-956.ipa`, so a downloaded file says which build it is.
+Builds mirrored before that keep the name they were first published under.
+
 The source's own icon, `icons/source.png`, is "Null's Apps" in the website's
 dot font. It lives only here, so the updater never replaces it; to change it,
 edit and run `fonts/icon.py` in `nulldev85/nulldev85.github.io`.

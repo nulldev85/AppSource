@@ -63,7 +63,7 @@ class AppVersionLookupTests(unittest.TestCase):
         self.assertEqual(
             versions[0]["downloadURL"],
             "https://github.com/nulldev85/AppSource/releases/download/"
-            "dist-nullsports-source-tvos-39762082363/Lineup-tvOS-unsigned.ipa",
+            "dist-nullsports-source-tvos-39762082363/Lineup-tvOS-0.19.0-87.ipa",
         )
 
     def test_private_source_without_visible_release_does_not_retry_public_api(self):
