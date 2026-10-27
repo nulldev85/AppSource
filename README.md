@@ -13,9 +13,9 @@ icons here, so signer downloads do not depend on the app source repositories
 being public. Pull request builds, manual branch builds, simulator packages,
 and failed or unfinished builds are not included.
 
-The source's own icon, `icons/source.png`, is the N from the website's dot
-font. It lives only here, so the updater never replaces it; to change it, edit
-and run `fonts/icon.py` in `nulldev85/nulldev85.github.io`.
+The source's own icon, `icons/source.png`, is "Null's Apps" in the website's
+dot font. It lives only here, so the updater never replaces it; to change it,
+edit and run `fonts/icon.py` in `nulldev85/nulldev85.github.io`.
 
 ## Release notes
 
