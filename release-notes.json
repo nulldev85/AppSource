@@ -3,6 +3,19 @@
   "releases": [
     {
       "bundleIdentifier": "com.elmat.NullSign",
+      "version": "1.4.2",
+      "buildVersion": "31",
+      "sourceSHAs": [
+        "bd89ee6af2333b678be8eee194bd38643d3f77e7"
+      ],
+      "notes": [
+        "Check for Updates in your Library now says what it does, then tells you whether everything is up to date or how many updates it found.",
+        "The Signer tab shows a red count when apps have updates, so you can see them from any tab.",
+        "NullSign checks again when you come back to it after a while, so you hear about new builds even if it stays open for days."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
       "version": "1.4.1",
       "buildVersion": "30",
       "sourceSHAs": [
