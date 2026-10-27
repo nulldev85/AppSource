@@ -4,6 +4,34 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "952",
+      "sourceSHAs": [
+        "17419a920fe749436e1e535fa50779254a5dc8da"
+      ],
+      "notes": [
+        "You can now set up an Apple TV from your iPhone. On the TV, choose Set Up with iPhone, then scan the code it shows with your camera or from Settings › Set Up Apple TV.",
+        "Your IPTV providers, media servers and their sign-ins go across in one step, along with MDBList, Seerr, favorites, My Teams and your settings. It all travels over your Wi-Fi, locked with the code on the TV.",
+        "Watch history comes too. Anything either device has watched is kept, and where both played the same title, the most recent play wins.",
+        "A server or provider the TV already has is updated instead of being added a second time."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "684",
+      "sourceSHAs": [
+        "17419a920fe749436e1e535fa50779254a5dc8da"
+      ],
+      "notes": [
+        "New: Set Up with iPhone, at the top of Settings and on the first screen. Scan the code with your iPhone and everything arrives without typing a thing on the remote.",
+        "Your IPTV providers, media servers and their sign-ins come straight across your Wi-Fi, along with MDBList, Seerr, favorites, My Teams and your settings. They load right away, with no restart.",
+        "Watch history from your iPhone joins the TV's own. Nothing either device has watched is lost, and where both played the same title, the most recent play wins.",
+        "A server or provider the TV already has stays one entry instead of showing up twice, and running the setup again tidies up any doubles left from before."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "943",
       "sourceSHAs": [
         "2e60ec03a228bcc93e55dd7b27b4795e5819f66a"
