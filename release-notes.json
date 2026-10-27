@@ -2,6 +2,19 @@
   "schemaVersion": 1,
   "releases": [
     {
+      "bundleIdentifier": "com.elmat.NullSign",
+      "version": "1.4.1",
+      "buildVersion": "30",
+      "sourceSHAs": [
+        "d645c1fe1b95173e2b208bd6e247b2a0a5fce876"
+      ],
+      "notes": [
+        "Versions now show their build number in parentheses, like 0.19.0 (960), in your sources, version history and Library, so you can tell builds apart.",
+        "A newer build of the same version now shows up as an update.",
+        "Settings › About finds NullSign updates again."
+      ]
+    },
+    {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
       "buildVersion": "960",
