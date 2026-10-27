@@ -45,6 +45,15 @@
       "versions": [
         {
           "version": "0.19.0",
+          "buildVersion": "955",
+          "date": "2026-10-27T06:01:54Z",
+          "localizedDescription": "• Setting up an Apple TV now keeps each show where you're furthest along. If the TV is a few episodes ahead of your iPhone, it stays there, even if you played an earlier episode on your iPhone more recently.\n• The same goes the other way: if your iPhone is further into a show, the TV moves on to where you are.\n• Episodes and movies you've finished on either device still count as watched, and where both have played the same one, the further point wins.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-40456887375/Lineup-iPhone-unsigned.ipa",
+          "size": 83896072,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
           "buildVersion": "952",
           "date": "2026-10-27T02:53:02Z",
           "localizedDescription": "• You can now set up an Apple TV from your iPhone. On the TV, choose Set Up with iPhone, then scan the code it shows with your camera or from Settings › Set Up Apple TV.\n• Your IPTV providers, media servers and their sign-ins go across in one step, along with MDBList, Seerr, favorites, My Teams and your settings. It all travels over your Wi-Fi, locked with the code on the TV.\n• Watch history comes too. Anything either device has watched is kept, and where both played the same title, the most recent play wins.\n• A server or provider the TV already has is updated instead of being added a second time.",
@@ -145,6 +154,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "688",
+          "date": "2026-10-27T05:57:29Z",
+          "localizedDescription": "• After Set Up with iPhone, a show now picks up on whichever device was further along, so the TV no longer jumps back to an earlier episode you last played on your iPhone.\n• If your iPhone is ahead in a show, the TV moves on to where you are.\n• Episodes and movies finished on either device still count as watched, and where both have played the same one, the further point wins.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-40456887140-1/Lineup-tvOS-unsigned.ipa",
+          "size": 49183521,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.19.0",
           "buildVersion": "684",
