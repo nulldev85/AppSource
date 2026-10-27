@@ -80,6 +80,33 @@ class ReleaseNotesTests(unittest.TestCase):
         self.assertEqual(set(payload), {"body"})
         self.assertIn(notes[0], payload["body"])
 
+    def test_a_new_build_is_published_under_its_version_and_build(self):
+        notes = feed.human_release_notes(self.app, self.release, self.metadata)
+        created = {"id": 123, "body": "", "assets": [],
+                   "upload_url": "https://uploads.example.invalid/releases/123/assets{?name,label}"}
+        with (patch.object(feed, "distribution_token", return_value="fixture"),
+              patch.object(feed, "source_token", return_value="fixture"),
+              patch.object(feed, "maybe_json", return_value=None),
+              patch.object(feed, "request_json", side_effect=[created, created]),
+              patch.object(feed, "request", side_effect=[b"x" * 1234, b"{}"]) as transfer):
+            feed.distribution_release(self.app, self.release, self.metadata,
+                                      {"size": 1234, "url": "https://example.invalid/ipa"}, notes)
+        upload = transfer.call_args_list[1].args[0]
+        self.assertTrue(upload.endswith("?name=Lineup-tvOS-0.19.0-99.ipa"), upload)
+
+    def test_a_build_mirrored_under_the_old_name_keeps_its_link(self):
+        legacy = {**self.release, "draft": False, "prerelease": False,
+                  "published_at": "2026-10-26T00:00:00Z",
+                  "assets": [{"name": self.app["asset"], "url": "https://example.invalid/ipa", "size": 1234}]}
+        mirrored = {"tag_name": "dist-known", "assets": [{"name": self.app["asset"], "size": 1234}]}
+        with (patch.object(feed, "source_token", return_value="fixture"),
+              patch.object(feed, "request_json", return_value=[legacy]),
+              patch.object(feed, "distribution_release", return_value=mirrored)):
+            versions = feed.app_versions(self.app)
+        self.assertTrue(versions[0]["downloadURL"].endswith("/dist-known/Lineup-tvOS-unsigned.ipa"))
+        self.assertEqual(feed.mirrored_asset_name(self.app, self.metadata, {"assets": []}),
+                         "Lineup-tvOS-0.19.0-99.ipa")
+
     def test_identical_notes_are_not_patched_again(self):
         notes = feed.human_release_notes(self.app, self.release, self.metadata)
         mirrored = {"id": 123, "body": feed.distribution_notes(self.app, self.release, self.metadata, notes),

@@ -34,6 +34,7 @@ REPOSITORIES = [
         "tint": "#148BF4",
         "category": "utilities",
         "asset": "NullSign-unsigned.ipa",
+        "fileName": "NullSign",
     },
     {
         "repo": "NullSports",
@@ -46,6 +47,7 @@ REPOSITORIES = [
         "tint": "#168CFF",
         "category": "entertainment",
         "asset": "Lineup-iPhone-unsigned.ipa",
+        "fileName": "Lineup-iPhone",
     },
     {
         "repo": "NullSports",
@@ -58,6 +60,7 @@ REPOSITORIES = [
         "tint": "#168CFF",
         "category": "entertainment",
         "asset": "Lineup-tvOS-unsigned.ipa",
+        "fileName": "Lineup-tvOS",
     },
     {
         "repo": "Aether",
@@ -71,6 +74,7 @@ REPOSITORIES = [
         "tint": "#5277E8",
         "category": "entertainment",
         "asset": "IPTVRadio-unsigned-device.ipa",
+        "fileName": "Aether",
     },
 ]
 
@@ -238,6 +242,23 @@ def release_metadata(body: str) -> dict[str, str]:
     return values
 
 
+def distribution_asset_name(app: dict, metadata: dict[str, str]) -> str:
+    """The name an IPA is published under here: the app, its version and its
+    build, so a downloaded file says which build it is."""
+    stem = app.get("fileName") or re.sub(r"[^A-Za-z0-9]+", "-", app["name"]).strip("-")
+    version, build = (re.sub(r"[^A-Za-z0-9.]+", "-", metadata[key]).strip("-")
+                      for key in ("Source-Version", "Source-Build-Version"))
+    return f"{stem}-{version}-{build}.ipa"
+
+
+def mirrored_asset_name(app: dict, metadata: dict[str, str], release: dict) -> str:
+    """A build mirrored before IPAs carried their build keeps the name it was
+    published under; anything newer goes under its versioned name."""
+    named = distribution_asset_name(app, metadata)
+    names = {item.get("name") for item in release.get("assets", [])}
+    return app["asset"] if app["asset"] in names and named not in names else named
+
+
 def distribution_release(app: dict, source_release: dict, metadata: dict[str, str], asset: dict,
                          notes: list[str]) -> dict:
     target_token = distribution_token()
@@ -269,11 +290,12 @@ def distribution_release(app: dict, source_release: dict, metadata: dict[str, st
             release = request_json(release_url, token=target_token)
 
     existing_assets = {item["name"]: item for item in release.get("assets", [])}
-    current = existing_assets.get(app["asset"])
+    name = mirrored_asset_name(app, metadata, release)
+    current = existing_assets.get(name)
     if current:
         if current.get("size") != asset.get("size"):
             raise RuntimeError(
-                f"Distribution asset size mismatch for {tag}/{app['asset']}; refusing to replace it."
+                f"Distribution asset size mismatch for {tag}/{name}; refusing to replace it."
             )
         if release.get("body") != body:
             request_json(f"{API_ROOT}/repos/{DIST_REPO}/releases/{release['id']}", token=target_token,
@@ -292,7 +314,7 @@ def distribution_release(app: dict, source_release: dict, metadata: dict[str, st
             f"expected {asset['size']}, got {len(source_bytes)}."
         )
     upload_url = release["upload_url"].split("{", 1)[0]
-    upload_url += "?name=" + urllib.parse.quote(app["asset"], safe="")
+    upload_url += "?name=" + urllib.parse.quote(name, safe="")
     request(
         upload_url,
         token=target_token,
@@ -374,7 +396,7 @@ def app_versions(app: dict) -> list[dict]:
         download_url = (
             f"https://github.com/{DIST_REPO}/releases/download/"
             f"{urllib.parse.quote(mirrored['tag_name'], safe='')}/"
-            f"{urllib.parse.quote(app['asset'], safe='')}"
+            f"{urllib.parse.quote(mirrored_asset_name(app, metadata, mirrored), safe='')}"
         )
         version = {
             "version": metadata["Source-Version"],
