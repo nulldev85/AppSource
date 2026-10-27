@@ -131,5 +131,14 @@ class AppVersionLookupTests(unittest.TestCase):
         self.assertEqual(versions, previous_versions)
 
 
+class SourceIconTests(unittest.TestCase):
+    def test_source_icon_is_kept_here_and_never_synced_over(self):
+        self.assertTrue((update_feed.ICON_DIR / update_feed.SOURCE_ICON).is_file())
+        self.assertNotIn(
+            update_feed.SOURCE_ICON,
+            {app["iconFile"] for app in update_feed.REPOSITORIES},
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
