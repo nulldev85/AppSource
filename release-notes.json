@@ -3,6 +3,21 @@
   "releases": [
     {
       "bundleIdentifier": "com.elmat.NullSign",
+      "version": "1.4.3",
+      "buildVersion": "32",
+      "sourceSHAs": [
+        "f2632d25a0f6a86f4d0305e2d3d46c9780900ebf"
+      ],
+      "notes": [
+        "NullSign can now update itself. When a new version is out, the Signer tab shows a banner with an Update button; tap it, then tap Install when iOS asks.",
+        "NullSign signs its own update with the certificate shown on the Signer tab, then steps out to the Home Screen while iOS installs it. Open it again once its icon finishes.",
+        "Check for Updates now looks for a new NullSign as well as your apps, and it has its own button, apart from the + button.",
+        "Apps you imported from Files now get updates when one of your sources lists a newer version.",
+        "From this version on, NullSign updates from inside the app, so you won't need to download it again by hand."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
       "version": "1.4.2",
       "buildVersion": "31",
       "sourceSHAs": [
