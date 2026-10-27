@@ -14,6 +14,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 FEED_PATH = ROOT / "apps.json"
 ICON_DIR = ROOT / "icons"
+# The source's own icon lives only here; the site's fonts/icon.py draws it.
+SOURCE_ICON = "source.png"
 NOTES_PATH = ROOT / "release-notes.json"
 OWNER = "nulldev85"
 DIST_REPO = os.environ.get("GITHUB_REPOSITORY", f"{OWNER}/AppSource")
@@ -438,7 +440,7 @@ def main() -> None:
     current["featuredApps"] = [app["bundleIdentifier"] for app in apps]
     current["subtitle"] = "NullSign, Lineup for iPhone and Apple TV, and Aether"
     current["description"] = "Unsigned iOS and tvOS app builds published after successful main-branch builds."
-    current["iconURL"] = icon_urls["nullsign.png"]
+    current["iconURL"] = f"https://raw.githubusercontent.com/{DIST_REPO}/main/icons/{SOURCE_ICON}"
     FEED_PATH.write_text(json.dumps(current, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Wrote {len(apps)} app entries from completed main-branch releases.")
 
