@@ -45,6 +45,15 @@
       "versions": [
         {
           "version": "0.19.0",
+          "buildVersion": "960",
+          "date": "2026-10-27T18:55:36Z",
+          "localizedDescription": "• Settings is now the same black as the rest of the app. The glow in your accent colour stays in the top corner, and the blue tint lower down is gone.\n• The bar and title across the top of Settings are gone, so your settings start right under the clock.\n• Pages you open from Settings still have their title and back button.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-40561186326/Lineup-iPhone-0.19.0-960.ipa",
+          "size": 83897791,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
           "buildVersion": "955",
           "date": "2026-10-27T06:01:54Z",
           "localizedDescription": "• Setting up an Apple TV now keeps each show where you're furthest along. If the TV is a few episodes ahead of your iPhone, it stays there, even if you played an earlier episode on your iPhone more recently.\n• The same goes the other way: if your iPhone is further into a show, the TV moves on to where you are.\n• Episodes and movies you've finished on either device still count as watched, and where both have played the same one, the further point wins.",
