@@ -4,6 +4,32 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "955",
+      "sourceSHAs": [
+        "a00096e94858317334c60b13f17ec12ffb4871c0"
+      ],
+      "notes": [
+        "Setting up an Apple TV now keeps each show where you're furthest along. If the TV is a few episodes ahead of your iPhone, it stays there, even if you played an earlier episode on your iPhone more recently.",
+        "The same goes the other way: if your iPhone is further into a show, the TV moves on to where you are.",
+        "Episodes and movies you've finished on either device still count as watched, and where both have played the same one, the further point wins."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "688",
+      "sourceSHAs": [
+        "a00096e94858317334c60b13f17ec12ffb4871c0"
+      ],
+      "notes": [
+        "After Set Up with iPhone, a show now picks up on whichever device was further along, so the TV no longer jumps back to an earlier episode you last played on your iPhone.",
+        "If your iPhone is ahead in a show, the TV moves on to where you are.",
+        "Episodes and movies finished on either device still count as watched, and where both have played the same one, the further point wins."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "952",
       "sourceSHAs": [
         "17419a920fe749436e1e535fa50779254a5dc8da"
