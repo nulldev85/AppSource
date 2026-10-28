@@ -4,6 +4,31 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "968",
+      "sourceSHAs": [
+        "16863e8ee50c7bf9d9ce1ff644623c3c5ebdbd00"
+      ],
+      "notes": [
+        "Playlist guides that wouldn't load now do. Lineup used to throw out a whole guide over one badly written listing, a very large guide or a slow guide server, which left the TV Guide empty and Sports with nothing to match.",
+        "A listing Lineup can't read is now skipped on its own, so the rest of the guide still shows.",
+        "If a provider's channels or guide still won't load, the TV Guide now says why."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "703",
+      "sourceSHAs": [
+        "16863e8ee50c7bf9d9ce1ff644623c3c5ebdbd00"
+      ],
+      "notes": [
+        "Playlist guides that wouldn't load now do. Lineup used to throw out a whole guide over one badly written listing, a very large guide or a slow guide server, which left the TV Guide empty and Sports with nothing to match.",
+        "A listing Lineup can't read is now skipped on its own, so the rest of the guide still shows."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "964",
       "sourceSHAs": [
         "c7b41e95b8996907f8baaa3a8d337f0a6fd5adfd"
