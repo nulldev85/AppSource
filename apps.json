@@ -338,6 +338,15 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "1.2.0",
+          "buildVersion": "9",
+          "date": "2026-10-28T03:07:45Z",
+          "localizedDescription": "• Previous and Next follow the list you started from, including your arranged Favorites order.\n• Tap Search or Settings again to return to your last station tab while playback continues.\n• Improved logo loading after temporary connection errors and when switching stations quickly.\n• A new layout built around simple navigation at the top and a full-width player at the bottom.\n• Radio and Favorites now show spacious station presets with transparent logos and numbered positions.\n• Settings has dedicated pages for your account, stations, playback and app preferences.\n• Search has a genre grid, and Aether Dial keeps location and genre filters in an expandable section.\n• A cleaner full player with left-aligned song details and unboxed controls, keeping the centered spinning vinyl.\n• Dim charcoal surfaces and gray controls throughout, with the same rounded typeface.\n• Improved VoiceOver navigation for player controls and station filters.\n• Toolbar buttons keep their labels on one line, including Cancel when adding a station.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-aether-source-40621742094/Aether-1.2.0-9.ipa",
+          "size": 11870332,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "1.0.0",
           "buildVersion": "1",
           "date": "2026-10-21T02:15:44Z",
