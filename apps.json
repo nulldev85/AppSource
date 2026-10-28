@@ -72,6 +72,15 @@
       "versions": [
         {
           "version": "0.19.0",
+          "buildVersion": "964",
+          "date": "2026-10-27T23:57:09Z",
+          "localizedDescription": "• The AetherEngine player is updated to 7.49.0, and Settings shows the new version.\n• Resuming a film or an episode no longer jumps to 0:00 for a moment as it starts, which could also save your place as the very beginning.\n• Pressing Play after a pause no longer flashes the loading spinner.\n• Some MP4 videos that stuttered or showed frames out of order now play smoothly, and MP4s with lots of subtitle tracks no longer keep stopping to buffer.\n• Films with picture-based subtitles, such as those from Blu-rays, use far less memory.\n• Disconnecting headphones, a Bluetooth speaker or AirPlay now pauses the video, as Apple's own player does.\n• Includes a security fix for teletext captions on TV channels.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-40603982613/Lineup-iPhone-0.19.0-964.ipa",
+          "size": 84302584,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
           "buildVersion": "960",
           "date": "2026-10-27T18:55:36Z",
           "localizedDescription": "• Settings is now the same black as the rest of the app. The glow in your accent colour stays in the top corner, and the blue tint lower down is gone.\n• The bar and title across the top of Settings are gone, so your settings start right under the clock.\n• Pages you open from Settings still have their title and back button.",
@@ -190,6 +199,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "698",
+          "date": "2026-10-28T00:00:34Z",
+          "localizedDescription": "• The AetherEngine player is updated to 7.49.0, and Settings shows the new version.\n• With Match Frame Rate on, films made at exactly 24 frames per second now switch your TV to 24 Hz rather than 23.976 Hz, so they no longer repeat a frame about every 40 seconds.\n• Resuming a film or an episode no longer jumps to 0:00 for a moment as it starts, which could also save your place as the very beginning.\n• Pressing Play after a pause no longer flashes the loading spinner.\n• Some MP4 videos that stuttered or showed frames out of order now play smoothly, and MP4s with lots of subtitle tracks no longer keep stopping to buffer.\n• Films with picture-based subtitles, such as those from Blu-rays, use far less memory.\n• Includes a security fix for teletext captions on TV channels.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-40603982618-1/Lineup-tvOS-0.19.0-698.ipa",
+          "size": 49593505,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.19.0",
           "buildVersion": "688",
