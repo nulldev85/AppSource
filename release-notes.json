@@ -4,6 +4,31 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "975",
+      "sourceSHAs": [
+        "6b2eb6eb413d25bd6f875050f49a100729744c6a"
+      ],
+      "notes": [
+        "This iPhone release has no user-facing changes."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "715",
+      "sourceSHAs": [
+        "6b2eb6eb413d25bd6f875050f49a100729744c6a"
+      ],
+      "notes": [
+        "Settings has a new charcoal layout with a fixed category sidebar and more room for controls. The extra description panel and footer text are gone.",
+        "Sports backgrounds follow the highlighted game's dark team-color blend, with smooth transitions as you browse.",
+        "Channel matching shares background work and avoids unnecessary repeat downloads. Saved games remain available while provider data refreshes.",
+        "Reduced rendering work in Sports and Settings, including during rapid remote navigation."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "974",
       "sourceSHAs": [
         "61851b06d5b9d1f2ef2742841509127205f3b6d7"
