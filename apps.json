@@ -72,6 +72,15 @@
       "versions": [
         {
           "version": "0.19.0",
+          "buildVersion": "975",
+          "date": "2026-10-30T08:47:46Z",
+          "localizedDescription": "• This iPhone release has no user-facing changes.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-41026491737/Lineup-iPhone-0.19.0-975.ipa",
+          "size": 84442642,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
           "buildVersion": "974",
           "date": "2026-10-30T03:46:50Z",
           "localizedDescription": "• Returning to Lineup shows saved live events and their matched channels sooner, so you can open a game while schedules and TV listings refresh in the background.\n• Saved alternative channels are ready alongside the main feed, including when the original channel's listing has ended.\n• The data refresh popup now appears only in TV Guide.\n• The glass navigation bar compacts and expands with a smoother transition, respecting Reduce Motion.",
@@ -217,6 +226,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "715",
+          "date": "2026-10-30T08:49:53Z",
+          "localizedDescription": "• Settings has a new charcoal layout with a fixed category sidebar and more room for controls. The extra description panel and footer text are gone.\n• Sports backgrounds follow the highlighted game's dark team-color blend, with smooth transitions as you browse.\n• Channel matching shares background work and avoids unnecessary repeat downloads. Saved games remain available while provider data refreshes.\n• Reduced rendering work in Sports and Settings, including during rapid remote navigation.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-41026491496-1/Lineup-tvOS-0.19.0-715.ipa",
+          "size": 49709044,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.19.0",
           "buildVersion": "710",
