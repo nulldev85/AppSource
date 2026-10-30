@@ -4,6 +4,34 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "974",
+      "sourceSHAs": [
+        "61851b06d5b9d1f2ef2742841509127205f3b6d7"
+      ],
+      "notes": [
+        "Returning to Lineup shows saved live events and their matched channels sooner, so you can open a game while schedules and TV listings refresh in the background.",
+        "Saved alternative channels are ready alongside the main feed, including when the original channel's listing has ended.",
+        "The data refresh popup now appears only in TV Guide.",
+        "The glass navigation bar compacts and expands with a smoother transition, respecting Reduce Motion."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "710",
+      "sourceSHAs": [
+        "61851b06d5b9d1f2ef2742841509127205f3b6d7"
+      ],
+      "notes": [
+        "Saved live events and their matched channels are ready when you reopen Lineup, while schedules and TV listings refresh in the background.",
+        "Newly available live-game feeds can become playable before the rest of the schedule has finished preparing.",
+        "Once matching finishes for a selected game, Lineup continues automatically instead of repeatedly asking you to wait.",
+        "The data refresh popup now appears only in TV Guide."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "968",
       "sourceSHAs": [
         "16863e8ee50c7bf9d9ce1ff644623c3c5ebdbd00"
