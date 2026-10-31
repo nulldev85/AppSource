@@ -4,6 +4,37 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "984",
+      "sourceSHAs": [
+        "7d3724d0d02a41feba4e0a87ba3a09f2e5c9e518"
+      ],
+      "notes": [
+        "Reduced slowdowns when opening live events, switching tabs and browsing large libraries while channels and guide data refresh in the background.",
+        "Settings scrolls smoothly as the navigation bar compacts and reappears.",
+        "Live scores refresh independently of channel matching, and tennis events keep their prepared channels when tournament listings change.",
+        "Fixed an earlier stream starting after you had already stopped playback or selected another stream.",
+        "Added soccer coverage for the Carabao Cup, FA Cup, Copa del Rey and Supercopa de España.",
+        "Device Reports in Diagnostics can now copy saved reports with the installed build and iOS version."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "726",
+      "sourceSHAs": [
+        "7d3724d0d02a41feba4e0a87ba3a09f2e5c9e518"
+      ],
+      "notes": [
+        "Fixed live-event syncing appearing stuck at 99%. Previously prepared live events remain ready to play while channels and guide data refresh in the background.",
+        "Improved remote navigation across Sports, TV Guide, Library and Settings, especially with large channel and media libraries.",
+        "The Sports background now fills the entire screen with the highlighted event's dark team-color blend, including behind the navigation bar and scores ticker.",
+        "Live scores refresh independently of channel matching, and tennis events keep their prepared channels when tournament listings change.",
+        "Added soccer coverage for the Carabao Cup, FA Cup, Copa del Rey and Supercopa de España."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "975",
       "sourceSHAs": [
         "6b2eb6eb413d25bd6f875050f49a100729744c6a"
