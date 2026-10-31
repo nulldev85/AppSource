@@ -72,6 +72,15 @@
       "versions": [
         {
           "version": "0.19.0",
+          "buildVersion": "984",
+          "date": "2026-10-31T07:14:22Z",
+          "localizedDescription": "• Reduced slowdowns when opening live events, switching tabs and browsing large libraries while channels and guide data refresh in the background.\n• Settings scrolls smoothly as the navigation bar compacts and reappears.\n• Live scores refresh independently of channel matching, and tennis events keep their prepared channels when tournament listings change.\n• Fixed an earlier stream starting after you had already stopped playback or selected another stream.\n• Added soccer coverage for the Carabao Cup, FA Cup, Copa del Rey and Supercopa de España.\n• Device Reports in Diagnostics can now copy saved reports with the installed build and iOS version.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-41178632265/Lineup-iPhone-0.19.0-984.ipa",
+          "size": 84576918,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
           "buildVersion": "975",
           "date": "2026-10-30T08:47:46Z",
           "localizedDescription": "• This iPhone release has no user-facing changes.",
@@ -226,6 +235,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "726",
+          "date": "2026-10-31T07:12:25Z",
+          "localizedDescription": "• Fixed live-event syncing appearing stuck at 99%. Previously prepared live events remain ready to play while channels and guide data refresh in the background.\n• Improved remote navigation across Sports, TV Guide, Library and Settings, especially with large channel and media libraries.\n• The Sports background now fills the entire screen with the highlighted event's dark team-color blend, including behind the navigation bar and scores ticker.\n• Live scores refresh independently of channel matching, and tennis events keep their prepared channels when tournament listings change.\n• Added soccer coverage for the Carabao Cup, FA Cup, Copa del Rey and Supercopa de España.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-41178632251-1/Lineup-tvOS-0.19.0-726.ipa",
+          "size": 49843511,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.19.0",
           "buildVersion": "715",
