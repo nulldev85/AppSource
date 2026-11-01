@@ -23,6 +23,15 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "1.4.4",
+          "buildVersion": "34",
+          "date": "2026-11-01T02:04:25Z",
+          "localizedDescription": "• Improved compatibility with passwordless .p12 certificates.\n• Certificate import now explains password problems, missing private keys and mismatched provisioning profiles.\n• Improved reliability when importing several IPA or TIPA files together, including files with matching names.\n• App names, versions and icons are preserved during import, and failed imports clean up partial files.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-41263309088/NullSign-1.4.4-34.ipa",
+          "size": 19436628,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.4.3",
           "buildVersion": "32",
           "date": "2026-10-27T22:03:28Z",
