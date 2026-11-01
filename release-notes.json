@@ -2,6 +2,20 @@
   "schemaVersion": 1,
   "releases": [
     {
+      "bundleIdentifier": "com.elmat.NullSign",
+      "version": "1.4.4",
+      "buildVersion": "34",
+      "sourceSHAs": [
+        "6a66deb6fa0e2a1bc7f99e32027bd631e6cc41ae"
+      ],
+      "notes": [
+        "Improved compatibility with passwordless .p12 certificates.",
+        "Certificate import now explains password problems, missing private keys and mismatched provisioning profiles.",
+        "Improved reliability when importing several IPA or TIPA files together, including files with matching names.",
+        "App names, versions and icons are preserved during import, and failed imports clean up partial files."
+      ]
+    },
+    {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
       "buildVersion": "984",
