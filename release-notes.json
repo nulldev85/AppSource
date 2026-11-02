@@ -3,6 +3,18 @@
   "releases": [
     {
       "bundleIdentifier": "com.elmat.NullSign",
+      "version": "1.4.5",
+      "buildVersion": "35",
+      "sourceSHAs": [
+        "8a04d1a7c7a3011b2a9c324a5b04415d5ebff90b"
+      ],
+      "notes": [
+        "Apps you've already updated no longer say Update available. Once a newer copy is in your Library, the older copy stops offering the update and the Signer tab badge clears.",
+        "Update badges refresh as soon as you add, sign or delete an app, without waiting for the next check."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
       "version": "1.4.4",
       "buildVersion": "34",
       "sourceSHAs": [
