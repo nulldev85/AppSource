@@ -23,6 +23,15 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "1.4.5",
+          "buildVersion": "35",
+          "date": "2026-11-02T01:40:10Z",
+          "localizedDescription": "• Apps you've already updated no longer say Update available. Once a newer copy is in your Library, the older copy stops offering the update and the Signer tab badge clears.\n• Update badges refresh as soon as you add, sign or delete an app, without waiting for the next check.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-41372659550/NullSign-1.4.5-35.ipa",
+          "size": 19440654,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.4.4",
           "buildVersion": "34",
           "date": "2026-11-01T02:04:25Z",
