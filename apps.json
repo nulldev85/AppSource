@@ -23,6 +23,15 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "1.4.6",
+          "buildVersion": "36",
+          "date": "2026-11-03T01:14:00Z",
+          "localizedDescription": "• Update on a signed app now updates it in one tap. NullSign downloads the new version, signs it with the same certificate, then asks iOS to install it over the old one.\n• While an app updates, its row shows Downloading update and Signing update, and if something goes wrong NullSign tells you why.\n• Fixed tapping Update on a signed app reinstalling the version you already had.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-41557251135/NullSign-1.4.6-36.ipa",
+          "size": 19448554,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.4.5",
           "buildVersion": "35",
           "date": "2026-11-02T01:40:10Z",
