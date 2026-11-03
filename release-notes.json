@@ -3,6 +3,19 @@
   "releases": [
     {
       "bundleIdentifier": "com.elmat.NullSign",
+      "version": "1.4.7",
+      "buildVersion": "37",
+      "sourceSHAs": [
+        "bdff75bf2451367d269626e0f59413004eaa506b"
+      ],
+      "notes": [
+        "New setting: Keep Only the Newest Version, in Settings › Signing Defaults › Library. When a newer version of an app arrives, older copies of it are deleted from Imported and from Signed.",
+        "Turning it on clears out duplicate and older copies already in your library. Apps installed on your device stay installed.",
+        "An older version you import on purpose is kept, and an app being signed or updated never loses the copy it just made."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
       "version": "1.4.6",
       "buildVersion": "36",
       "sourceSHAs": [
