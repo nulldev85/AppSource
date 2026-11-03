@@ -23,6 +23,15 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "1.4.7",
+          "buildVersion": "37",
+          "date": "2026-11-03T03:48:44Z",
+          "localizedDescription": "• New setting: Keep Only the Newest Version, in Settings › Signing Defaults › Library. When a newer version of an app arrives, older copies of it are deleted from Imported and from Signed.\n• Turning it on clears out duplicate and older copies already in your library. Apps installed on your device stay installed.\n• An older version you import on purpose is kept, and an app being signed or updated never loses the copy it just made.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-41573273388/NullSign-1.4.7-37.ipa",
+          "size": 19452506,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.4.6",
           "buildVersion": "36",
           "date": "2026-11-03T01:14:00Z",
