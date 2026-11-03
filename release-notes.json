@@ -3,6 +3,19 @@
   "releases": [
     {
       "bundleIdentifier": "com.elmat.NullSign",
+      "version": "1.4.6",
+      "buildVersion": "36",
+      "sourceSHAs": [
+        "2528c237f263d423a895da54cf2f264e37a3f4d1"
+      ],
+      "notes": [
+        "Update on a signed app now updates it in one tap. NullSign downloads the new version, signs it with the same certificate, then asks iOS to install it over the old one.",
+        "While an app updates, its row shows Downloading update and Signing update, and if something goes wrong NullSign tells you why.",
+        "Fixed tapping Update on a signed app reinstalling the version you already had."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
       "version": "1.4.5",
       "buildVersion": "35",
       "sourceSHAs": [
