@@ -3,6 +3,18 @@
   "releases": [
     {
       "bundleIdentifier": "com.elmat.NullSign",
+      "version": "1.4.8",
+      "buildVersion": "38",
+      "sourceSHAs": [
+        "bd095a6f969d8d5e95a0a94a59e57573c5b2886f"
+      ],
+      "notes": [
+        "Fixed installs hanging in Safari and ending with \"the server stopped responding\" on some cellular carriers. NullSign now installs from your Wi-Fi address, never your cellular one.",
+        "Without Wi-Fi, installs go through the phone itself, the same as the Use localhost only setting."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
       "version": "1.4.7",
       "buildVersion": "37",
       "sourceSHAs": [
