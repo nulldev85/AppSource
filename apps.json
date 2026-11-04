@@ -23,6 +23,15 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "1.4.8",
+          "buildVersion": "38",
+          "date": "2026-11-04T05:26:49Z",
+          "localizedDescription": "• Fixed installs hanging in Safari and ending with \"the server stopped responding\" on some cellular carriers. NullSign now installs from your Wi-Fi address, never your cellular one.\n• Without Wi-Fi, installs go through the phone itself, the same as the Use localhost only setting.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-41778237904/NullSign-1.4.8-38.ipa",
+          "size": 19452275,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.4.7",
           "buildVersion": "37",
           "date": "2026-11-03T03:48:44Z",
