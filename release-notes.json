@@ -4,6 +4,38 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "1028",
+      "sourceSHAs": [
+        "7c810d5aa4385761fa5b067635234b86787555d6"
+      ],
+      "notes": [
+        "Finishing the newest episode of a show that's still airing keeps your place. It no longer jumps to the specials or back to the first episode, and the next episode shows up in Continue Watching once it's announced.",
+        "Episode cards show the air date and running time right under the episode's name.",
+        "Adding an AIOStreams server sets up your Library straight away: its libraries appear as shelves in the order you arranged them, and the banner at the top fills itself.",
+        "AIOStreams collections show their full wide artwork instead of being cropped, and the banner at the top of Library only features movies and shows, never collection art.",
+        "You can now remove the Collections row from the Library's Remove Shelf menu, and bring it back from Add Shelf.",
+        "Library lists no longer say \"0 titles\" for libraries whose size the server doesn't report."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "781",
+      "sourceSHAs": [
+        "7c810d5aa4385761fa5b067635234b86787555d6"
+      ],
+      "notes": [
+        "Lineup on Apple TV is simpler and much faster. Sports is now a list of game cards like on iPhone: select a game to watch it full screen, or hold select for channels, reminders, team pages and more.",
+        "In the TV Guide, Back takes you to the top of the guide, and Back again to the menu bar. Browsing channels no longer starts a video for each one; select a channel to watch it.",
+        "Library shows all your shelves in one scrolling list.",
+        "Scrolling is smoother on every tab. If the screen ever freezes for a moment, Settings › Screen Stalls shows when and what was happening.",
+        "Finishing the newest episode of a show that's still airing keeps your place instead of jumping to the specials or back to the first episode.",
+        "Episode cards show the air date and running time right under the episode's name, and adding an AIOStreams server sets up your Library straight away."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "1016",
       "sourceSHAs": [
         "8dfd8b019dd1573543c7dd0b740b7f0c9fecf119"
