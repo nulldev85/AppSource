@@ -2,6 +2,33 @@
   "schemaVersion": 1,
   "releases": [
     {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
+      "buildVersion": "1016",
+      "sourceSHAs": [
+        "8dfd8b019dd1573543c7dd0b740b7f0c9fecf119"
+      ],
+      "notes": [
+        "The posters in Library's Streaming Services row now come to life. Each one shows art from that service's most popular titles you can play, drifting slowly and fading to the next title every few seconds.",
+        "The posters stay smooth while you scroll and take turns changing, so the row never changes all at once. With Reduce Motion on, each poster shows a still picture instead.",
+        "With an AIOStreams server added, Library opens faster and stays lighter: Lineup no longer loads every one of your catalogs each time you open the app. Your collections still show in the Collections row, and a collection's titles load when you open it.",
+        "When there's no featured banner at the top of Library, the first row no longer sits under the clock."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "760",
+      "sourceSHAs": [
+        "8dfd8b019dd1573543c7dd0b740b7f0c9fecf119"
+      ],
+      "notes": [
+        "The posters in Library's Streaming Services row now come to life. The one you're on shows art from that service's most popular titles you can play, drifting slowly and fading to the next title every few seconds; the rest hold a still picture until you move to them.",
+        "With Reduce Motion on, every poster shows a still picture instead.",
+        "With an AIOStreams server added, Library opens faster and stays lighter: Lineup no longer loads every one of your catalogs each time you open the app."
+      ]
+    },
+    {
       "bundleIdentifier": "com.elmat.NullSign",
       "version": "1.4.9",
       "buildVersion": "39",
