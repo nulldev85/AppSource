@@ -23,6 +23,15 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "1.4.9",
+          "buildVersion": "39",
+          "date": "2026-11-05T03:31:47Z",
+          "localizedDescription": "• Repository icons now update from the latest source feed when you refresh, including the icons beside All Apps.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-41960894829/NullSign-1.4.9-39.ipa",
+          "size": 19452091,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.4.8",
           "buildVersion": "38",
           "date": "2026-11-04T05:26:49Z",
