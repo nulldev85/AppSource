@@ -3,6 +3,17 @@
   "releases": [
     {
       "bundleIdentifier": "com.elmat.NullSign",
+      "version": "1.4.9",
+      "buildVersion": "39",
+      "sourceSHAs": [
+        "186d242a5654e3fbd31c84e98ed816dd30b3148b"
+      ],
+      "notes": [
+        "Repository icons now update from the latest source feed when you refresh, including the icons beside All Apps."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
       "version": "1.4.8",
       "buildVersion": "38",
       "sourceSHAs": [
