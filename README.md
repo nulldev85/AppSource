@@ -17,9 +17,10 @@ Each IPA is published under its app, version and build, such as
 `Lineup-iPhone-0.19.0-956.ipa`, so a downloaded file says which build it is.
 Builds mirrored before that keep the name they were first published under.
 
-The source's own icon, `icons/source.png`, is "Null's Apps" in the website's
-dot font. It lives only here, so the updater never replaces it; to change it,
-edit and run `fonts/icon.py` in `nulldev85/nulldev85.github.io`.
+The source's own icon, `icons/source.png`, is the supplied dotted N artwork
+with "Null's Apps" beneath it. Replace that file to change the repository icon
+shown in signers. The updater preserves the artwork and versions its URL from
+the file's contents so refreshed sources can fetch a changed icon.
 
 ## Release notes
 

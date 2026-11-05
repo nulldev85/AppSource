@@ -2,6 +2,7 @@
 """Mirror successful main-branch source IPAs into this public distribution repo."""
 
 import base64
+import hashlib
 import json
 import os
 import re
@@ -14,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 FEED_PATH = ROOT / "apps.json"
 ICON_DIR = ROOT / "icons"
-# The source's own icon lives only here; the site's fonts/icon.py draws it.
+# The source's own artwork is maintained here, separately from app icons.
 SOURCE_ICON = "source.png"
 NOTES_PATH = ROOT / "release-notes.json"
 OWNER = "nulldev85"
@@ -462,7 +463,8 @@ def main() -> None:
     current["featuredApps"] = [app["bundleIdentifier"] for app in apps]
     current["subtitle"] = "NullSign, Lineup for iPhone and Apple TV, and Aether"
     current["description"] = "Unsigned iOS and tvOS app builds published after successful main-branch builds."
-    current["iconURL"] = f"https://raw.githubusercontent.com/{DIST_REPO}/main/icons/{SOURCE_ICON}"
+    icon_version = hashlib.sha256((ICON_DIR / SOURCE_ICON).read_bytes()).hexdigest()[:12]
+    current["iconURL"] = f"https://raw.githubusercontent.com/{DIST_REPO}/main/icons/{SOURCE_ICON}?v={icon_version}"
     FEED_PATH.write_text(json.dumps(current, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"Wrote {len(apps)} app entries from completed main-branch releases.")
 
