@@ -126,6 +126,15 @@
       "versions": [
         {
           "version": "0.19.0",
+          "buildVersion": "1045",
+          "date": "2026-11-06T07:57:56Z",
+          "localizedDescription": "• The player has a new look built on Liquid Glass on iOS 26: close at the top left, picture in picture at the top right, bigger play and skip buttons in the middle, and the title right on the picture instead of in a box.\n• Subtitles, audio, the next episode and the summary are together in one toolbar at the bottom right, and the progress bar is a thin line along the bottom.\n• Full screen in Sports and the TV Guide, the player has the same look, with live stats and other channels for the game in the toolbar at the bottom right.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-42182557956/Lineup-iPhone-0.19.0-1045.ipa",
+          "size": 84772995,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
           "buildVersion": "1040",
           "date": "2026-11-06T06:26:15Z",
           "localizedDescription": "• Your progress now syncs with Jellyfin, Emby and AIOStreams. The server knows where you stopped, and what you watch in other apps shows up in Continue Watching and Next Up. You can turn it off with Server Tracking in your tracking settings.\n• AIOStreams streams are listed exactly the way your formatter writes them. Turn off Server's Stream Format in Metadata settings to go back to Lineup's own layout.\n• Add badge packs by link under Stream Badges, and streams get picture badges for things like 4K, Dolby Vision or Atmos. Packs made for the AIOStreams app, Fusion or Nuvio work as they are.\n• AIOStreams streams come up faster: Lineup starts finding them as soon as you open a movie or episode.\n• Posters from your own server, such as ones from a poster service, now stay put instead of being swapped for TMDB's. Server Posters in Metadata settings turns this off.\n• Collection, folder and streaming service cards no longer leave empty space under their names.\n• The player's buttons and panels use Liquid Glass on iOS 26.\n• Late games that run past midnight stay on the Sports list until they end, wherever you are.",
@@ -293,15 +302,6 @@
           "localizedDescription": "• Choose List or TV Guide layouts in the TV Guide tab. Sports now uses the new list style while keeping its video preview.\n• Channel rows pick up colors from their logos, with a darker look and a more subtle way to show live-program progress.\n• Browse movies and shows by genre in Search, with artwork and separate results for each.\n• Library hero content and title logos are centered. TMDB can supply a matching logo when Fanart.tv has none.\n• Added MPVKit as another playback option and updated AetherEngine to 7.45.0.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39762082362/Lineup-iPhone-unsigned.ipa",
           "size": 79748464,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "126",
-          "date": "2026-10-21T02:27:48Z",
-          "localizedDescription": "• Organize your Library with collections and rearrange the shelves to suit you.\n• Movie and show pages can use matching Fanart.tv title logos, with regular title text kept as a fallback.\n• Added more subtitle choices, including online subtitle search and saved display preferences.\n• Skip Intro and Skip Recap appear when timing data is available, with notices for movies that have a scene after the credits.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39530865422/Lineup-iPhone-unsigned.ipa",
-          "size": 63256668,
           "minOSVersion": "18.0"
         }
       ]
@@ -476,15 +476,6 @@
           "localizedDescription": "• Added MPVKit as another playback option alongside VLC and AetherEngine.\n• Fixed the Apple TV screensaver appearing during MPVKit playback.\n• Refreshed the player controls and restored 15-second remote skips.\n• Updated AetherEngine to 7.45.0.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39762082363/Lineup-tvOS-unsigned.ipa",
           "size": 46565766,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "86",
-          "date": "2026-10-21T02:49:23Z",
-          "localizedDescription": "• Lineup is now available through the shared app repo on Apple TV.\n• Browse live TV, sports and your media library with controls designed for the remote.\n• Choose VLC or AetherEngine for playback and keep your existing provider connections.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39530865389/Lineup-tvOS-unsigned.ipa",
-          "size": 31957244,
           "minOSVersion": "18.0"
         }
       ]
