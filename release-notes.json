@@ -4,6 +4,19 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "1045",
+      "sourceSHAs": [
+        "83b7a8ee5f16b5eace54527a2b3c94c2da10fbcb"
+      ],
+      "notes": [
+        "The player has a new look built on Liquid Glass on iOS 26: close at the top left, picture in picture at the top right, bigger play and skip buttons in the middle, and the title right on the picture instead of in a box.",
+        "Subtitles, audio, the next episode and the summary are together in one toolbar at the bottom right, and the progress bar is a thin line along the bottom.",
+        "Full screen in Sports and the TV Guide, the player has the same look, with live stats and other channels for the game in the toolbar at the bottom right."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "1040",
       "sourceSHAs": [
         "f9224af5427d12bed229f558e52957e9f8847836"
