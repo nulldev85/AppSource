@@ -4,6 +4,40 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "1040",
+      "sourceSHAs": [
+        "f9224af5427d12bed229f558e52957e9f8847836"
+      ],
+      "notes": [
+        "Your progress now syncs with Jellyfin, Emby and AIOStreams. The server knows where you stopped, and what you watch in other apps shows up in Continue Watching and Next Up. You can turn it off with Server Tracking in your tracking settings.",
+        "AIOStreams streams are listed exactly the way your formatter writes them. Turn off Server's Stream Format in Metadata settings to go back to Lineup's own layout.",
+        "Add badge packs by link under Stream Badges, and streams get picture badges for things like 4K, Dolby Vision or Atmos. Packs made for the AIOStreams app, Fusion or Nuvio work as they are.",
+        "AIOStreams streams come up faster: Lineup starts finding them as soon as you open a movie or episode.",
+        "Posters from your own server, such as ones from a poster service, now stay put instead of being swapped for TMDB's. Server Posters in Metadata settings turns this off.",
+        "Collection, folder and streaming service cards no longer leave empty space under their names.",
+        "The player's buttons and panels use Liquid Glass on iOS 26.",
+        "Late games that run past midnight stay on the Sports list until they end, wherever you are."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "799",
+      "sourceSHAs": [
+        "f9224af5427d12bed229f558e52957e9f8847836"
+      ],
+      "notes": [
+        "Your progress now syncs with Jellyfin, Emby and AIOStreams. The server knows where you stopped, and what you watch in other apps shows up in Continue Watching and Next Up.",
+        "Animated covers play on the card you're on and stop when you move away.",
+        "AIOStreams streams are listed exactly the way your formatter writes them, and badge packs you add in Metadata settings put picture badges under each stream.",
+        "AIOStreams streams come up faster: Lineup starts finding them as soon as you open a movie or episode.",
+        "Posters from your own server, such as ones from a poster service, now stay put instead of being swapped for TMDB's.",
+        "Late games that run past midnight stay on Sports until they end, wherever you are."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "1028",
       "sourceSHAs": [
         "7c810d5aa4385761fa5b067635234b86787555d6"
