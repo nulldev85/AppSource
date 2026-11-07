@@ -126,6 +126,15 @@
       "versions": [
         {
           "version": "0.19.0",
+          "buildVersion": "1073",
+          "date": "2026-11-07T09:28:07Z",
+          "localizedDescription": "• Shows you're caught up on stay in Continue Watching, with the next episode's air date, or a Coming Soon card until one is scheduled.\n• With two servers connected, like Nullfin and AIOStreams, a movie or show shows up once in Continue Watching, and your progress reaches both servers whichever one played it.\n• Continue Watching keeps up with your other devices: something you finish on the Apple TV moves on here too, and Lineup checks again whenever you come back to the app.\n• Nullfin and other Jellyfin servers' streams now show exactly the way your formatter writes them, like AIOStreams' do.\n• Games that won't load move to another channel within about 15 seconds instead of minutes, and Lineup remembers channels that failed and tries the working ones first next time.\n• Ambient Mode spreads the picture's colours into the black bars around it, like YouTube. Turn it off in Metadata settings.\n• Show names in the TV Guide no longer carry the tiny raised \"New\" some providers add; new episodes get a clean NEW badge instead.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-42358253370/Lineup-iPhone-0.19.0-1073.ipa",
+          "size": 84845685,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
           "buildVersion": "1045",
           "date": "2026-11-06T07:57:56Z",
           "localizedDescription": "• The player has a new look built on Liquid Glass on iOS 26: close at the top left, picture in picture at the top right, bigger play and skip buttons in the middle, and the title right on the picture instead of in a box.\n• Subtitles, audio, the next episode and the summary are together in one toolbar at the bottom right, and the progress bar is a thin line along the bottom.\n• Full screen in Sports and the TV Guide, the player has the same look, with live stats and other channels for the game in the toolbar at the bottom right.",
@@ -307,6 +316,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "829",
+          "date": "2026-11-07T09:25:47Z",
+          "localizedDescription": "• Shows you're caught up on stay in Continue Watching, with the next episode's air date, or a Coming Soon card until one is scheduled.\n• With two servers connected, like Nullfin and AIOStreams, a movie or show shows up once in Continue Watching, and your progress reaches both servers whichever one played it.\n• Continue Watching keeps up with your iPhone: something you finish there moves on here too.\n• Nullfin and other Jellyfin servers' streams now show exactly the way your formatter writes them, like AIOStreams' do.\n• Games that won't load move to another channel within about 15 seconds instead of minutes, and Lineup remembers channels that failed and tries the working ones first next time.\n• Ambient Mode spreads the picture's colours into any black bars around it. Turn it off in Metadata settings.\n• Search lists its genres from A to Z, and show names in the guide no longer carry the tiny raised \"New\" some providers add.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-42358253312-1/Lineup-tvOS-0.19.0-829.ipa",
+          "size": 49830870,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.19.0",
           "buildVersion": "799",
