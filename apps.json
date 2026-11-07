@@ -294,15 +294,6 @@
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39899666495/Lineup-iPhone-unsigned.ipa",
           "size": 80312718,
           "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "127",
-          "date": "2026-10-22T10:39:58Z",
-          "localizedDescription": "• Choose List or TV Guide layouts in the TV Guide tab. Sports now uses the new list style while keeping its video preview.\n• Channel rows pick up colors from their logos, with a darker look and a more subtle way to show live-program progress.\n• Browse movies and shows by genre in Search, with artwork and separate results for each.\n• Library hero content and title logos are centered. TMDB can supply a matching logo when Fanart.tv has none.\n• Added MPVKit as another playback option and updated AetherEngine to 7.45.0.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39762082362/Lineup-iPhone-unsigned.ipa",
-          "size": 79748464,
-          "minOSVersion": "18.0"
         }
       ]
     },
@@ -467,15 +458,6 @@
           "localizedDescription": "• Sports and TV Guide now use the updated channel-colored layouts designed for Apple TV.\n• The guide's left edge fades into the darker background, including the timeline above it.\n• Library hero content is centered while keeping the existing playback and browsing options.\n• Refined the guide's row spacing and live-program progress display.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39899666642/Lineup-tvOS-unsigned.ipa",
           "size": 46565738,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "87",
-          "date": "2026-10-22T15:55:55Z",
-          "localizedDescription": "• Added MPVKit as another playback option alongside VLC and AetherEngine.\n• Fixed the Apple TV screensaver appearing during MPVKit playback.\n• Refreshed the player controls and restored 15-second remote skips.\n• Updated AetherEngine to 7.45.0.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39762082363/Lineup-tvOS-unsigned.ipa",
-          "size": 46565766,
           "minOSVersion": "18.0"
         }
       ]
