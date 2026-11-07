@@ -4,6 +4,40 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "1073",
+      "sourceSHAs": [
+        "24c9da529480bcc752558d66cb23ec6068fcd289"
+      ],
+      "notes": [
+        "Shows you're caught up on stay in Continue Watching, with the next episode's air date, or a Coming Soon card until one is scheduled.",
+        "With two servers connected, like Nullfin and AIOStreams, a movie or show shows up once in Continue Watching, and your progress reaches both servers whichever one played it.",
+        "Continue Watching keeps up with your other devices: something you finish on the Apple TV moves on here too, and Lineup checks again whenever you come back to the app.",
+        "Nullfin and other Jellyfin servers' streams now show exactly the way your formatter writes them, like AIOStreams' do.",
+        "Games that won't load move to another channel within about 15 seconds instead of minutes, and Lineup remembers channels that failed and tries the working ones first next time.",
+        "Ambient Mode spreads the picture's colours into the black bars around it, like YouTube. Turn it off in Metadata settings.",
+        "Show names in the TV Guide no longer carry the tiny raised \"New\" some providers add; new episodes get a clean NEW badge instead."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "829",
+      "sourceSHAs": [
+        "24c9da529480bcc752558d66cb23ec6068fcd289"
+      ],
+      "notes": [
+        "Shows you're caught up on stay in Continue Watching, with the next episode's air date, or a Coming Soon card until one is scheduled.",
+        "With two servers connected, like Nullfin and AIOStreams, a movie or show shows up once in Continue Watching, and your progress reaches both servers whichever one played it.",
+        "Continue Watching keeps up with your iPhone: something you finish there moves on here too.",
+        "Nullfin and other Jellyfin servers' streams now show exactly the way your formatter writes them, like AIOStreams' do.",
+        "Games that won't load move to another channel within about 15 seconds instead of minutes, and Lineup remembers channels that failed and tries the working ones first next time.",
+        "Ambient Mode spreads the picture's colours into any black bars around it. Turn it off in Metadata settings.",
+        "Search lists its genres from A to Z, and show names in the guide no longer carry the tiny raised \"New\" some providers add."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "1045",
       "sourceSHAs": [
         "83b7a8ee5f16b5eace54527a2b3c94c2da10fbcb"
