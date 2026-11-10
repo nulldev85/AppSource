@@ -2,6 +2,21 @@
   "schemaVersion": 1,
   "releases": [
     {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
+      "buildVersion": "1083",
+      "sourceSHAs": [
+        "327ad56e4320081d64f3a73e1558b689a66aeac4"
+      ],
+      "notes": [
+        "Continue Watching shows the series name and poster, with one thin bar along the bottom for the episode or movie you paused.",
+        "Switch Jellyfin profiles from the Library and see each person's profile picture. You can also sign in with Quick Connect.",
+        "On AIO Jellyfin servers, Continue Watching follows the selected profile's resume list.",
+        "The TV Guide keeps the last channel in view when you scroll to the bottom or change categories.",
+        "Look for Lineup's new three-bar icon on your Home Screen."
+      ]
+    },
+    {
       "bundleIdentifier": "com.elmat.NullSign",
       "version": "1.5.0",
       "buildVersion": "40",
