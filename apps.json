@@ -23,6 +23,15 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "1.5.0",
+          "buildVersion": "40",
+          "date": "2026-11-10T00:47:35Z",
+          "localizedDescription": "• Tap Install on an imported app to sign it with your saved certificate and settings, then continue straight to installation.\n• The same progress bar now follows preparation, signing, packaging and installation. Errors stay in the progress card with a Retry action.\n• The usual iPhone install flow skips the browser's extra Open prompt while keeping iOS's Install confirmation. Continue in Browser is available if needed.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-42729953533/NullSign-1.5.0-40.ipa",
+          "size": 19466994,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.4.9",
           "buildVersion": "39",
           "date": "2026-11-05T03:31:47Z",
