@@ -2,6 +2,19 @@
   "schemaVersion": 1,
   "releases": [
     {
+      "bundleIdentifier": "com.elmat.NullSign",
+      "version": "1.5.0",
+      "buildVersion": "40",
+      "sourceSHAs": [
+        "65ea429745a348bbad60afdbc353d2e9e15e6a62"
+      ],
+      "notes": [
+        "Tap Install on an imported app to sign it with your saved certificate and settings, then continue straight to installation.",
+        "The same progress bar now follows preparation, signing, packaging and installation. Errors stay in the progress card with a Retry action.",
+        "The usual iPhone install flow skips the browser's extra Open prompt while keeping iOS's Install confirmation. Continue in Browser is available if needed."
+      ]
+    },
+    {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
       "buildVersion": "1073",
