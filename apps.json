@@ -1,6 +1,6 @@
 {
   "name": "Null’s Apps",
-  "subtitle": "NullSign, Lineup for iPhone and Apple TV, and Aether",
+  "subtitle": "NullSign and Lineup for iPhone and Apple TV",
   "description": "Unsigned iOS and tvOS app builds published after successful main-branch builds.",
   "iconURL": "https://raw.githubusercontent.com/nulldev85/AppSource/main/icons/source.png?v=760c2e66e9a5",
   "tintColor": "#148BF4",
@@ -8,8 +8,7 @@
   "featuredApps": [
     "com.elmat.NullSign",
     "com.nulldev85.NullSports.iOS",
-    "com.nulldev85.NullSports",
-    "com.example.IPTVRadio"
+    "com.nulldev85.NullSports"
   ],
   "apps": [
     {
@@ -476,54 +475,6 @@
           "localizedDescription": "• Sports and TV Guide now use the updated channel-colored layouts designed for Apple TV.\n• The guide's left edge fades into the darker background, including the timeline above it.\n• Library hero content is centered while keeping the existing playback and browsing options.\n• Refined the guide's row spacing and live-program progress display.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39901711704-1/Lineup-tvOS-unsigned.ipa",
           "size": 46565742,
-          "minOSVersion": "18.0"
-        }
-      ]
-    },
-    {
-      "name": "Aether",
-      "bundleIdentifier": "com.example.IPTVRadio",
-      "developerName": "NullDev85",
-      "subtitle": "IPTV radio and podcasts",
-      "localizedDescription": "Radio from your own IPTV subscription and public stations, plus every podcast, with downloads, video podcasts and light or dark mode. Inspired by Orbitrr. Shoutout to Keeb.",
-      "iconURL": "https://raw.githubusercontent.com/nulldev85/AppSource/main/icons/aether.png",
-      "tintColor": "#5277E8",
-      "category": "entertainment",
-      "versions": [
-        {
-          "version": "1.3.1",
-          "buildVersion": "11",
-          "date": "2026-11-05T18:24:22Z",
-          "localizedDescription": "• The Search button at the top now finds podcasts and episodes as well as stations, so there's one search for everything.\n• Tap a podcast or episode in Search to open it right there, with Follow, play and download.\n• Library has a new Latest Episodes section with new episodes from the shows you follow, and See All opens the full list.\n• Podcast episodes start playing sooner after you tap play.\n• New and Discover in Podcasts open right away with your last results, then update in the background.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-aether-source-42078814370/Aether-1.3.1-11.ipa",
-          "size": 12707619,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.3.0",
-          "buildVersion": "10",
-          "date": "2026-11-02T21:04:38Z",
-          "localizedDescription": "• New Podcasts tab: search every show in the Apple Podcasts directory, browse top charts by genre, or follow any show by its RSS address.\n• Follow shows, see their newest episodes in New, and pick up where you left off with Continue Listening.\n• Switch podcasts between List and Grid views with one tap; Grid shows each show's full cover art.\n• Video podcasts play their video, with an Audio Only switch for each episode and a setting to always play them as audio.\n• The podcast player has 15 and 30 second skips, 0.5× to 3× speed, a sleep timer that can stop at the end of an episode, and Up Next.\n• Download episodes to listen offline, such as in the car with no signal.\n• Close a podcast to clear it from the player, and remove any episode from Continue Listening.\n• Radio and podcasts share the lock screen and headphone controls, and starting one pauses the other.\n• New Light mode with a warm cream look. Choose Dark, Light or Automatic in Settings › App › Appearance; Dark stays the default.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-aether-source-41518451094/Aether-1.3.0-10.ipa",
-          "size": 12649458,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.2.0",
-          "buildVersion": "9",
-          "date": "2026-10-28T03:07:45Z",
-          "localizedDescription": "• Previous and Next follow the list you started from, including your arranged Favorites order.\n• Tap Search or Settings again to return to your last station tab while playback continues.\n• Improved logo loading after temporary connection errors and when switching stations quickly.\n• A new layout built around simple navigation at the top and a full-width player at the bottom.\n• Radio and Favorites now show spacious station presets with transparent logos and numbered positions.\n• Settings has dedicated pages for your account, stations, playback and app preferences.\n• Search has a genre grid, and Aether Dial keeps location and genre filters in an expandable section.\n• A cleaner full player with left-aligned song details and unboxed controls, keeping the centered spinning vinyl.\n• Dim charcoal surfaces and gray controls throughout, with the same rounded typeface.\n• Improved VoiceOver navigation for player controls and station filters.\n• Toolbar buttons keep their labels on one line, including Cancel when adding a station.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-aether-source-40621742094/Aether-1.2.0-9.ipa",
-          "size": 11870332,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "1.0.0",
-          "buildVersion": "1",
-          "date": "2026-10-21T02:15:44Z",
-          "localizedDescription": "• Radio playback now uses AetherEngine, with improvements to how streams start, stop and recover.\n• Refreshed station browsing and discovery controls to make finding something to listen to feel simpler.\n• Now Playing has a centered vinyl display and controls that stay within easy reach at the bottom.\n• The darker interface and rounded text now feel more consistent throughout the app.\n• Improved playback recovery after phone calls.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-aether-source-39529689019/IPTVRadio-unsigned-device.ipa",
-          "size": 11810160,
           "minOSVersion": "18.0"
         }
       ]

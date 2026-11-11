@@ -1,7 +1,7 @@
 # NullDev App Source
 
 This public repository hosts the AltStore-compatible source for NullSign,
-Lineup for iPhone, Lineup for Apple TV, and Aether. Add this URL in AltStore or
+Lineup for iPhone, and Lineup for Apple TV. Add this URL in AltStore or
 Feather:
 
 `https://raw.githubusercontent.com/nulldev85/AppSource/main/apps.json`
@@ -45,9 +45,9 @@ there is no need to rebuild the app. Scheduled updates still run every 30 minute
 
 ## Making the app source repositories private
 
-Before changing `NullSign`, `NullSports`, or `Aether` to private, add a fine-
+Before changing `NullSign` or `NullSports` to private, add a fine-
 grained personal access token as the `SOURCE_REPOS_TOKEN` Actions secret in
-this repository. Give it read-only Contents access to those three repositories.
+this repository. Give it read-only Contents access to those two repositories.
 The updater uses it only to read releases, IPA files, and current app icons;
 `GITHUB_TOKEN` writes the public copies and feed to this repository. Do not put
 the token in this repo's files or the feed.

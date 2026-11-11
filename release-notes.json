@@ -716,21 +716,6 @@
       ]
     },
     {
-      "bundleIdentifier": "com.example.IPTVRadio",
-      "version": "1.0.0",
-      "buildVersion": "1",
-      "sourceSHAs": [
-        "f403d745e7d5accc99a5028269b331e29603efc6"
-      ],
-      "notes": [
-        "Radio playback now uses AetherEngine, with improvements to how streams start, stop and recover.",
-        "Refreshed station browsing and discovery controls to make finding something to listen to feel simpler.",
-        "Now Playing has a centered vinyl display and controls that stay within easy reach at the bottom.",
-        "The darker interface and rounded text now feel more consistent throughout the app.",
-        "Improved playback recovery after phone calls."
-      ]
-    },
-    {
       "bundleIdentifier": "com.elmat.NullSign",
       "version": "1.4.0",
       "buildVersion": "29",
