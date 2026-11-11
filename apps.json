@@ -134,6 +134,15 @@
       "versions": [
         {
           "version": "0.19.0",
+          "buildVersion": "1089",
+          "date": "2026-11-11T06:05:05Z",
+          "localizedDescription": "• The smaller iPhone download includes AetherEngine 7.62.1 and MPVKit. MPVKit can take over when AetherEngine can’t open a stream.\n• The Library hero uses backdrop artwork. Pick multiple catalogs for the hero or shuffle titles across your catalogs.\n• You can hide the built-in genre categories in Search and move stream badges above the server’s formatted text.\n• Switching My Teams or changing leagues now starts the schedule at the top, with live games and upcoming days in separate rows.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-42967089687/Lineup-iPhone-0.19.0-1089.ipa",
+          "size": 37704976,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
           "buildVersion": "1083",
           "date": "2026-11-10T06:52:32Z",
           "localizedDescription": "• Continue Watching shows the series name and poster, with one thin bar along the bottom for the episode or movie you paused.\n• Switch Jellyfin profiles from the Library and see each person's profile picture. You can also sign in with Quick Connect.\n• On AIO Jellyfin servers, Continue Watching follows the selected profile's resume list.\n• The TV Guide keeps the last channel in view when you scroll to the bottom or change categories.\n• Look for Lineup's new three-bar icon on your Home Screen.",
@@ -302,15 +311,6 @@
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39926297532/Lineup-iPhone-unsigned.ipa",
           "size": 80313296,
           "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "127",
-          "date": "2026-10-23T05:11:24Z",
-          "localizedDescription": "• The TV Guide and Sports lists have a new look, with row colors drawn from each channel's logo.\n• Browse movies and shows by genre in Search, with separate movie and series results.\n• Library hero content and title logos are centered, with matching TMDB artwork available when Fanart.tv has no logo.\n• The welcome screen shows official movie and show posters, and its sign-in form is easier to read.\n• Library row panels take up less space while keeping the artwork at its original size.\n• Fixed removing IPTV providers and media servers from Settings.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-39901711703/Lineup-iPhone-unsigned.ipa",
-          "size": 80312724,
-          "minOSVersion": "18.0"
         }
       ]
     },
@@ -324,6 +324,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "835",
+          "date": "2026-11-11T05:58:14Z",
+          "localizedDescription": "• Immersive lighting stays inside the black bars during playback. The light bands are half as deep.\n• Scrolling through Library posters does less work, and moving focus stops animated artwork from decoding after you leave a card.\n• Coming back from the screensaver is smoother, especially with a large watch history or a connected Jellyfin server.\n• Stream results show the release’s file size when the server provides it, including when you use your server’s formatter.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-42967089748-1/Lineup-tvOS-0.19.0-835.ipa",
+          "size": 50082774,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.19.0",
           "buildVersion": "829",
