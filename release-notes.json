@@ -4,6 +4,34 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "1089",
+      "sourceSHAs": [
+        "1cf0567532099eac79e90b761b5a9bfc30a4e8f9"
+      ],
+      "notes": [
+        "The smaller iPhone download includes AetherEngine 7.62.1 and MPVKit. MPVKit can take over when AetherEngine can’t open a stream.",
+        "The Library hero uses backdrop artwork. Pick multiple catalogs for the hero or shuffle titles across your catalogs.",
+        "You can hide the built-in genre categories in Search and move stream badges above the server’s formatted text.",
+        "Switching My Teams or changing leagues now starts the schedule at the top, with live games and upcoming days in separate rows."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "835",
+      "sourceSHAs": [
+        "1cf0567532099eac79e90b761b5a9bfc30a4e8f9"
+      ],
+      "notes": [
+        "Immersive lighting stays inside the black bars during playback. The light bands are half as deep.",
+        "Scrolling through Library posters does less work, and moving focus stops animated artwork from decoding after you leave a card.",
+        "Coming back from the screensaver is smoother, especially with a large watch history or a connected Jellyfin server.",
+        "Stream results show the release’s file size when the server provides it, including when you use your server’s formatter."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "1083",
       "sourceSHAs": [
         "327ad56e4320081d64f3a73e1558b689a66aeac4"
