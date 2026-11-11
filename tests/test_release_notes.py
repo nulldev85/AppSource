@@ -33,7 +33,15 @@ class ReleaseNotesTests(unittest.TestCase):
         ios = feed.human_release_notes(phone_app, self.release, phone)
         self.assertTrue(any("Search again" in note for note in ios))
         self.assertFalse(any("Search again" in note for note in tv))
-        self.assertEqual(len(records), 51)
+        self.assertEqual(len(records), 53)
+        merged = "1cf0567532099eac79e90b761b5a9bfc30a4e8f9"
+        ios = feed.human_release_notes(phone_app, self.release, {
+            **phone, "Source-SHA": merged, "Source-Build-Version": "1089"})
+        tv = feed.human_release_notes(self.app, self.release, {
+            **self.metadata, "Source-SHA": merged, "Source-Build-Version": "835"})
+        self.assertTrue(any("My Teams" in note for note in ios))
+        self.assertTrue(any("screensaver" in note for note in tv))
+        self.assertFalse(set(ios).intersection(tv))
 
     def test_same_version_and_build_with_a_different_commit_does_not_borrow_notes(self):
         other = {**self.metadata, "Source-SHA": "a" * 40}
