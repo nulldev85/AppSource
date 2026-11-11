@@ -22,6 +22,15 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "1.5.1",
+          "buildVersion": "43",
+          "date": "2026-11-11T18:16:05Z",
+          "localizedDescription": "• Fixed a crash when installing imported apps with ElleKit enabled.\n• ElleKit is now enabled by default for new or reset signing settings. Your saved preference is kept.\n• Invalid or incomplete .deb tweaks now show an error instead of closing NullSign.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-43075286483/NullSign-1.5.1-43.ipa",
+          "size": 19467054,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.5.0",
           "buildVersion": "40",
           "date": "2026-11-10T00:47:35Z",
