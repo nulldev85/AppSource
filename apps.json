@@ -476,15 +476,6 @@
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39926297402-1/Lineup-tvOS-unsigned.ipa",
           "size": 48454933,
           "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "87",
-          "date": "2026-10-23T04:55:50Z",
-          "localizedDescription": "• Sports and TV Guide now use the updated channel-colored layouts designed for Apple TV.\n• The guide's left edge fades into the darker background, including the timeline above it.\n• Library hero content is centered while keeping the existing playback and browsing options.\n• Refined the guide's row spacing and live-program progress display.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39901711704-1/Lineup-tvOS-unsigned.ipa",
-          "size": 46565742,
-          "minOSVersion": "18.0"
         }
       ]
     }
