@@ -33,7 +33,7 @@ class ReleaseNotesTests(unittest.TestCase):
         ios = feed.human_release_notes(phone_app, self.release, phone)
         self.assertTrue(any("Search again" in note for note in ios))
         self.assertFalse(any("Search again" in note for note in tv))
-        self.assertEqual(len(records), 53)
+        self.assertEqual(len(records), 54)
         merged = "1cf0567532099eac79e90b761b5a9bfc30a4e8f9"
         ios = feed.human_release_notes(phone_app, self.release, {
             **phone, "Source-SHA": merged, "Source-Build-Version": "1089"})
