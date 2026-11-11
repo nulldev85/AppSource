@@ -63,20 +63,6 @@ REPOSITORIES = [
         "asset": "Lineup-tvOS-unsigned.ipa",
         "fileName": "Lineup-tvOS",
     },
-    {
-        "repo": "Aether",
-        "private": True,
-        "name": "Aether",
-        "bundle": "com.example.IPTVRadio",
-        "subtitle": "IPTV radio and podcasts",
-        "description": "Radio from your own IPTV subscription and public stations, plus every podcast, with downloads, video podcasts and light or dark mode. Inspired by Orbitrr. Shoutout to Keeb.",
-        "iconPath": "IPTVRadio/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
-        "iconFile": "aether.png",
-        "tint": "#5277E8",
-        "category": "entertainment",
-        "asset": "IPTVRadio-unsigned-device.ipa",
-        "fileName": "Aether",
-    },
 ]
 
 
@@ -461,7 +447,7 @@ def main() -> None:
         )
     current["apps"] = apps
     current["featuredApps"] = [app["bundleIdentifier"] for app in apps]
-    current["subtitle"] = "NullSign, Lineup for iPhone and Apple TV, and Aether"
+    current["subtitle"] = "NullSign and Lineup for iPhone and Apple TV"
     current["description"] = "Unsigned iOS and tvOS app builds published after successful main-branch builds."
     icon_version = hashlib.sha256((ICON_DIR / SOURCE_ICON).read_bytes()).hexdigest()[:12]
     current["iconURL"] = f"https://raw.githubusercontent.com/{DIST_REPO}/main/icons/{SOURCE_ICON}?v={icon_version}"
