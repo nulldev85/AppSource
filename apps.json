@@ -344,6 +344,15 @@
       "versions": [
         {
           "version": "0.19.0",
+          "buildVersion": "839",
+          "date": "2026-11-14T07:37:01Z",
+          "localizedDescription": "• Seerr requests go season by season, and you'll see why a title or season can't be requested instead of a generic error.\n• Setting up Silo works with the address from its docs page, and playback sessions end properly when you stop watching.\n• If the sports schedule can't refresh because of a secure connection problem, it tells you that.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-43570415490-1/Lineup-tvOS-0.19.0-839.ipa",
+          "size": 50092114,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
           "buildVersion": "835",
           "date": "2026-11-11T05:58:14Z",
           "localizedDescription": "• Immersive lighting stays inside the black bars during playback. The light bands are half as deep.\n• Scrolling through Library posters does less work, and moving focus stops animated artwork from decoding after you leave a card.\n• Coming back from the screensaver is smoother, especially with a large watch history or a connected Jellyfin server.\n• Stream results show the release’s file size when the server provides it, including when you use your server’s formatter.",
@@ -484,15 +493,6 @@
           "localizedDescription": "• Movie and show logos now load independently of the rest of the page, so a slow artwork source does not hold up the others.\n• Returning to a title reuses its loaded logo. Matching artwork links are also remembered between app launches.\n• Opening a title from Nullfin no longer starts a stream lookup that the details page does not need.\n• Added Seerr discovery and requests, plus Silo library connections, with sign-in screens styled for each service.\n• Choose local tracking, MDBList, or both. Improved how saved progress and watched status are kept in step.\n• Updated menus and supporting screens to match the darker Sports and TV Guide look.\n• Apple TV gets the new red play icon, including matching Home Screen and Top Shelf artwork.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-40247680985-1/Lineup-tvOS-unsigned.ipa",
           "size": 50465184,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "87",
-          "date": "2026-10-23T08:53:41Z",
-          "localizedDescription": "• TV Guide program rows now keep their channel's logo colors while still showing how far the live program has progressed.\n• The Library hero is centered lower on the screen, with larger text and a rectangular Play button.\n• The Play button now changes between Movie and Series to match the title you are browsing.\n• Added genre browsing to Search.\n• Improved how the navigation bar stays visible while browsing the Library.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-39926297402-1/Lineup-tvOS-unsigned.ipa",
-          "size": 48454933,
           "minOSVersion": "18.0"
         }
       ]
