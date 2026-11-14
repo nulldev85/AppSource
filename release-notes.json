@@ -9,13 +9,13 @@
         "e8cb61a0337ceff63b3d6661f9c34b979abf105d"
       ],
       "notes": [
-        "NullSign now fills the whole screen on iPhone Duo, and its tab bar follows iPhone Duo's layout: on the right when closed, beside your toolbar buttons.",
-        "NullSign now uses the standard iOS tab bar. Tap the open tab again to go back to its first screen; the Signer badge still shows how many updates are waiting.",
-        "The install card now reaches Completed with a checkmark when iOS finishes installing, even if iOS stops reporting progress near the end.",
-        "Deleting an app from the library takes effect right away and tells you if it couldn't be saved. Imported apps show their own icons.",
-        "IPA imports from Files that fail now say why instead of silently disappearing.",
-        "PPQ protection has been removed. Apps are signed under their own bundle identifier.",
-        "When a source's file is missing, NullSign now says so instead of reporting invalid JSON. GitHub release sources can be briefly unavailable while a new release uploads."
+        "Full screen on iPhone Duo. The tab bar sits on the right like the rest of the phone, next to your toolbar buttons when it's tucked away.",
+        "Switched to the regular iOS tab bar. Tap the tab you're already on to jump back to its first screen. The Signer badge still counts your waiting updates.",
+        "Installs finish on Completed with a checkmark, even when iOS stops reporting progress right at the end.",
+        "Deleting an app from your library happens right away, and you'll know if it didn't save. Imported apps show their real icons.",
+        "If an IPA from Files won't import, you'll see why instead of it just disappearing.",
+        "PPQ protection is gone. Apps are signed with their own bundle ID.",
+        "A source with a missing file tells you that, instead of a confusing invalid JSON error. GitHub sources can drop out for a minute while a new release uploads."
       ]
     },
     {
@@ -453,11 +453,11 @@
         "f2632d25a0f6a86f4d0305e2d3d46c9780900ebf"
       ],
       "notes": [
-        "NullSign can now update itself. When a new version is out, the Signer tab shows a banner with an Update button; tap it, then tap Install when iOS asks.",
-        "NullSign signs its own update with the certificate shown on the Signer tab, then steps out to the Home Screen while iOS installs it. Open it again once its icon finishes.",
+        "You can update NullSign from inside the app. When a new version is out, the Signer tab shows a banner with an Update button. Tap it, then tap Install when iOS asks.",
+        "The update is signed with the certificate on your Signer tab. The app drops to the Home Screen while iOS installs it, so open it again once the icon finishes.",
         "Check for Updates now looks for a new NullSign as well as your apps, and it has its own button, apart from the + button.",
         "Apps you imported from Files now get updates when one of your sources lists a newer version.",
-        "From this version on, NullSign updates from inside the app, so you won't need to download it again by hand."
+        "This is the last version you'll have to download by hand."
       ]
     },
     {
@@ -470,7 +470,7 @@
       "notes": [
         "Check for Updates in your Library now says what it does, then tells you whether everything is up to date or how many updates it found.",
         "The Signer tab shows a red count when apps have updates, so you can see them from any tab.",
-        "NullSign checks again when you come back to it after a while, so you hear about new builds even if it stays open for days."
+        "Coming back after a while checks again, so you hear about new builds even if the app stays open for days."
       ]
     },
     {
