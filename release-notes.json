@@ -3,6 +3,23 @@
   "releases": [
     {
       "bundleIdentifier": "com.elmat.NullSign",
+      "version": "1.5.2",
+      "buildVersion": "52",
+      "sourceSHAs": [
+        "e8cb61a0337ceff63b3d6661f9c34b979abf105d"
+      ],
+      "notes": [
+        "NullSign now fills the whole screen on iPhone Duo, and its tab bar follows iPhone Duo's layout: on the right when closed, beside your toolbar buttons.",
+        "NullSign now uses the standard iOS tab bar. Tap the open tab again to go back to its first screen; the Signer badge still shows how many updates are waiting.",
+        "The install card now reaches Completed with a checkmark when iOS finishes installing, even if iOS stops reporting progress near the end.",
+        "Deleting an app from the library takes effect right away and tells you if it couldn't be saved. Imported apps show their own icons.",
+        "IPA imports from Files that fail now say why instead of silently disappearing.",
+        "PPQ protection has been removed. Apps are signed under their own bundle identifier.",
+        "When a source's file is missing, NullSign now says so instead of reporting invalid JSON. GitHub release sources can be briefly unavailable while a new release uploads."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
       "version": "1.5.1",
       "buildVersion": "43",
       "sourceSHAs": [
