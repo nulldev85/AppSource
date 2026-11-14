@@ -22,6 +22,15 @@
       "category": "utilities",
       "versions": [
         {
+          "version": "1.5.2",
+          "buildVersion": "52",
+          "date": "2026-11-14T06:33:30Z",
+          "localizedDescription": "• NullSign now fills the whole screen on iPhone Duo, and its tab bar follows iPhone Duo's layout: on the right when closed, beside your toolbar buttons.\n• NullSign now uses the standard iOS tab bar. Tap the open tab again to go back to its first screen; the Signer badge still shows how many updates are waiting.\n• The install card now reaches Completed with a checkmark when iOS finishes installing, even if iOS stops reporting progress near the end.\n• Deleting an app from the library takes effect right away and tells you if it couldn't be saved. Imported apps show their own icons.\n• IPA imports from Files that fail now say why instead of silently disappearing.\n• PPQ protection has been removed. Apps are signed under their own bundle identifier.\n• When a source's file is missing, NullSign now says so instead of reporting invalid JSON. GitHub release sources can be briefly unavailable while a new release uploads.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-43566275481/NullSign-1.5.2-52.ipa",
+          "size": 18663484,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.5.1",
           "buildVersion": "43",
           "date": "2026-11-11T18:16:05Z",
