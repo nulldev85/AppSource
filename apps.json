@@ -16,7 +16,7 @@
       "bundleIdentifier": "com.elmat.NullSign",
       "developerName": "NullDev85",
       "subtitle": "Sign and install iOS apps",
-      "localizedDescription": "A local iOS IPA signer and installer.",
+      "localizedDescription": "NullSign signs and installs iOS apps right on your iPhone with your own certificate. Import IPAs from Files or a URL, browse AltStore-compatible sources, and install in one tap. It keeps your apps up to date, updates itself, and fills the whole screen on iPhone Duo.",
       "iconURL": "https://raw.githubusercontent.com/nulldev85/AppSource/main/icons/nullsign.png",
       "tintColor": "#148BF4",
       "category": "utilities",
