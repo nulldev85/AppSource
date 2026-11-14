@@ -29,7 +29,7 @@ REPOSITORIES = [
         "bundle": "com.elmat.NullSign",
         "private": True,
         "subtitle": "Sign and install iOS apps",
-        "description": "A local iOS IPA signer and installer.",
+        "description": "NullSign signs and installs iOS apps right on your iPhone with your own certificate. Import IPAs from Files or a URL, browse AltStore-compatible sources, and install in one tap. It keeps your apps up to date, updates itself, and fills the whole screen on iPhone Duo.",
         "iconPath": "Feather/Resources/Assets.xcassets/NullSignBlue.appiconset/nullsign.png",
         "iconFile": "nullsign.png",
         "tint": "#148BF4",
