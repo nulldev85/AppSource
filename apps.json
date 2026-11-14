@@ -25,7 +25,7 @@
           "version": "1.5.2",
           "buildVersion": "52",
           "date": "2026-11-14T06:33:30Z",
-          "localizedDescription": "• NullSign now fills the whole screen on iPhone Duo, and its tab bar follows iPhone Duo's layout: on the right when closed, beside your toolbar buttons.\n• NullSign now uses the standard iOS tab bar. Tap the open tab again to go back to its first screen; the Signer badge still shows how many updates are waiting.\n• The install card now reaches Completed with a checkmark when iOS finishes installing, even if iOS stops reporting progress near the end.\n• Deleting an app from the library takes effect right away and tells you if it couldn't be saved. Imported apps show their own icons.\n• IPA imports from Files that fail now say why instead of silently disappearing.\n• PPQ protection has been removed. Apps are signed under their own bundle identifier.\n• When a source's file is missing, NullSign now says so instead of reporting invalid JSON. GitHub release sources can be briefly unavailable while a new release uploads.",
+          "localizedDescription": "• Full screen on iPhone Duo. The tab bar sits on the right like the rest of the phone, next to your toolbar buttons when it's tucked away.\n• Switched to the regular iOS tab bar. Tap the tab you're already on to jump back to its first screen. The Signer badge still counts your waiting updates.\n• Installs finish on Completed with a checkmark, even when iOS stops reporting progress right at the end.\n• Deleting an app from your library happens right away, and you'll know if it didn't save. Imported apps show their real icons.\n• If an IPA from Files won't import, you'll see why instead of it just disappearing.\n• PPQ protection is gone. Apps are signed with their own bundle ID.\n• A source with a missing file tells you that, instead of a confusing invalid JSON error. GitHub sources can drop out for a minute while a new release uploads.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-43566275481/NullSign-1.5.2-52.ipa",
           "size": 18663484,
           "minOSVersion": "16.0"
@@ -106,7 +106,7 @@
           "version": "1.4.3",
           "buildVersion": "32",
           "date": "2026-10-27T22:03:28Z",
-          "localizedDescription": "• NullSign can now update itself. When a new version is out, the Signer tab shows a banner with an Update button; tap it, then tap Install when iOS asks.\n• NullSign signs its own update with the certificate shown on the Signer tab, then steps out to the Home Screen while iOS installs it. Open it again once its icon finishes.\n• Check for Updates now looks for a new NullSign as well as your apps, and it has its own button, apart from the + button.\n• Apps you imported from Files now get updates when one of your sources lists a newer version.\n• From this version on, NullSign updates from inside the app, so you won't need to download it again by hand.",
+          "localizedDescription": "• You can update NullSign from inside the app. When a new version is out, the Signer tab shows a banner with an Update button. Tap it, then tap Install when iOS asks.\n• The update is signed with the certificate on your Signer tab. The app drops to the Home Screen while iOS installs it, so open it again once the icon finishes.\n• Check for Updates now looks for a new NullSign as well as your apps, and it has its own button, apart from the + button.\n• Apps you imported from Files now get updates when one of your sources lists a newer version.\n• This is the last version you'll have to download by hand.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-40590566286/NullSign-1.4.3-32.ipa",
           "size": 19430165,
           "minOSVersion": "16.0"
@@ -115,7 +115,7 @@
           "version": "1.4.2",
           "buildVersion": "31",
           "date": "2026-10-27T20:34:23Z",
-          "localizedDescription": "• Check for Updates in your Library now says what it does, then tells you whether everything is up to date or how many updates it found.\n• The Signer tab shows a red count when apps have updates, so you can see them from any tab.\n• NullSign checks again when you come back to it after a while, so you hear about new builds even if it stays open for days.",
+          "localizedDescription": "• Check for Updates in your Library now says what it does, then tells you whether everything is up to date or how many updates it found.\n• The Signer tab shows a red count when apps have updates, so you can see them from any tab.\n• Coming back after a while checks again, so you hear about new builds even if the app stays open for days.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-40577778152/NullSign-1.4.2-31.ipa",
           "size": 19405270,
           "minOSVersion": "16.0"
