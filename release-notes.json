@@ -34,6 +34,35 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "1101",
+      "sourceSHAs": [
+        "bfc538ab2be6f50de70f9d40fb8ecab9efe2f89d"
+      ],
+      "notes": [
+        "The TV Guide opens on your channel categories now, like other IPTV apps: Favorites, Recently Watched, All Channels, then your provider's categories. Tap one to see its guide. Hold a category to open the guide on it every time, or to hide it.",
+        "On iPhone Duo the tabs sit on the side, and the Library artwork, shelves and TV Guide header go all the way to the edge of the screen.",
+        "Library shelves are Liquid Glass on iOS 26.",
+        "Search has a type menu, so you can look at just movies, shows, VOD or your collections. Collections can be filtered to movies or TV shows too.",
+        "The stream list, channel pickers, Catch Up and team pages open full screen. From the Start on a show starts the episode over like it should.",
+        "Seerr lets you request single seasons and tells you why something can't be requested. Silo takes the address from its docs page when you set it up, and stops playback properly when you're done."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "839",
+      "sourceSHAs": [
+        "bfc538ab2be6f50de70f9d40fb8ecab9efe2f89d"
+      ],
+      "notes": [
+        "Seerr requests go season by season, and you'll see why a title or season can't be requested instead of a generic error.",
+        "Setting up Silo works with the address from its docs page, and playback sessions end properly when you stop watching.",
+        "If the sports schedule can't refresh because of a secure connection problem, it tells you that."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "1089",
       "sourceSHAs": [
         "1cf0567532099eac79e90b761b5a9bfc30a4e8f9"
