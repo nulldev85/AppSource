@@ -30,7 +30,7 @@ REPOSITORIES = [
         "private": True,
         "subtitle": "Sign and install iOS apps",
         "description": "NullSign signs and installs iOS apps right on your iPhone with your own certificate. Import IPAs from Files or a URL, browse AltStore-compatible sources, and install in one tap. It keeps your apps up to date, updates itself, and installs Apple TV apps on your paired Apple TV over Wi-Fi.",
-        "iconPath": "RyukSign/Resources/Assets.xcassets/AppIcon.appiconset/nullsign.png",
+        "iconPath": "NullSign/Resources/Assets.xcassets/AppIcon.appiconset/nullsign.png",
         "iconFile": "nullsign.png",
         "tint": "#148BF4",
         "category": "utilities",
