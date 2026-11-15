@@ -2,6 +2,36 @@
   "schemaVersion": 1,
   "releases": [
     {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
+      "buildVersion": "1126",
+      "sourceSHAs": [
+        "648259cc9084e2fa15dd3220fdaa133355806c72"
+      ],
+      "notes": [
+        "Got two IPTV providers? Each one has its own section in the TV Guide now, with its own favorites, recently watched and all channels. Tap a provider's name to open or close it. Categories go by their own names, without the provider in front.",
+        "The TV Guide opens right on your categories with no bar on top. You no longer get stuck inside a default category or Favorites, every row opens when you tap it, and list view stops hiding the first channel.",
+        "Lock the screen while you watch. Tap the lock in the player and touches, swipes and turning the phone are ignored. Hold the lock to unlock.",
+        "Turn off sports you don't watch, from the Sports tab's league list or Settings. College football rankings stay current, and you can pick AP, Coaches or Playoff in Settings.",
+        "The live score bar rolls smoothly from game to game, and the extra clock at the top is gone since your phone already shows the time.",
+        "On an unfolded iPhone Duo, Sports and the TV Guide put their headers up next to the clock. The TV Guide's video preview is bigger, without the large channel name over it.",
+        "The Library scrolls smoothly again. Posters fit the screen, the artwork fades to black under the ratings, shelves run edge to edge, and landscape collections fill their tiles."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "843",
+      "sourceSHAs": [
+        "648259cc9084e2fa15dd3220fdaa133355806c72"
+      ],
+      "notes": [
+        "The TV Guide's channel menu starts with Favorites, Recently Watched and All Channels, then your categories. Recently Watched is new here.",
+        "Turn off sports you don't watch in Settings, under Sports. They drop out of the Sports tab and its sport filter.",
+        "Pick which college football ranking shows next to teams: AP, which is the default, Coaches or Playoff. Rankings stay current."
+      ]
+    },
+    {
       "bundleIdentifier": "com.elmat.NullSign",
       "version": "1.5.2",
       "buildVersion": "52",
