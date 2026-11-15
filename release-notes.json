@@ -2,6 +2,24 @@
   "schemaVersion": 1,
   "releases": [
     {
+      "bundleIdentifier": "com.elmat.NullSign",
+      "version": "2.0.0",
+      "buildVersion": "58",
+      "sourceSHAs": [
+        "a687cb963bafed0121ce0a4efb3d9823568a03e2"
+      ],
+      "notes": [
+        "NullSign 2.0 is rebuilt on a faster, sturdier engine, with the same look, your library, certificates and sources carried over.",
+        "Apple TV: pair your Apple TV from Settings > Apple TV with the six-digit code it shows. Apple TV apps then sign with your tvOS certificate and install over Wi-Fi, no computer or VPN needed.",
+        "Updates count new builds too, so a fresh build of the same version shows up as an update. Versions show their build number.",
+        "NullSign updates itself from the Signer: tap Update on the card, and it signs and installs the new version. The card goes away once it's done.",
+        "Sign and install several apps at once, reorder your library, and pick which source an update comes from.",
+        "One broken app in a source no longer hides the whole source, and source errors say what went wrong.",
+        "Null's Apps comes built in. Add Source is simpler, with import and copy for source lists.",
+        "Opening an IPA from Files no longer freezes NullSign."
+      ]
+    },
+    {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
       "buildVersion": "1134",
