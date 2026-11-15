@@ -4,6 +4,19 @@
     {
       "bundleIdentifier": "com.elmat.NullSign",
       "version": "2.0.0",
+      "buildVersion": "59",
+      "sourceSHAs": [
+        "0baad02f669c520e1a831c3302607147f2c53c05"
+      ],
+      "notes": [
+        "Web Manager, the on-device install certificate and tweak notes all say NullSign now.",
+        "Backups save as .nullsignbackup files. Your older backups still restore just fine.",
+        "The bundle ID protection option is called NullSign, and apps it signs get a null prefix."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
+      "version": "2.0.0",
       "buildVersion": "58",
       "sourceSHAs": [
         "a687cb963bafed0121ce0a4efb3d9823568a03e2"
