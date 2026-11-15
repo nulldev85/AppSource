@@ -4,6 +4,28 @@
     {
       "bundleIdentifier": "com.elmat.NullSign",
       "version": "2.0.0",
+      "buildVersion": "60",
+      "sourceSHAs": [
+        "ef509bb078ef08d18b6cc482abcc102215eb0bab"
+      ],
+      "notes": [
+        "Pick a few apps at once and sign, install or delete them together. You can also drag apps around to put your library in your own order.",
+        "Installs line up now. Start a few and they go one after another. Close the card and a small pill keeps track, and you can cancel the one that's running.",
+        "Updates stick with the tweaked build you downloaded, so X or Instagram won't jump to a different tweak. If NullSign can't tell which one you want, it asks.",
+        "When an app is in more than one source, you choose where its update comes from, and NullSign can remember that. Skip an update you don't want and it stops asking.",
+        "Null's Apps comes built in. Star your favorite sources to keep them on top, hide one from All Apps without deleting it, and sort them however you like.",
+        "Sources open from a saved copy first, so the Apps tab fills in right away, even on a slow connection.",
+        "Back up your certificates, sources, settings and tweaks to one .nullsignbackup file, then restore them on another device or after a reset.",
+        "Web Manager lets you move IPAs and files between NullSign and a computer from any browser on the same Wi-Fi. Storage shows what's taking up space, and Activity Logs keep a record if something goes wrong.",
+        "Tweaks get their own library, and you can edit an app's Info.plist and entitlements right from the signing screen.",
+        "Apple TV has its own spot in Settings. Apple TV apps pick your tvOS certificate on their own and bring their profile along, so even a brand new Apple TV installs them.",
+        "Coming from 1.5.2 with an Apple TV set up? Installs work again instead of saying Missing Pairing, and iPhone apps sign with your iPhone certificate.",
+        "Signed apps carry their provisioning profile again, so they install on devices that haven't seen it before. IPAs you open from other apps now say Open in NullSign."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
+      "version": "2.0.0",
       "buildVersion": "59",
       "sourceSHAs": [
         "0baad02f669c520e1a831c3302607147f2c53c05"
