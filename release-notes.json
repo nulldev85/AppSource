@@ -9,9 +9,18 @@
         "0baad02f669c520e1a831c3302607147f2c53c05"
       ],
       "notes": [
-        "Web Manager, the on-device install certificate and tweak notes all say NullSign now.",
-        "Backups save as .nullsignbackup files. Your older backups still restore just fine.",
-        "The bundle ID protection option is called NullSign, and apps it signs get a null prefix."
+        "Pick a few apps at once and sign, install or delete them together. You can also drag apps around to put your library in your own order.",
+        "Installs line up now. Start a few and they go one after another. Close the card and a small pill keeps track, and you can cancel the one that's running.",
+        "When an app is in more than one source, you choose where its update comes from, and NullSign can remember that. Skip an update you don't want and it stops asking.",
+        "Star your favorite sources to keep them on top, hide a source from All Apps without deleting it, and sort your sources however you like.",
+        "Sources open from a saved copy first, so the Apps tab fills in right away, even on a slow connection.",
+        "Back up your certificates, sources, settings and tweaks to one .nullsignbackup file, then restore them on another device or after a reset.",
+        "Web Manager lets you move IPAs and files between NullSign and a computer from any browser on the same Wi-Fi.",
+        "Storage shows what's taking up space and lets you clear it out. Activity Logs keep a record if something goes wrong.",
+        "Tweaks get their own library, and you choose which ones go into every app you sign.",
+        "Edit an app's Info.plist and entitlements right from the signing screen before you sign.",
+        "Apple TV has its own spot in Settings. Apple TV apps pick your tvOS certificate on their own, and certificates that work for Apple TV get a tvOS tag.",
+        "Null's Apps comes built in, so NullSign and Lineup are there from the first launch."
       ]
     },
     {
