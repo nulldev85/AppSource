@@ -4,6 +4,36 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "1134",
+      "sourceSHAs": [
+        "ef2806ec1cc576207bdb59ff94868e948e01860e"
+      ],
+      "notes": [
+        "Setting up an Apple TV from your phone brings everything over in one go now, so there's no reopening the app until it all shows up. If the first try can't reach the TV, it tries again on its own.",
+        "College basketball is here: every Division I game, the latest AP or Coaches Top 25 next to teams, live stats, and all 365 teams to follow in My Teams. The ranking setting is called College Top 25 now and covers football too.",
+        "UFC cards show every channel carrying them, not just one.",
+        "On an unfolded iPhone Duo, expanding a game in Sports puts the picture on the top half and keeps the scores, stats or games on the bottom half. Fold it into laptop mode and the picture sits on the top screen.",
+        "Live stats scroll as one page under the picture, instead of in a small box at the bottom."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "854",
+      "sourceSHAs": [
+        "ef2806ec1cc576207bdb59ff94868e948e01860e"
+      ],
+      "notes": [
+        "Set Up with iPhone looks like the rest of the app and stays up until your channels and library have loaded, then says you're all set. Everything comes over in one go.",
+        "The TV Guide opens on your categories, like on iPhone: Favorites, Recently Watched, All Channels, then the rest. Moving across the tab bar no longer drops you into it.",
+        "College basketball is here, with the latest Top 25 and every Division I team to follow. Choose which sports show up, and which Top 25 you see, in Settings under Sports.",
+        "Choose a Channel lists every channel carrying a game, so a UFC card shows all of its channels.",
+        "If the app ever closes on its own, the Playback Log says so next time, along with what was playing."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "1126",
       "sourceSHAs": [
         "648259cc9084e2fa15dd3220fdaa133355806c72"
