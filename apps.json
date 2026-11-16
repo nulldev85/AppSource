@@ -389,6 +389,15 @@
       "versions": [
         {
           "version": "0.19.0",
+          "buildVersion": "857",
+          "date": "2026-11-16T00:08:05Z",
+          "localizedDescription": "• If the TV Guide shows a college basketball game on a channel, Sports finds that channel too, including small-school games on ESPN+.\n• Only teams that are actually in the Top 25 get a number beside them.\n• The Trending and Streaming Services rows no longer stay missing for the rest of the day when they're first built before your servers have loaded.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-43776629037-1/Lineup-tvOS-0.19.0-857.ipa",
+          "size": 50239921,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
           "buildVersion": "854",
           "date": "2026-11-15T07:26:21Z",
           "localizedDescription": "• Set Up with iPhone looks like the rest of the app and stays up until your channels and library have loaded, then says you're all set. Everything comes over in one go.\n• The TV Guide opens on your categories, like on iPhone: Favorites, Recently Watched, All Channels, then the rest. Moving across the tab bar no longer drops you into it.\n• College basketball is here, with the latest Top 25 and every Division I team to follow. Choose which sports show up, and which Top 25 you see, in Settings under Sports.\n• Choose a Channel lists every channel carrying a game, so a UFC card shows all of its channels.\n• If the app ever closes on its own, the Playback Log says so next time, along with what was playing.",
