@@ -2,6 +2,34 @@
   "schemaVersion": 1,
   "releases": [
     {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
+      "buildVersion": "1139",
+      "sourceSHAs": [
+        "8c943c6754e50fd64c668eb4cc8c04d0d22eff33"
+      ],
+      "notes": [
+        "Everything feels quicker: the TV Guide scrolls sideways without stutter, and Sports and the Library don't redraw things that haven't changed.",
+        "College basketball games get their channel in Sports whenever the TV Guide shows them on one, small-school games on ESPN+ included.",
+        "Top 25 numbers only show up next to teams that are actually ranked.",
+        "Library shelf titles are just text now, without the icons.",
+        "After a reinstall, Trending Movies, Trending Shows and Streaming Services fill in on their own instead of leaving the Library empty."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "857",
+      "sourceSHAs": [
+        "8c943c6754e50fd64c668eb4cc8c04d0d22eff33"
+      ],
+      "notes": [
+        "If the TV Guide shows a college basketball game on a channel, Sports finds that channel too, including small-school games on ESPN+.",
+        "Only teams that are actually in the Top 25 get a number beside them.",
+        "The Trending and Streaming Services rows no longer stay missing for the rest of the day when they're first built before your servers have loaded."
+      ]
+    },
+    {
       "bundleIdentifier": "com.elmat.NullSign",
       "version": "2.0.0",
       "buildVersion": "62",
