@@ -6,4 +6,6 @@
   descriptions, comments, issue templates or file names. Credit only Feather
   and its contributors (claration, Nyasami, llsc12), as About does.
 - Release notes list only what is new to NullSign, in a casual, human tone,
-  never how a build was made or where its code came from.
+  never how a build was made or where its code came from. Make them funny,
+  snarky and human, never corny. They show on the full-screen update page,
+  so they're the first thing people read about a build.
