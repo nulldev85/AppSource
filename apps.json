@@ -215,6 +215,15 @@
       "versions": [
         {
           "version": "0.19.0",
+          "buildVersion": "1208",
+          "date": "2026-11-17T20:22:51Z",
+          "localizedDescription": "• Tap a game that hasn't started to open its own page: the league's logo, when and where it's on, how each team has been doing lately, a reminder button, and Where to Watch.\n• Where to Watch lists the channels your guide confirms from every playlist you've added, then that network's own channels, like ESPN, from each one.\n• Hold a live game and pick Channels to get that same list, and any channel in it plays.\n• The Library's dropdown now switches between Lineup's Library and each server's own. Everything that menu used to hold is in Settings, under Library.\n• Playing something from a server's Library only looks for streams on that server.\n• 4K HDR and Dolby Vision movies from Silo play directly instead of asking your server to convert them.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-44164592308/Lineup-iPhone-0.19.0-1208.ipa",
+          "size": 38405810,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
           "buildVersion": "1188",
           "date": "2026-11-17T06:29:39Z",
           "localizedDescription": "• Pick Media Server Libraries in the Library menu to browse a single server the way its own app lays it out: its recommended rows, the whole library with sorting, filters and Shuffle, and its collections.\n• Silo posters show the same quality badges as Silo's own app, like 1080P, EAC3 and REMUX.\n• Up Next has its own row now, apart from Continue Watching.\n• Movies and shows from every IPTV account you've added show up in the VOD row, and the Library menu lets you see all of them or just one. Tap a folder to browse its categories and open any title.\n• The stream list puts each provider's VOD first, named after the account, then your servers, then add-on results, and file sizes are back on every stream.\n• Each provider's tab in the stream list counts only its own streams and stops spinning once it's done looking.\n• Silo streams play instead of getting stuck on Reconnecting.\n• Starting a movie or show stops any live channel that was still playing.\n• Plex isn't supported anymore. If you had a Plex server saved, it's skipped and your other servers load as usual.",
@@ -383,15 +392,6 @@
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-40456887375/Lineup-iPhone-unsigned.ipa",
           "size": 83896072,
           "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "952",
-          "date": "2026-10-27T02:53:02Z",
-          "localizedDescription": "• You can now set up an Apple TV from your iPhone. On the TV, choose Set Up with iPhone, then scan the code it shows with your camera or from Settings › Set Up Apple TV.\n• Your IPTV providers, media servers and their sign-ins go across in one step, along with MDBList, Seerr, favorites, My Teams and your settings. It all travels over your Wi-Fi, locked with the code on the TV.\n• Watch history comes too. Anything either device has watched is kept, and where both played the same title, the most recent play wins.\n• A server or provider the TV already has is updated instead of being added a second time.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-40439161873/Lineup-iPhone-unsigned.ipa",
-          "size": 83896120,
-          "minOSVersion": "18.0"
         }
       ]
     },
@@ -405,6 +405,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "941",
+          "date": "2026-11-17T20:24:11Z",
+          "localizedDescription": "• 4K HDR and Dolby Vision movies from Silo play directly instead of asking your server to convert them.\n• Playing something from a server's Library only looks for streams on that server.\n• Moving up to the tabs lands on the tab you're already on instead of jumping to Library.\n• Scrolling the TV Guide no longer jumps back a few channels.\n• The TV Guide's text is bigger and easier to read.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-44164592342-1/Lineup-tvOS-0.19.0-941.ipa",
+          "size": 50454330,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.19.0",
           "buildVersion": "926",
@@ -547,15 +556,6 @@
           "localizedDescription": "• After Set Up with iPhone, a show now picks up on whichever device was further along, so the TV no longer jumps back to an earlier episode you last played on your iPhone.\n• If your iPhone is ahead in a show, the TV moves on to where you are.\n• Episodes and movies finished on either device still count as watched, and where both have played the same one, the further point wins.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-40456887140-1/Lineup-tvOS-unsigned.ipa",
           "size": 49183521,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "684",
-          "date": "2026-10-27T02:47:00Z",
-          "localizedDescription": "• New: Set Up with iPhone, at the top of Settings and on the first screen. Scan the code with your iPhone and everything arrives without typing a thing on the remote.\n• Your IPTV providers, media servers and their sign-ins come straight across your Wi-Fi, along with MDBList, Seerr, favorites, My Teams and your settings. They load right away, with no restart.\n• Watch history from your iPhone joins the TV's own. Nothing either device has watched is lost, and where both played the same title, the most recent play wins.\n• A server or provider the TV already has stays one entry instead of showing up twice, and running the setup again tidies up any doubles left from before.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-40439161941-1/Lineup-tvOS-unsigned.ipa",
-          "size": 49181043,
           "minOSVersion": "18.0"
         }
       ]
