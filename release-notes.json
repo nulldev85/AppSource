@@ -4,6 +4,37 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "1208",
+      "sourceSHAs": [
+        "9e1cc4d56694fb0f7f3fdf8d4399f86ccd86ff05"
+      ],
+      "notes": [
+        "Tap a game that hasn't started to open its own page: the league's logo, when and where it's on, how each team has been doing lately, a reminder button, and Where to Watch.",
+        "Where to Watch lists the channels your guide confirms from every playlist you've added, then that network's own channels, like ESPN, from each one.",
+        "Hold a live game and pick Channels to get that same list, and any channel in it plays.",
+        "The Library's dropdown now switches between Lineup's Library and each server's own. Everything that menu used to hold is in Settings, under Library.",
+        "Playing something from a server's Library only looks for streams on that server.",
+        "4K HDR and Dolby Vision movies from Silo play directly instead of asking your server to convert them."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "941",
+      "sourceSHAs": [
+        "9e1cc4d56694fb0f7f3fdf8d4399f86ccd86ff05"
+      ],
+      "notes": [
+        "4K HDR and Dolby Vision movies from Silo play directly instead of asking your server to convert them.",
+        "Playing something from a server's Library only looks for streams on that server.",
+        "Moving up to the tabs lands on the tab you're already on instead of jumping to Library.",
+        "Scrolling the TV Guide no longer jumps back a few channels.",
+        "The TV Guide's text is bigger and easier to read."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "1188",
       "sourceSHAs": [
         "5f0dbdaf0404cb8428e0892be9404489fc62c9ff"
