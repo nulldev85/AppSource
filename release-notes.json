@@ -42,6 +42,18 @@
     {
       "bundleIdentifier": "com.elmat.NullSign",
       "version": "2.0.0",
+      "buildVersion": "71",
+      "sourceSHAs": [
+        "935f8fd29276793b2b208924804224e31ef7aa6d"
+      ],
+      "notes": [
+        "Apple TV installs are a lot faster now, and they don't get stuck on \"Installing\" anymore. No more opening and closing the app on your TV to get it going.",
+        "If an Apple TV install ever does stall, NullSign tells you how to get it moving instead of just sitting there."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
+      "version": "2.0.0",
       "buildVersion": "65",
       "sourceSHAs": [
         "539a1dc0be2946b1b27edbff6da852fdf8bf5c60"
