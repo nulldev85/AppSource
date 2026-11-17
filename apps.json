@@ -23,6 +23,15 @@
       "versions": [
         {
           "version": "2.0.0",
+          "buildVersion": "65",
+          "date": "2026-11-17T06:02:46Z",
+          "localizedDescription": "• Apple TV installs connect more reliably, and if the first try doesn't go through, NullSign quietly tries again for you.\n• When NullSign updates itself, it waits until the update has fully arrived before stepping aside, so the new version finishes much faster.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-44026874698/NullSign-2.0.0-65.ipa",
+          "size": 22459054,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "2.0.0",
           "buildVersion": "64",
           "date": "2026-11-16T23:16:05Z",
           "localizedDescription": "• Signed apps keep their provisioning profile, so they install on devices that haven't seen them before, like a brand new Apple TV. Signed an Apple TV app on an earlier 2.0 build? Sign it again.",
@@ -191,15 +200,6 @@
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-40569246890/NullSign-1.4.1-30.ipa",
           "size": 19399399,
           "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.4.0",
-          "buildVersion": "29",
-          "date": "2026-10-21T02:11:55Z",
-          "localizedDescription": "• Fixed signing failures caused by unreadable files inside an imported app.\n• Imported apps now stay clear of the bottom navigation bar.\n• Refreshed the dark interface, with more consistent cards, menus and controls.\n• Improved artwork when importing Apple TV apps.\n• Removed repeated Apple TV installation prompts.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-39530787902/NullSign-unsigned.ipa",
-          "size": 19396928,
-          "minOSVersion": "16.0"
         }
       ]
     },
@@ -213,6 +213,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "1188",
+          "date": "2026-11-17T06:29:39Z",
+          "localizedDescription": "• Pick Media Server Libraries in the Library menu to browse a single server the way its own app lays it out: its recommended rows, the whole library with sorting, filters and Shuffle, and its collections.\n• Silo posters show the same quality badges as Silo's own app, like 1080P, EAC3 and REMUX.\n• Up Next has its own row now, apart from Continue Watching.\n• Movies and shows from every IPTV account you've added show up in the VOD row, and the Library menu lets you see all of them or just one. Tap a folder to browse its categories and open any title.\n• The stream list puts each provider's VOD first, named after the account, then your servers, then add-on results, and file sizes are back on every stream.\n• Each provider's tab in the stream list counts only its own streams and stops spinning once it's done looking.\n• Silo streams play instead of getting stuck on Reconnecting.\n• Starting a movie or show stops any live channel that was still playing.\n• Plex isn't supported anymore. If you had a Plex server saved, it's skipped and your other servers load as usual.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-44027212512/Lineup-iPhone-0.19.0-1188.ipa",
+          "size": 38263389,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.19.0",
           "buildVersion": "1139",
@@ -383,15 +392,6 @@
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-40439161873/Lineup-iPhone-unsigned.ipa",
           "size": 83896120,
           "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "943",
-          "date": "2026-10-26T23:02:59Z",
-          "localizedDescription": "• Text across the app now uses Apple's own rounded system font instead of one bundled with Lineup, so the download is a little smaller.\n• From now on, every build has its own number, so your signing app will always offer a new release as an update. That's why this one jumps from 155 to 943.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-40414135805/Lineup-iPhone-unsigned.ipa",
-          "size": 83782131,
-          "minOSVersion": "18.0"
         }
       ]
     },
@@ -405,6 +405,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "926",
+          "date": "2026-11-17T06:14:06Z",
+          "localizedDescription": "• The tabs along the top and anything you highlight now lift up with a soft shadow, with no white box or frame around them.\n• Pick a server from the row at the top of the Library to browse it the way its own app lays it out: its recommended rows, the whole library with sorting and filters, and its collections.\n• Sports, the TV Guide and the Library respond faster and stay smooth while you move around.\n• Hold Select on a TV Guide category to hide it, and bring it back from Hidden Categories at the bottom of the list.\n• Trending movies and shows show up in Lineup's spot on the Home Screen's Top Shelf.\n• Player controls are much easier to see when highlighted, and pressing Up from the seek bar takes you to Next Episode.\n• Up Next has its own row in the Library, apart from Continue Watching.\n• Silo streams play instead of getting stuck on Reconnecting, and the stream list shows VOD first with file sizes back.\n• Plex isn't supported anymore. If you had a Plex server saved, it's skipped and your other servers load as usual.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-44027212497-1/Lineup-tvOS-0.19.0-926.ipa",
+          "size": 50440076,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.19.0",
           "buildVersion": "857",
@@ -547,15 +556,6 @@
           "localizedDescription": "• New: Set Up with iPhone, at the top of Settings and on the first screen. Scan the code with your iPhone and everything arrives without typing a thing on the remote.\n• Your IPTV providers, media servers and their sign-ins come straight across your Wi-Fi, along with MDBList, Seerr, favorites, My Teams and your settings. They load right away, with no restart.\n• Watch history from your iPhone joins the TV's own. Nothing either device has watched is lost, and where both played the same title, the most recent play wins.\n• A server or provider the TV already has stays one entry instead of showing up twice, and running the setup again tidies up any doubles left from before.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-40439161941-1/Lineup-tvOS-unsigned.ipa",
           "size": 49181043,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "674",
-          "date": "2026-10-26T22:54:10Z",
-          "localizedDescription": "• Text across the app now uses Apple's own rounded system font instead of one bundled with Lineup, so the download is a little smaller.\n• From now on, every build has its own number, so your signing app will always offer a new release as an update. That's why this one jumps from 100 to 674.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-40414135730-1/Lineup-tvOS-unsigned.ipa",
-          "size": 49085086,
           "minOSVersion": "18.0"
         }
       ]
