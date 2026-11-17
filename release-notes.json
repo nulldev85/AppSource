@@ -42,6 +42,17 @@
     {
       "bundleIdentifier": "com.elmat.NullSign",
       "version": "2.0.0",
+      "buildVersion": "72",
+      "sourceSHAs": [
+        "a98d0452a25ea2840aea601bebb812352f343d5f"
+      ],
+      "notes": [
+        "Skipped a few updates? The update pop-up now shows what's new in every build you missed, not just the latest one."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
+      "version": "2.0.0",
       "buildVersion": "71",
       "sourceSHAs": [
         "935f8fd29276793b2b208924804224e31ef7aa6d"
