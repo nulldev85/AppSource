@@ -4,6 +4,18 @@
     {
       "bundleIdentifier": "com.elmat.NullSign",
       "version": "2.0.0",
+      "buildVersion": "65",
+      "sourceSHAs": [
+        "539a1dc0be2946b1b27edbff6da852fdf8bf5c60"
+      ],
+      "notes": [
+        "Apple TV installs connect more reliably, and if the first try doesn't go through, NullSign quietly tries again for you.",
+        "When NullSign updates itself, it waits until the update has fully arrived before stepping aside, so the new version finishes much faster."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
+      "version": "2.0.0",
       "buildVersion": "64",
       "sourceSHAs": [
         "eb5b93f9c0e49117d64fa5c1976f51f1ba57c776"
