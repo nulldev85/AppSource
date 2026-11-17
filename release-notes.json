@@ -73,6 +73,18 @@
     {
       "bundleIdentifier": "com.elmat.NullSign",
       "version": "2.0.0",
+      "buildVersion": "73",
+      "sourceSHAs": [
+        "268bc48f258b1f482c69fc70763fe6e22f22249a"
+      ],
+      "notes": [
+        "NullSign no longer freezes halfway through updating itself and just stares at you. Tap Install and it gets out of the way so iOS can do its thing.",
+        "The full-screen update page is back, so new builds are harder to miss. Yes, that's how you're reading this."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
+      "version": "2.0.0",
       "buildVersion": "72",
       "sourceSHAs": [
         "a98d0452a25ea2840aea601bebb812352f343d5f"
