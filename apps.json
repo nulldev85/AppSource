@@ -23,6 +23,15 @@
       "versions": [
         {
           "version": "2.0.0",
+          "buildVersion": "75",
+          "date": "2026-11-20T10:45:26Z",
+          "localizedDescription": "• This was supposed to go out with the smaller fixes from ten minutes ago. Oops. Enjoy the double update.\n• Added Update All in Sources updates with search, per-app source picking, and a choice to just add, sign, or sign and install—because tapping Update twelve times in a row was getting old.\n• Long-pressing grouped updates actually has options now, including Ignore Updates for that one app you refuse to update.\n• Automatic Cleanup can now wipe same or newer copies too, not just older ones, if you like keeping your Library spotless.\n• Updates now keep your existing copy's bundle ID so they actually replace it instead of cloning a second copy onto your Home Screen, and the Identifier editor lists the ones already in your Library.\n• Big apps shouldn't panic and yell Failed while iOS is still unpacking them, installs shouldn't stall halfway, tiny apps shouldn't claim they failed right after succeeding, reused update rows show the right icon now, and View in Sources won't drop you into a black void.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-44720012641/NullSign-2.0.0-75.ipa",
+          "size": 22653982,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "2.0.0",
           "buildVersion": "74",
           "date": "2026-11-20T09:36:48Z",
           "localizedDescription": "• Pulling to refresh inside a repo no longer leaves the search bar chilling in the middle of the screen blocking your apps. Turns out people actually wanted to see those.\n• Pulling down on the Apps screen now lets you know it's updating instead of flashing the spinner for half a second and gaslighting you into thinking nothing happened.",
@@ -190,15 +199,6 @@
           "localizedDescription": "• Update on a signed app now updates it in one tap. NullSign downloads the new version, signs it with the same certificate, then asks iOS to install it over the old one.\n• While an app updates, its row shows Downloading update and Signing update, and if something goes wrong NullSign tells you why.\n• Fixed tapping Update on a signed app reinstalling the version you already had.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-41557251135/NullSign-1.4.6-36.ipa",
           "size": 19448554,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.4.5",
-          "buildVersion": "35",
-          "date": "2026-11-02T01:40:10Z",
-          "localizedDescription": "• Apps you've already updated no longer say Update available. Once a newer copy is in your Library, the older copy stops offering the update and the Signer tab badge clears.\n• Update badges refresh as soon as you add, sign or delete an app, without waiting for the next check.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-41372659550/NullSign-1.4.5-35.ipa",
-          "size": 19440654,
           "minOSVersion": "16.0"
         }
       ]
