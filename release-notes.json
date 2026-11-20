@@ -73,6 +73,22 @@
     {
       "bundleIdentifier": "com.elmat.NullSign",
       "version": "2.0.0",
+      "buildVersion": "75",
+      "sourceSHAs": [
+        "aad8c62a3a89647073c0cced46771a4dede9cec6"
+      ],
+      "notes": [
+        "This was supposed to go out with the smaller fixes from ten minutes ago. Oops. Enjoy the double update.",
+        "Added Update All in Sources updates with search, per-app source picking, and a choice to just add, sign, or sign and install—because tapping Update twelve times in a row was getting old.",
+        "Long-pressing grouped updates actually has options now, including Ignore Updates for that one app you refuse to update.",
+        "Automatic Cleanup can now wipe same or newer copies too, not just older ones, if you like keeping your Library spotless.",
+        "Updates now keep your existing copy's bundle ID so they actually replace it instead of cloning a second copy onto your Home Screen, and the Identifier editor lists the ones already in your Library.",
+        "Big apps shouldn't panic and yell Failed while iOS is still unpacking them, installs shouldn't stall halfway, tiny apps shouldn't claim they failed right after succeeding, reused update rows show the right icon now, and View in Sources won't drop you into a black void."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
+      "version": "2.0.0",
       "buildVersion": "74",
       "sourceSHAs": [
         "0383332fa988fc3e8f0f6a6778a096d9e6ba4b2f"
