@@ -23,6 +23,15 @@
       "versions": [
         {
           "version": "2.0.0",
+          "buildVersion": "74",
+          "date": "2026-11-20T09:36:48Z",
+          "localizedDescription": "• Pulling to refresh inside a repo no longer leaves the search bar chilling in the middle of the screen blocking your apps. Turns out people actually wanted to see those.\n• Pulling down on the Apps screen now lets you know it's updating instead of flashing the spinner for half a second and gaslighting you into thinking nothing happened.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-44710293250/NullSign-2.0.0-74.ipa",
+          "size": 22591865,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "2.0.0",
           "buildVersion": "73",
           "date": "2026-11-17T21:54:51Z",
           "localizedDescription": "• NullSign no longer freezes halfway through updating itself and just stares at you. Tap Install and it gets out of the way so iOS can do its thing.\n• The full-screen update page is back, so new builds are harder to miss. Yes, that's how you're reading this.",
@@ -190,15 +199,6 @@
           "localizedDescription": "• Apps you've already updated no longer say Update available. Once a newer copy is in your Library, the older copy stops offering the update and the Signer tab badge clears.\n• Update badges refresh as soon as you add, sign or delete an app, without waiting for the next check.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-41372659550/NullSign-1.4.5-35.ipa",
           "size": 19440654,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.4.4",
-          "buildVersion": "34",
-          "date": "2026-11-01T02:04:25Z",
-          "localizedDescription": "• Improved compatibility with passwordless .p12 certificates.\n• Certificate import now explains password problems, missing private keys and mismatched provisioning profiles.\n• Improved reliability when importing several IPA or TIPA files together, including files with matching names.\n• App names, versions and icons are preserved during import, and failed imports clean up partial files.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-41263309088/NullSign-1.4.4-34.ipa",
-          "size": 19436628,
           "minOSVersion": "16.0"
         }
       ]
