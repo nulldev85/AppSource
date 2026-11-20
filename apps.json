@@ -215,6 +215,15 @@
       "versions": [
         {
           "version": "0.19.0",
+          "buildVersion": "1222",
+          "date": "2026-11-20T17:49:27Z",
+          "localizedDescription": "• Live TV gets a moment to catch its breath while data is still coming in. We’ve retired the panic button that kept restarting the stream.\n• If a live stream URL gives up, Lineup tries another one from your provider before firing the entire playback engine.\n• A movie that disconnects halfway through stays in Continue Watching. Nice try, credits.\n• Silo search results now look up the playable files. A very good place to look for something to play.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-44781996907/Lineup-iPhone-0.19.0-1222.ipa",
+          "size": 38780576,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
           "buildVersion": "1208",
           "date": "2026-11-17T20:22:51Z",
           "localizedDescription": "• Tap a game that hasn't started to open its own page: the league's logo, when and where it's on, how each team has been doing lately, a reminder button, and Where to Watch.\n• Where to Watch lists the channels your guide confirms from every playlist you've added, then that network's own channels, like ESPN, from each one.\n• Hold a live game and pick Channels to get that same list, and any channel in it plays.\n• The Library's dropdown now switches between Lineup's Library and each server's own. Everything that menu used to hold is in Settings, under Library.\n• Playing something from a server's Library only looks for streams on that server.\n• 4K HDR and Dolby Vision movies from Silo play directly instead of asking your server to convert them.",
@@ -396,6 +405,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "959",
+          "date": "2026-11-20T17:42:06Z",
+          "localizedDescription": "• Lineup stops restarting live streams that are still buffering. Turns out throwing away the buffer doesn’t make buffering faster.\n• An early disconnect no longer marks a movie watched. You still get to find out who did it.\n• The TV Guide keeps the current category on screen until the next one is ready. Farewell, spontaneous black rectangle.\n• Press Up from the first playback option to return to your tab. No more surprise field trips to Chapters.\n• Silo search results now look up the playable files. The play button has been briefed.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-44781997006-1/Lineup-tvOS-0.19.0-959.ipa",
+          "size": 50996804,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.19.0",
           "buildVersion": "941",
