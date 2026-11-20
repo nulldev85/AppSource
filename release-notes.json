@@ -4,6 +4,35 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "1222",
+      "sourceSHAs": [
+        "d89db1babc92ecb77d68c7d89b25ea34943ec092"
+      ],
+      "notes": [
+        "Lineup gives streams time to recover while the buffer is still filling, reducing unnecessary reconnects.",
+        "Live TV tries another stream URL from your provider before switching playback engines.",
+        "Movies and episodes that disconnect early keep their place in Continue Watching.",
+        "Silo Library results use the server’s watch endpoint to find playable files."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "959",
+      "sourceSHAs": [
+        "d89db1babc92ecb77d68c7d89b25ea34943ec092"
+      ],
+      "notes": [
+        "Lineup gives streams time to recover while the buffer is still filling, reducing unnecessary reconnects.",
+        "Movies and episodes that disconnect early keep their place in Continue Watching.",
+        "Switching TV Guide categories keeps the current guide visible until the next one is ready.",
+        "In playback options, press Up from the first option to return to the same tab.",
+        "Silo Library results use the server’s watch endpoint to find playable files."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "1208",
       "sourceSHAs": [
         "9e1cc4d56694fb0f7f3fdf8d4399f86ccd86ff05"
