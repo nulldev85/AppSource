@@ -73,6 +73,18 @@
     {
       "bundleIdentifier": "com.elmat.NullSign",
       "version": "2.0.0",
+      "buildVersion": "74",
+      "sourceSHAs": [
+        "0383332fa988fc3e8f0f6a6778a096d9e6ba4b2f"
+      ],
+      "notes": [
+        "Pulling to refresh inside a repo no longer leaves the search bar stranded halfway down the screen like it forgot what it came in for.",
+        "Pulling down on the Apps screen now actually shows that it's updating your repos instead of flashing the spinner for a split second and pretending nothing happened."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
+      "version": "2.0.0",
       "buildVersion": "73",
       "sourceSHAs": [
         "268bc48f258b1f482c69fc70763fe6e22f22249a"
