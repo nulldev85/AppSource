@@ -9,10 +9,10 @@
         "d89db1babc92ecb77d68c7d89b25ea34943ec092"
       ],
       "notes": [
-        "Lineup gives streams time to recover while the buffer is still filling, reducing unnecessary reconnects.",
-        "Live TV tries another stream URL from your provider before switching playback engines.",
-        "Movies and episodes that disconnect early keep their place in Continue Watching.",
-        "Silo Library results use the server’s watch endpoint to find playable files."
+        "Live TV gets a moment to catch its breath while data is still coming in. We’ve retired the panic button that kept restarting the stream.",
+        "If a live stream URL gives up, Lineup tries another one from your provider before firing the entire playback engine.",
+        "A movie that disconnects halfway through stays in Continue Watching. Nice try, credits.",
+        "Silo search results now look up the playable files. A very good place to look for something to play."
       ]
     },
     {
@@ -23,11 +23,11 @@
         "d89db1babc92ecb77d68c7d89b25ea34943ec092"
       ],
       "notes": [
-        "Lineup gives streams time to recover while the buffer is still filling, reducing unnecessary reconnects.",
-        "Movies and episodes that disconnect early keep their place in Continue Watching.",
-        "Switching TV Guide categories keeps the current guide visible until the next one is ready.",
-        "In playback options, press Up from the first option to return to the same tab.",
-        "Silo Library results use the server’s watch endpoint to find playable files."
+        "Lineup stops restarting live streams that are still buffering. Turns out throwing away the buffer doesn’t make buffering faster.",
+        "An early disconnect no longer marks a movie watched. You still get to find out who did it.",
+        "The TV Guide keeps the current category on screen until the next one is ready. Farewell, spontaneous black rectangle.",
+        "Press Up from the first playback option to return to your tab. No more surprise field trips to Chapters.",
+        "Silo search results now look up the playable files. The play button has been briefed."
       ]
     },
     {
