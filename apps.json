@@ -215,6 +215,15 @@
       "versions": [
         {
           "version": "0.19.0",
+          "buildVersion": "1224",
+          "date": "2026-11-21T03:50:40Z",
+          "localizedDescription": "• Skip Intro actually skips the intro now instead of sitting there looking pretty while I stare at the theme song again.\n• I rebuilt the playback options menu from scratch because the old one looked like it came free with a 2012 cable box. Stats, Video, Audio, Subtitles, and Chapters finally look like they belong in the same app.\n• Fullscreen controls react when you tap them now instead of making you double-check whether your thumb stopped working.\n• Updated AetherEngine to 7.71.2 under the hood so streams open faster and stop throwing tantrums mid-play.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-44860403610/Lineup-iPhone-0.19.0-1224.ipa",
+          "size": 39364178,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.19.0",
           "buildVersion": "1222",
           "date": "2026-11-20T17:49:27Z",
           "localizedDescription": "• Live TV gets a moment to catch its breath while data is still coming in. We’ve retired the panic button that kept restarting the stream.\n• If a live stream URL gives up, Lineup tries another one from your provider before firing the entire playback engine.\n• A movie that disconnects halfway through stays in Continue Watching. Nice try, credits.\n• Silo search results now look up the playable files. A very good place to look for something to play.",
@@ -383,15 +392,6 @@
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-40603982613/Lineup-iPhone-0.19.0-964.ipa",
           "size": 84302584,
           "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "960",
-          "date": "2026-10-27T18:55:36Z",
-          "localizedDescription": "• Settings is now the same black as the rest of the app. The glow in your accent colour stays in the top corner, and the blue tint lower down is gone.\n• The bar and title across the top of Settings are gone, so your settings start right under the clock.\n• Pages you open from Settings still have their title and back button.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-40561186326/Lineup-iPhone-0.19.0-960.ipa",
-          "size": 83897791,
-          "minOSVersion": "18.0"
         }
       ]
     },
@@ -405,6 +405,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.19.0",
+          "buildVersion": "964",
+          "date": "2026-11-21T03:37:18Z",
+          "localizedDescription": "• Skip Intro finally obeys the remote instead of acting like a decorative coaster. Hit Select and it actually jumps.\n• I redesigned the playback options menu because the old one looked painfully cheap. Info, Stats, Video, Audio, Subtitles, and Chapters now look like I actually cared—because I did.\n• Fullscreen controls feel snappy without playing leapfrog over half the buttons when you click across the bar.\n• Updated AetherEngine to 7.71.2 and taught Lineup to remember whichever live stream transport actually works for your provider—so channels start fast instead of flashing Reconnecting and drifting out of sync.\n• Scrolling down from the Settings tab lands in the main settings sidebar now, and backing out of a sub-setting puts you right back on the category you picked instead of teleporting you to Library.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-44860403616-1/Lineup-tvOS-0.19.0-964.ipa",
+          "size": 51605798,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.19.0",
           "buildVersion": "959",
