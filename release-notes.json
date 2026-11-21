@@ -4,6 +4,35 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "1224",
+      "sourceSHAs": [
+        "fbbb3628eb7671eeb8260e4ce8f4df7b10b479a1"
+      ],
+      "notes": [
+        "Skip Intro actually skips the intro now instead of sitting there looking pretty while I stare at the theme song again.",
+        "I rebuilt the playback options menu from scratch because the old one looked like it came free with a 2012 cable box. Stats, Video, Audio, Subtitles, and Chapters finally look like they belong in the same app.",
+        "Fullscreen controls react when you tap them now instead of making you double-check whether your thumb stopped working.",
+        "Updated AetherEngine to 7.71.2 under the hood so streams open faster and stop throwing tantrums mid-play."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "964",
+      "sourceSHAs": [
+        "fbbb3628eb7671eeb8260e4ce8f4df7b10b479a1"
+      ],
+      "notes": [
+        "Skip Intro finally obeys the remote instead of acting like a decorative coaster. Hit Select and it actually jumps.",
+        "I redesigned the playback options menu because the old one looked painfully cheap. Info, Stats, Video, Audio, Subtitles, and Chapters now look like I actually cared—because I did.",
+        "Fullscreen controls feel snappy without playing leapfrog over half the buttons when you click across the bar.",
+        "Updated AetherEngine to 7.71.2 and taught Lineup to remember whichever live stream transport actually works for your provider—so channels start fast instead of flashing Reconnecting and drifting out of sync.",
+        "Scrolling down from the Settings tab lands in the main settings sidebar now, and backing out of a sub-setting puts you right back on the category you picked instead of teleporting you to Library."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "1222",
       "sourceSHAs": [
         "d89db1babc92ecb77d68c7d89b25ea34943ec092"
