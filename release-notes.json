@@ -4,6 +4,38 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
+      "buildVersion": "1231",
+      "sourceSHAs": [
+        "e3c5d3800ddf2f1ab3972daff79a65244d591520"
+      ],
+      "notes": [
+        "I gave the whole iPhone app a long-overdue facelift because half of it still looked like a placeholder wireframe I forgot to finish. Every tab now shares the same typography, spacing, and frosted-glass polish instead of arguing with itself.",
+        "Sports got a proper branded header, a Featured Live hero card, OT and CLOSE crunch-time badges, winner/loser score contrast so you can actually tell who's winning at a glance, followed-team stars, collapsible Final scores, and a frosted All Sports menu.",
+        "The TV Guide now opens with a 2x2 quick-access bento, smart category icons with channel counts, a cleaner timeline with a real Now playhead, and an Up Next preview in the mini player. I also evicted that giant chunky Refreshing Data popup and replaced it with a subtle frosted toast.",
+        "Squashed five separate poster-loading bugs that were leaving your Library full of blank gray rectangles—transient timeouts now retry instead of getting cached forever, slow hosts get bounded timeouts, and missing server or episode artwork falls back to TMDB. The Library switcher also wears real Silo, Emby, and Jellyfin logos now, with emerald watched badges to match.",
+        "Search gained live-counted filter chips and Recent Searches, and I finally stopped Genre Browse from listing the exact same movie twice like it forgot it already told you.",
+        "Settings got a proper branded masthead with side-by-side Live TV and Media Servers status cards and a cleaner Apple TV pairing flow, so checking what's connected takes one glance instead of a scavenger hunt."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.19.0",
+      "buildVersion": "969",
+      "sourceSHAs": [
+        "e3c5d3800ddf2f1ab3972daff79a65244d591520"
+      ],
+      "notes": [
+        "Live TV and sports stuttering across every playback engine wasn't your imagination—the app was quietly mugging itself in the background. I paused IPTV catalog and EPG refreshes during fullscreen and multiview video, stopped Ambient Glow from snapping live video frames every 2.5 seconds, silenced main-thread clock and display-link churn, wired up tvOS movie-playback audio sessions properly, and gave VLC, Aether, and MPV real live jitter buffers (4s VLC caching, 64 MiB MPV demuxer cache with reconnect, and no more starving Aether with fast-zap on Apple TV).",
+        "I redesigned the entire Apple TV interface to match the new iPhone look: a frosted LINEUP top bar, a compact 10-foot refresh toast, upgraded Sports cards with OT and CLOSE badges, winner/loser score contrast, broadcast pills, collapsible Final Scores, and real league logos in the All Sports picker.",
+        "Added Manage Categories to the TV Guide with search filtering, Show All / Hide All, and one-click Select toggling synced with iPhone—so hiding thirty IPTV categories you'll never open takes ten seconds instead of a sprained thumb.",
+        "The TV Guide got quick-access cards, smart category icons, color-coded NEW and UHD badges, and an Up Next preview, while Settings now shows side-by-side Live TV and Media Servers status cards with real Silo, Emby, and Jellyfin logos.",
+        "Rewrote tvOS poster loading so your Library stops showing mystery gray boxes, added TMDB fallback artwork and emerald watched badges, brought Recent Searches to Apple TV, and stopped Genre Browse from showing duplicate titles.",
+        "Pressing Up from Sports or Library actually lands back in the top navigation bar now instead of trapping you until you give up and hit Back."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.19.0",
       "buildVersion": "1224",
       "sourceSHAs": [
         "fbbb3628eb7671eeb8260e4ce8f4df7b10b479a1"
