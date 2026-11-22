@@ -383,15 +383,6 @@
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-40996973123/Lineup-iPhone-0.19.0-974.ipa",
           "size": 84442492,
           "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "968",
-          "date": "2026-10-28T02:13:16Z",
-          "localizedDescription": "• Playlist guides that wouldn't load now do. Lineup used to throw out a whole guide over one badly written listing, a very large guide or a slow guide server, which left the TV Guide empty and Sports with nothing to match.\n• A listing Lineup can't read is now skipped on its own, so the rest of the guide still shows.\n• If a provider's channels or guide still won't load, the TV Guide now says why.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-40617685972/Lineup-iPhone-0.19.0-968.ipa",
-          "size": 84319969,
-          "minOSVersion": "18.0"
         }
       ]
     },
@@ -556,15 +547,6 @@
           "localizedDescription": "• Saved live events and their matched channels are ready when you reopen Lineup, while schedules and TV listings refresh in the background.\n• Newly available live-game feeds can become playable before the rest of the schedule has finished preparing.\n• Once matching finishes for a selected game, Lineup continues automatically instead of repeatedly asking you to wait.\n• The data refresh popup now appears only in TV Guide.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-40996973130-1/Lineup-tvOS-0.19.0-710.ipa",
           "size": 49712177,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "703",
-          "date": "2026-10-28T02:07:08Z",
-          "localizedDescription": "• Playlist guides that wouldn't load now do. Lineup used to throw out a whole guide over one badly written listing, a very large guide or a slow guide server, which left the TV Guide empty and Sports with nothing to match.\n• A listing Lineup can't read is now skipped on its own, so the rest of the guide still shows.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-40617685970-1/Lineup-tvOS-0.19.0-703.ipa",
-          "size": 49610596,
           "minOSVersion": "18.0"
         }
       ]
