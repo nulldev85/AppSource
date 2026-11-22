@@ -3,6 +3,34 @@
   "releases": [
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.20.0",
+      "buildVersion": "1240",
+      "sourceSHAs": [
+        "f09d414bd55ea4ff16724aa822bbf542004e392e"
+      ],
+      "notes": [
+        "Added a built-in Apple TV Remote right inside Lineup. Whenever your Apple TV is running Lineup on the same Wi-Fi, a remote icon pops up in the top bar across every tab with a circular clickpad for navigating the TV app, playback and engine switching (Aether, VLC, MPV), typing straight into Apple TV Search from your phone keyboard, quick favorite channels, and one-tap Send to TV handoff.",
+        "Channels you've actually watched now earn real playback-verified quality badges (4K60, 1080p60, HDR, DV, 5.1, etc.) in Where to Watch and the TV Guide instead of trusting whatever fake label your IPTV provider typed into the channel name.",
+        "Overhauled Live Stats Auto Sync so scoreboard clock matching locks on faster and stays accurate across sports, including sub-minute crunch time and multi-clock broadcasts.",
+        "Cleaned up the Library hero by removing the extra catalog eyebrow above the title."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.20.0",
+      "buildVersion": "980",
+      "sourceSHAs": [
+        "f09d414bd55ea4ff16724aa822bbf542004e392e"
+      ],
+      "notes": [
+        "Added local Wi-Fi Apple TV Remote host support so Lineup on your iPhone can navigate the app with its circular clickpad, control playback and Playback Options, switch engines live, jump tabs, type straight into Search, and hand off whatever you're watching on your phone.",
+        "Channels you've watched now show real playback-verified quality badges (4K60, 1080p60, HDR, DV, 5.1, etc.) in Where to Watch and the TV Guide header based on the actual decoded stream.",
+        "Tinted the Apple TV player seek bar and catch-up timeline with your selected accent color from Settings instead of plain white.",
+        "Overhauled Live Stats Auto Sync for faster, more reliable scoreboard clock matching across sports, and cleaned up the Library hero header."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.19.0",
       "buildVersion": "1231",
       "sourceSHAs": [
