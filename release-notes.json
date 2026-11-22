@@ -191,6 +191,18 @@
     {
       "bundleIdentifier": "com.elmat.NullSign",
       "version": "2.0.0",
+      "buildVersion": "76",
+      "sourceSHAs": [
+        "48412e361ede1107a439e2cb008d7c9cf5db1c46"
+      ],
+      "notes": [
+        "Installs no longer sit at Sending Payload halfway through and leave your apps darkening on the Home Screen saying Waiting forever. NullSign actually watches the install from the jump now.",
+        "Local install SSL certificates now refresh daily based on when they actually expire instead of clinging to a stale cert for a week and refusing to install anything."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
+      "version": "2.0.0",
       "buildVersion": "75",
       "sourceSHAs": [
         "aad8c62a3a89647073c0cced46771a4dede9cec6"
