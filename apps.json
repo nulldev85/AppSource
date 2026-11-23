@@ -215,6 +215,15 @@
       "versions": [
         {
           "version": "0.20.0",
+          "buildVersion": "1245",
+          "date": "2026-11-23T08:03:56Z",
+          "localizedDescription": "• Up Next should start showing up for shows you watch through AIOStreams. Finish an episode and the next one ought to be waiting for you, instead of you digging for it in Search like it's 2009.\n• Playlist categories should stay in the order your provider put them in. Lineup was quietly reshuffling one of them every time the app reopened, which, rude. It should snap back the next time you open the app.\n• Added a Recently Watched switch on the Preferred Channels screen. Turn it off and Lineup clears what you watched and stops keeping track, so nobody else in the house gets a highlight reel of your viewing choices.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-45132254486/Lineup-iPhone-0.20.0-1245.ipa",
+          "size": 40117258,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.20.0",
           "buildVersion": "1240",
           "date": "2026-11-22T22:37:03Z",
           "localizedDescription": "• Added a built-in Apple TV Remote right inside Lineup. Whenever your Apple TV is running Lineup on the same Wi-Fi, a remote icon pops up in the top bar across every tab with a circular clickpad for navigating the TV app, playback and engine switching (Aether, VLC, MPV), typing straight into Apple TV Search from your phone keyboard, quick favorite channels, and one-tap Send to TV handoff.\n• Channels you've actually watched now earn real playback-verified quality badges (4K60, 1080p60, HDR, DV, 5.1, etc.) in Where to Watch and the TV Guide instead of trusting whatever fake label your IPTV provider typed into the channel name.\n• Overhauled Live Stats Auto Sync so scoreboard clock matching locks on faster and stays accurate across sports, including sub-minute crunch time and multi-clock broadcasts.\n• Cleaned up the Library hero by removing the extra catalog eyebrow above the title.",
@@ -374,15 +383,6 @@
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-41178632265/Lineup-iPhone-0.19.0-984.ipa",
           "size": 84576918,
           "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "975",
-          "date": "2026-10-30T08:47:46Z",
-          "localizedDescription": "• This iPhone release has no user-facing changes.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-41026491737/Lineup-iPhone-0.19.0-975.ipa",
-          "size": 84442642,
-          "minOSVersion": "18.0"
         }
       ]
     },
@@ -396,6 +396,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.20.0",
+          "buildVersion": "986",
+          "date": "2026-11-23T07:52:21Z",
+          "localizedDescription": "• Took another swing at TV Guide navigation. Pressing down should move one channel at a time, and pressing right should stay in your row instead of taking a scenic detour through the channel below. Still early days, so tell me if it gets weird.\n• Steering the guide with the iPhone remote should stop moving two spots for every one you asked for.\n• In My Teams, the highlight now follows your remote down the league list, instead of staying glued to whatever league you last clicked.\n• Added a Recently Watched switch in Settings under Live TV. Turn it off and the list is cleared and stays empty, so whatever you watched last night stays between you and the couch.\n• Playlist categories should keep your provider's order instead of getting shuffled every time the app opens.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-45132254456-1/Lineup-tvOS-0.20.0-986.ipa",
+          "size": 52142278,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.20.0",
           "buildVersion": "980",
@@ -538,15 +547,6 @@
           "localizedDescription": "• Fixed live-event syncing appearing stuck at 99%. Previously prepared live events remain ready to play while channels and guide data refresh in the background.\n• Improved remote navigation across Sports, TV Guide, Library and Settings, especially with large channel and media libraries.\n• The Sports background now fills the entire screen with the highlighted event's dark team-color blend, including behind the navigation bar and scores ticker.\n• Live scores refresh independently of channel matching, and tennis events keep their prepared channels when tournament listings change.\n• Added soccer coverage for the Carabao Cup, FA Cup, Copa del Rey and Supercopa de España.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-41178632251-1/Lineup-tvOS-0.19.0-726.ipa",
           "size": 49843511,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "715",
-          "date": "2026-10-30T08:49:53Z",
-          "localizedDescription": "• Settings has a new charcoal layout with a fixed category sidebar and more room for controls. The extra description panel and footer text are gone.\n• Sports backgrounds follow the highlighted game's dark team-color blend, with smooth transitions as you browse.\n• Channel matching shares background work and avoids unnecessary repeat downloads. Saved games remain available while provider data refreshes.\n• Reduced rendering work in Sports and Settings, including during rapid remote navigation.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-41026491496-1/Lineup-tvOS-0.19.0-715.ipa",
-          "size": 49709044,
           "minOSVersion": "18.0"
         }
       ]
