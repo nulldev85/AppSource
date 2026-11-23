@@ -33,7 +33,7 @@ class ReleaseNotesTests(unittest.TestCase):
         ios = feed.human_release_notes(phone_app, self.release, phone)
         self.assertTrue(any("Search again" in note for note in ios))
         self.assertFalse(any("Search again" in note for note in tv))
-        self.assertGreaterEqual(len(records), 80)
+        self.assertGreaterEqual(len(records), 91)
         merged = "1cf0567532099eac79e90b761b5a9bfc30a4e8f9"
         ios = feed.human_release_notes(phone_app, self.release, {
             **phone, "Source-SHA": merged, "Source-Build-Version": "1089"})
@@ -50,6 +50,15 @@ class ReleaseNotesTests(unittest.TestCase):
         self.assertTrue(any("TV Guide" in note for note in ios))
         self.assertTrue(any("Silo" in note for note in tv))
         self.assertFalse(any("TV Guide" in note for note in tv))
+        self.assertFalse(set(ios).intersection(tv))
+        round_fix = "cfad20121cbad28585e48f26fb50ffb2b26c2f88"
+        ios = feed.human_release_notes(phone_app, self.release, {
+            **phone, "Source-SHA": round_fix, "Source-Version": "0.20.0", "Source-Build-Version": "1245"})
+        tv = feed.human_release_notes(self.app, self.release, {
+            **self.metadata, "Source-SHA": round_fix, "Source-Version": "0.20.0", "Source-Build-Version": "986"})
+        self.assertTrue(any("Up Next" in note for note in ios))
+        self.assertTrue(any("TV Guide" in note for note in tv))
+        self.assertFalse(any("Up Next" in note for note in tv))
         self.assertFalse(set(ios).intersection(tv))
 
     def test_same_version_and_build_with_a_different_commit_does_not_borrow_notes(self):

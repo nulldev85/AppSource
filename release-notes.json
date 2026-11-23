@@ -4,6 +4,34 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.20.0",
+      "buildVersion": "1245",
+      "sourceSHAs": [
+        "cfad20121cbad28585e48f26fb50ffb2b26c2f88"
+      ],
+      "notes": [
+        "Up Next should start showing up for shows you watch through AIOStreams. Finish an episode and the next one ought to be waiting for you, instead of you digging for it in Search like it's 2009.",
+        "Playlist categories should stay in the order your provider put them in. Lineup was quietly reshuffling one of them every time the app reopened, which, rude. It should snap back the next time you open the app.",
+        "Added a Recently Watched switch on the Preferred Channels screen. Turn it off and Lineup clears what you watched and stops keeping track, so nobody else in the house gets a highlight reel of your viewing choices."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.20.0",
+      "buildVersion": "986",
+      "sourceSHAs": [
+        "cfad20121cbad28585e48f26fb50ffb2b26c2f88"
+      ],
+      "notes": [
+        "Took another swing at TV Guide navigation. Pressing down should move one channel at a time, and pressing right should stay in your row instead of taking a scenic detour through the channel below. Still early days, so tell me if it gets weird.",
+        "Steering the guide with the iPhone remote should stop moving two spots for every one you asked for.",
+        "In My Teams, the highlight now follows your remote down the league list, instead of staying glued to whatever league you last clicked.",
+        "Added a Recently Watched switch in Settings under Live TV. Turn it off and the list is cleared and stays empty, so whatever you watched last night stays between you and the couch.",
+        "Playlist categories should keep your provider's order instead of getting shuffled every time the app opens."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.20.0",
       "buildVersion": "1240",
       "sourceSHAs": [
         "f09d414bd55ea4ff16724aa822bbf542004e392e"
