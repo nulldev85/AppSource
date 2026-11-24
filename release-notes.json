@@ -4,6 +4,32 @@
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.20.0",
+      "buildVersion": "1269",
+      "sourceSHAs": [
+        "24aa0f3fafb0e82c12f22105c14c5ab35dfc8c7f"
+      ],
+      "notes": [
+        "New: Network Activity, in Settings › Diagnostics. It's a live monitor of every request Lineup sends, as it happens: which server, how big, whether it worked, plus a little graph that wiggles along in real time.",
+        "Your own stuff (IPTV providers, Silo, Jellyfin, Emby) gets its own list, with how many times each one was asked in the last minute and the last hour. Some vibe-coded apps hammer servers until providers start handing out bans. Now you don't have to take my word that Lineup isn't one of them, you can just watch.",
+        "Usernames, passwords and API keys are left out of it, so screenshot away and show your provider the receipts."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.20.0",
+      "buildVersion": "1017",
+      "sourceSHAs": [
+        "24aa0f3fafb0e82c12f22105c14c5ab35dfc8c7f"
+      ],
+      "notes": [
+        "New: Network Activity, in Settings under Activity. Every request your Apple TV sends, live and on the big screen, with a graph that moves in real time. Watching numbers go up is a hobby now, apparently.",
+        "See how often each of your providers and media servers gets asked, per minute and per hour, right next to the services Lineup uses for scores and artwork. If you've ever wondered whether Lineup is quietly flooding your IPTV provider, the evidence is one remote click away.",
+        "Logins and keys stay out of it, so it's safe to leave up when people come over and ask why there's a graph on the TV."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.20.0",
       "buildVersion": "1245",
       "sourceSHAs": [
         "cfad20121cbad28585e48f26fb50ffb2b26c2f88"
