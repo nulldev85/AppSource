@@ -215,6 +215,15 @@
       "versions": [
         {
           "version": "0.20.0",
+          "buildVersion": "1269",
+          "date": "2026-11-24T10:53:21Z",
+          "localizedDescription": "• New: Network Activity, in Settings › Diagnostics. It's a live monitor of every request Lineup sends, as it happens: which server, how big, whether it worked, plus a little graph that wiggles along in real time.\n• Your own stuff (IPTV providers, Silo, Jellyfin, Emby) gets its own list, with how many times each one was asked in the last minute and the last hour. Some vibe-coded apps hammer servers until providers start handing out bans. Now you don't have to take my word that Lineup isn't one of them, you can just watch.\n• Usernames, passwords and API keys are left out of it, so screenshot away and show your provider the receipts.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-45372237085/Lineup-iPhone-0.20.0-1269.ipa",
+          "size": 40239545,
+          "minOSVersion": "18.0"
+        },
+        {
+          "version": "0.20.0",
           "buildVersion": "1245",
           "date": "2026-11-23T08:03:56Z",
           "localizedDescription": "• Up Next should start showing up for shows you watch through AIOStreams. Finish an episode and the next one ought to be waiting for you, instead of you digging for it in Search like it's 2009.\n• Playlist categories should stay in the order your provider put them in. Lineup was quietly reshuffling one of them every time the app reopened, which, rude. It should snap back the next time you open the app.\n• Added a Recently Watched switch on the Preferred Channels screen. Turn it off and Lineup clears what you watched and stops keeping track, so nobody else in the house gets a highlight reel of your viewing choices.",
@@ -374,15 +383,6 @@
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-41975497199/Lineup-iPhone-0.19.0-1016.ipa",
           "size": 84619740,
           "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "984",
-          "date": "2026-10-31T07:14:22Z",
-          "localizedDescription": "• Reduced slowdowns when opening live events, switching tabs and browsing large libraries while channels and guide data refresh in the background.\n• Settings scrolls smoothly as the navigation bar compacts and reappears.\n• Live scores refresh independently of channel matching, and tennis events keep their prepared channels when tournament listings change.\n• Fixed an earlier stream starting after you had already stopped playback or selected another stream.\n• Added soccer coverage for the Carabao Cup, FA Cup, Copa del Rey and Supercopa de España.\n• Device Reports in Diagnostics can now copy saved reports with the installed build and iOS version.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-41178632265/Lineup-iPhone-0.19.0-984.ipa",
-          "size": 84576918,
-          "minOSVersion": "18.0"
         }
       ]
     },
@@ -396,6 +396,15 @@
       "tintColor": "#168CFF",
       "category": "entertainment",
       "versions": [
+        {
+          "version": "0.20.0",
+          "buildVersion": "1017",
+          "date": "2026-11-24T10:33:44Z",
+          "localizedDescription": "• New: Network Activity, in Settings under Activity. Every request your Apple TV sends, live and on the big screen, with a graph that moves in real time. Watching numbers go up is a hobby now, apparently.\n• See how often each of your providers and media servers gets asked, per minute and per hour, right next to the services Lineup uses for scores and artwork. If you've ever wondered whether Lineup is quietly flooding your IPTV provider, the evidence is one remote click away.\n• Logins and keys stay out of it, so it's safe to leave up when people come over and ask why there's a graph on the TV.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-45372237037-1/Lineup-tvOS-0.20.0-1017.ipa",
+          "size": 52273220,
+          "minOSVersion": "18.0"
+        },
         {
           "version": "0.20.0",
           "buildVersion": "986",
@@ -538,15 +547,6 @@
           "localizedDescription": "• The posters in Library's Streaming Services row now come to life. The one you're on shows art from that service's most popular titles you can play, drifting slowly and fading to the next title every few seconds; the rest hold a still picture until you move to them.\n• With Reduce Motion on, every poster shows a still picture instead.\n• With an AIOStreams server added, Library opens faster and stays lighter: Lineup no longer loads every one of your catalogs each time you open the app.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-41975497148-1/Lineup-tvOS-0.19.0-760.ipa",
           "size": 49883269,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "726",
-          "date": "2026-10-31T07:12:25Z",
-          "localizedDescription": "• Fixed live-event syncing appearing stuck at 99%. Previously prepared live events remain ready to play while channels and guide data refresh in the background.\n• Improved remote navigation across Sports, TV Guide, Library and Settings, especially with large channel and media libraries.\n• The Sports background now fills the entire screen with the highlighted event's dark team-color blend, including behind the navigation bar and scores ticker.\n• Live scores refresh independently of channel matching, and tennis events keep their prepared channels when tournament listings change.\n• Added soccer coverage for the Carabao Cup, FA Cup, Copa del Rey and Supercopa de España.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-41178632251-1/Lineup-tvOS-0.19.0-726.ipa",
-          "size": 49843511,
           "minOSVersion": "18.0"
         }
       ]
