@@ -23,6 +23,15 @@
       "versions": [
         {
           "version": "2.0.0",
+          "buildVersion": "82",
+          "date": "2026-11-25T10:34:58Z",
+          "localizedDescription": "• Added the Installed tab you asked for, Bishop. Didn't forget about ya. It lives right in the Signer filter bar so I didn't have to cram another icon into the bottom bar, and tapping Open actually launches the app straight from there.\n• Library cards now show a little green dot when that app is already on your phone, so you don't have to play guessing games with your own Home Screen.\n• Gave the whole app a quiet glow-up without messing with NullSign's colors: crisp top-lit edges on cards, a cleaner rim around dark app icons so they stop camouflaging into the background, and a nicer ambient glow on the install card and overview headers.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-45593946154/NullSign-2.0.0-82.ipa",
+          "size": 22705024,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "2.0.0",
           "buildVersion": "80",
           "date": "2026-11-23T11:47:45Z",
           "localizedDescription": "• NullSign is now completely self-sufficient. Every app you install goes from NullSign to iOS without ever leaving your iPhone. No outside servers, no middlemen, and nobody else's uptime to pray to.\n• Why the change: the default install mode used to borrow its security certificate from a server NullSign doesn't run, and Semi Local asked a public website to write the install file for every single app. So other people could see what you were installing, and if either of them had a bad day, your installs had a bad day too.\n• The security part: that borrowed certificate came with its private key, handed out to anyone who asked. A lock where everyone on the internet has the key isn't much of a lock. NullSign now makes its own certificate right on your phone, and its private key never leaves it.\n• And no, trusting it doesn't hand NullSign the keys to the internet. The certificate can only vouch for addresses on your own iPhone, so it can't be used to impersonate your bank or any real website.\n• The catch: iOS wants you to trust that certificate once. A new One-Time Setup screen walks you through it: install the profile, install it in Settings, flip on trust. About 30 seconds, and the status turns green on its own when you come back.\n• Already using NullSign? You'll see the setup screen once after this update. Do it now and you'll never think about it again. Skip it and NullSign will politely bring it back the next time you install something, instead of failing with some cryptic error.\n• Semi Local and the \"Only use localhost address\" switch are gone. They only existed to work around not having a trusted certificate, which is now a solved problem. Settings › Installation › Server & SSL just shows whether you're set up, with a button to do it.\n• Pairing-file installs and Apple TV installs don't need any of this and work exactly like before.\n• Install Profile actually installs a profile now, instead of opening a page that proudly announces \"Not Found\". Riveting stuff.\n• The Web Manager finally dresses like NullSign: same blue, same charcoal, rounded everything. And its Auto theme actually follows your phone's light or dark setting now, instead of just picking dark and calling it a day.\n• Everything you can see now says NullSign, including the on-device certificate's profile, the Web Manager's default login and the log file. Your old logs came along for the ride.",
@@ -181,15 +190,6 @@
           "localizedDescription": "• Tap Install on an imported app to sign it with your saved certificate and settings, then continue straight to installation.\n• The same progress bar now follows preparation, signing, packaging and installation. Errors stay in the progress card with a Retry action.\n• The usual iPhone install flow skips the browser's extra Open prompt while keeping iOS's Install confirmation. Continue in Browser is available if needed.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-42729953533/NullSign-1.5.0-40.ipa",
           "size": 19466994,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.4.9",
-          "buildVersion": "39",
-          "date": "2026-11-05T03:31:47Z",
-          "localizedDescription": "• Repository icons now update from the latest source feed when you refresh, including the icons beside All Apps.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-41960894829/NullSign-1.4.9-39.ipa",
-          "size": 19452091,
           "minOSVersion": "16.0"
         }
       ]
