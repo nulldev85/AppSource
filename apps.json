@@ -397,6 +397,15 @@
       "category": "entertainment",
       "versions": [
         {
+          "version": "0.20.1",
+          "buildVersion": "1020",
+          "date": "2026-11-25T09:30:59Z",
+          "localizedDescription": "• Fixed the Refreshing Data popup getting stuck at 99% on Matching Games for minutes on large channel lists. Live college game matching now uses a fast index instead of rescanning tens of thousands of channels for every game.\n• Your Silo Watchlist now syncs right onto the main Library screen alongside Favorites and updates immediately when you bookmark a title.\n• Added Show Duplicate Channels in Settings › Live TV so channels intentionally duplicated across custom IPTV groups stay visible, and you can now uncheck a Library Hero source back to automatic by selecting it again.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-45581165658-1/Lineup-tvOS-0.20.1-1020.ipa",
+          "size": 52302985,
+          "minOSVersion": "18.0"
+        },
+        {
           "version": "0.20.0",
           "buildVersion": "1017",
           "date": "2026-11-24T10:33:44Z",
@@ -538,15 +547,6 @@
           "localizedDescription": "• Lineup on Apple TV is simpler and much faster. Sports is now a list of game cards like on iPhone: select a game to watch it full screen, or hold select for channels, reminders, team pages and more.\n• In the TV Guide, Back takes you to the top of the guide, and Back again to the menu bar. Browsing channels no longer starts a video for each one; select a channel to watch it.\n• Library shows all your shelves in one scrolling list.\n• Scrolling is smoother on every tab. If the screen ever freezes for a moment, Settings › Screen Stalls shows when and what was happening.\n• Finishing the newest episode of a show that's still airing keeps your place instead of jumping to the specials or back to the first episode.\n• Episode cards show the air date and running time right under the episode's name, and adding an AIOStreams server sets up your Library straight away.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-42119219365-1/Lineup-tvOS-0.19.0-781.ipa",
           "size": 49511218,
-          "minOSVersion": "18.0"
-        },
-        {
-          "version": "0.19.0",
-          "buildVersion": "760",
-          "date": "2026-11-05T05:56:22Z",
-          "localizedDescription": "• The posters in Library's Streaming Services row now come to life. The one you're on shows art from that service's most popular titles you can play, drifting slowly and fading to the next title every few seconds; the rest hold a still picture until you move to them.\n• With Reduce Motion on, every poster shows a still picture instead.\n• With an AIOStreams server added, Library opens faster and stays lighter: Lineup no longer loads every one of your catalogs each time you open the app.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsports-source-tvos-41975497148-1/Lineup-tvOS-0.19.0-760.ipa",
-          "size": 49883269,
           "minOSVersion": "18.0"
         }
       ]
