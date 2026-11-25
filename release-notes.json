@@ -3,6 +3,33 @@
   "releases": [
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.20.1",
+      "buildVersion": "1271",
+      "sourceSHAs": [
+        "df6b0518181655b96bc6216eaca5f8aadac40882"
+      ],
+      "notes": [
+        "Added a rotate button right on the video player so you can flip straight into landscape even if iOS Portrait Orientation Lock is on. No more swiping down Control Center just to watch something sideways.",
+        "Added a Show Duplicate Channels toggle in Settings › Sports & Live TV for folks using IPTV editors who duplicate channels across custom groups on purpose.",
+        "Your Silo Watchlist now shows up right on the main Library screen alongside Favorites (and updates right away when you bookmark something), and Silo search now matches Silo's own app scope.",
+        "Fixed New Collection doing nothing when tapped from Settings—and popping up out of nowhere later when you switched to Library—plus you can now tap a checked Library Hero source again to uncheck it back to automatic."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.20.1",
+      "buildVersion": "1020",
+      "sourceSHAs": [
+        "df6b0518181655b96bc6216eaca5f8aadac40882"
+      ],
+      "notes": [
+        "Fixed the Refreshing Data popup getting stuck at 99% on Matching Games for minutes on large channel lists. Live college game matching now uses a fast index instead of rescanning tens of thousands of channels for every game.",
+        "Your Silo Watchlist now syncs right onto the main Library screen alongside Favorites and updates immediately when you bookmark a title.",
+        "Added Show Duplicate Channels in Settings › Live TV so channels intentionally duplicated across custom IPTV groups stay visible, and you can now uncheck a Library Hero source back to automatic by selecting it again."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.20.0",
       "buildVersion": "1269",
       "sourceSHAs": [
