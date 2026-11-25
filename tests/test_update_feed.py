@@ -140,5 +140,96 @@ class SourceIconTests(unittest.TestCase):
         )
 
 
+class LatestReleaseAliasTests(unittest.TestCase):
+    def setUp(self):
+        self.app = {
+            "repo": "NullSign",
+            "name": "NullSign",
+            "bundle": "com.elmat.NullSign",
+            "asset": "NullSign-unsigned.ipa",
+            "fileName": "NullSign",
+            "latestTag": "nullsign-latest",
+            "latestAsset": "NullSign.ipa",
+        }
+        self.source_release = {"tag_name": "source-999"}
+        self.metadata = {
+            "Source-App": "NullSign",
+            "Source-Bundle-Identifier": "com.elmat.NullSign",
+            "Source-Version": "2.0.0",
+            "Source-Build-Version": "77",
+            "Source-Minimum-OS-Version": "16.0",
+            "Source-Branch": "main",
+            "Source-SHA": "a" * 40,
+        }
+        self.asset = {"url": "https://example.invalid/NullSign.ipa", "size": 4}
+        self.notes = ["Fixed a thing cleanly and reliably."]
+
+    def test_skips_reupload_when_latest_release_already_matches(self):
+        body = update_feed.distribution_notes(
+            self.app, self.source_release, self.metadata, self.notes
+        )
+        existing = {
+            "id": 123,
+            "name": "NullSign Latest (2.0.0 build 77)",
+            "body": body,
+            "upload_url": "https://uploads.example.invalid/releases/123/assets{?name,label}",
+            "assets": [{"id": 55, "name": "NullSign.ipa", "size": 4}],
+        }
+        calls = []
+
+        with (
+            patch.object(update_feed, "distribution_token", return_value="dist-token"),
+            patch.object(update_feed, "maybe_json", return_value=existing),
+            patch.object(update_feed, "request", side_effect=lambda *a, **kw: calls.append(("request", kw.get("method")))),
+            patch.object(update_feed, "request_json", side_effect=lambda *a, **kw: calls.append(("json", kw.get("method")))),
+        ):
+            update_feed.sync_latest_release(
+                self.app, self.source_release, self.metadata, self.asset, self.notes
+            )
+
+        self.assertEqual(calls, [])
+
+    def test_replaces_old_asset_and_updates_release_on_new_build(self):
+        existing = {
+            "id": 123,
+            "name": "NullSign Latest (2.0.0 build 76)",
+            "body": "Source-SHA: " + ("b" * 40) + "\nSource-Build-Version: 76\n",
+            "upload_url": "https://uploads.example.invalid/releases/123/assets{?name,label}",
+            "assets": [{"id": 55, "name": "NullSign.ipa", "size": 4}],
+        }
+        calls = []
+
+        def fake_request(url, **kw):
+            calls.append((kw.get("method") or "GET", url))
+            if (kw.get("method") or "GET") == "GET":
+                return b"DATA"
+            return b""
+
+        def fake_request_json(url, **kw):
+            calls.append((kw.get("method") or "GET", url))
+            return {}
+
+        with (
+            patch.object(update_feed, "distribution_token", return_value="dist-token"),
+            patch.object(update_feed, "source_token", return_value="src-token"),
+            patch.object(update_feed, "maybe_json", return_value=existing),
+            patch.object(update_feed, "request", side_effect=fake_request),
+            patch.object(update_feed, "request_json", side_effect=fake_request_json),
+        ):
+            update_feed.sync_latest_release(
+                self.app, self.source_release, self.metadata, self.asset, self.notes
+            )
+
+        self.assertEqual(
+            calls,
+            [
+                ("GET", "https://example.invalid/NullSign.ipa"),
+                ("DELETE", "https://api.github.com/repos/nulldev85/AppSource/releases/assets/55"),
+                ("POST", "https://uploads.example.invalid/releases/123/assets?name=NullSign.ipa"),
+                ("PATCH", "https://api.github.com/repos/nulldev85/AppSource/releases/123"),
+            ],
+        )
+
+
 if __name__ == "__main__":
     unittest.main()

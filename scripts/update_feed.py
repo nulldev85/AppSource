@@ -36,6 +36,8 @@ REPOSITORIES = [
         "category": "utilities",
         "asset": "NullSign-unsigned.ipa",
         "fileName": "NullSign",
+        "latestTag": "nullsign-latest",
+        "latestAsset": "NullSign.ipa",
     },
     {
         "repo": "NullSports",
@@ -313,6 +315,108 @@ def distribution_release(app: dict, source_release: dict, metadata: dict[str, st
     return request_json(release_url, token=target_token)
 
 
+def sync_latest_release(
+    app: dict,
+    source_release: dict,
+    metadata: dict[str, str],
+    asset: dict,
+    notes: list[str],
+) -> None:
+    """Keep a rolling release with a stable asset name (e.g. nullsign-latest/NullSign.ipa)
+    pointing to the newest publishable build."""
+    tag = app.get("latestTag")
+    asset_name = app.get("latestAsset")
+    if not tag or not asset_name:
+        return
+
+    target_token = distribution_token()
+    encoded_tag = urllib.parse.quote(tag, safe="")
+    release_url = f"{API_ROOT}/repos/{DIST_REPO}/releases/tags/{encoded_tag}"
+    release = maybe_json(release_url, token=target_token)
+    title = f"{app['name']} Latest ({metadata['Source-Version']} build {metadata['Source-Build-Version']})"
+    body = distribution_notes(app, source_release, metadata, notes)
+
+    if release is None:
+        payload = {
+            "tag_name": tag,
+            "target_commitish": "main",
+            "name": title,
+            "body": body,
+            "draft": False,
+            "prerelease": False,
+            "make_latest": "false",
+        }
+        try:
+            release = request_json(
+                f"{API_ROOT}/repos/{DIST_REPO}/releases",
+                token=target_token,
+                data=json.dumps(payload).encode("utf-8"),
+                method="POST",
+            )
+        except urllib.error.HTTPError as error:
+            if error.code != 422:
+                raise
+            release = request_json(release_url, token=target_token)
+
+    existing_meta = release_metadata(release.get("body") or "")
+    existing_asset = next(
+        (item for item in release.get("assets", []) if item.get("name") == asset_name),
+        None,
+    )
+    same_build = (
+        existing_asset is not None
+        and existing_asset.get("size") == asset.get("size")
+        and existing_meta.get("Source-SHA") == metadata.get("Source-SHA")
+        and existing_meta.get("Source-Build-Version") == metadata.get("Source-Build-Version")
+    )
+
+    if same_build:
+        if release.get("name") != title or release.get("body") != body:
+            request_json(
+                f"{API_ROOT}/repos/{DIST_REPO}/releases/{release['id']}",
+                token=target_token,
+                data=json.dumps({"name": title, "body": body}).encode("utf-8"),
+                method="PATCH",
+            )
+        return
+
+    print(f"Updating {tag}/{asset_name} to {app['name']} {metadata['Source-Version']} build {metadata['Source-Build-Version']}.")
+    source_bytes = request(
+        asset["url"],
+        token=source_token(),
+        accept="application/octet-stream",
+    )
+    if len(source_bytes) != asset["size"]:
+        raise RuntimeError(
+            f"Downloaded asset size mismatch for {app['repo']} {source_release['tag_name']}: "
+            f"expected {asset['size']}, got {len(source_bytes)}."
+        )
+
+    if existing_asset is not None and existing_asset.get("id") is not None:
+        request(
+            f"{API_ROOT}/repos/{DIST_REPO}/releases/assets/{existing_asset['id']}",
+            token=target_token,
+            method="DELETE",
+        )
+
+    upload_url = release["upload_url"].split("{", 1)[0]
+    upload_url += "?name=" + urllib.parse.quote(asset_name, safe="")
+    request(
+        upload_url,
+        token=target_token,
+        accept="application/vnd.github+json",
+        content_type="application/octet-stream",
+        data=source_bytes,
+        method="POST",
+    )
+    request_json(
+        f"{API_ROOT}/repos/{DIST_REPO}/releases/{release['id']}",
+        token=target_token,
+        data=json.dumps({"name": title, "body": body}).encode("utf-8"),
+        method="PATCH",
+    )
+
+
 def eligible_source_releases(releases: list[dict], app: dict) -> list[tuple]:
     eligible = []
     for release in releases:
@@ -373,6 +477,7 @@ def app_versions(app: dict) -> list[dict]:
         raise SourceReleaseUnavailable(f"No eligible source release found for {app['name']}.")
 
     versions = []
+    latest_synced = False
     for published, source_release, metadata, asset in eligible[:RELEASE_LIMIT]:
         try:
             notes = human_release_notes(app, source_release, metadata)
@@ -380,6 +485,9 @@ def app_versions(app: dict) -> list[dict]:
             print(f"::warning::{error}")
             continue
         mirrored = distribution_release(app, source_release, metadata, asset, notes)
+        if not latest_synced:
+            sync_latest_release(app, source_release, metadata, asset, notes)
+            latest_synced = True
         download_url = (
             f"https://github.com/{DIST_REPO}/releases/download/"
             f"{urllib.parse.quote(mirrored['tag_name'], safe='')}/"
