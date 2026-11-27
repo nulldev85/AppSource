@@ -275,6 +275,20 @@
     {
       "bundleIdentifier": "com.elmat.NullSign",
       "version": "2.0.0",
+      "buildVersion": "85",
+      "sourceSHAs": [
+        "276004208a4dad6713b1d11546c1c0ab294a7a0e"
+      ],
+      "notes": [
+        "Fixed the Installed tab acting like NullSign was the only app on your phone. Apps you install actually stick around in Installed now instead of vanishing 15 seconds later, and swiping Remove clears them on the first try instead of making you swipe three times.",
+        "Added Notify for Updates in Settings › Sources › Updates (with a Send Test Notification button right underneath so you don't have to guess if it's working). NullSign now checks in the background and pings you once per new version instead of leaving iOS Settings looking decorative.",
+        "Modded and tweaked apps that share the same base version number (like 254.0 with a mod bump from 12.9 to 13.0) now actually show up as updates instead of getting ignored.",
+        "Hid the Updates pill in Signer when there aren't any updates, so you're not staring at a lonely cut-off 'U' on the right edge of the bar."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.elmat.NullSign",
+      "version": "2.0.0",
       "buildVersion": "82",
       "sourceSHAs": [
         "1cadd3a8bf37676dd856b4a0f2ce135030d00340"
