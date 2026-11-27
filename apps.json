@@ -23,6 +23,15 @@
       "versions": [
         {
           "version": "2.0.0",
+          "buildVersion": "85",
+          "date": "2026-11-27T05:54:37Z",
+          "localizedDescription": "• Happy Thanksgiving! 🦃\n• Ate way too much food and got completely couch locked, so instead of moving I pushed this small update.\n• Fixed the Installed tab acting like NullSign was the only app on your phone. Your installed apps actually stick around now instead of ghosting after 15 seconds.\n• Added Notify for Updates in Settings › Sources › Updates, so NullSign actually pings you when new versions drop instead of just pretending notifications exist in iOS Settings.",
+          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-45947543693/NullSign-2.0.0-85.ipa",
+          "size": 22726956,
+          "minOSVersion": "16.0"
+        },
+        {
+          "version": "2.0.0",
           "buildVersion": "82",
           "date": "2026-11-25T10:34:58Z",
           "localizedDescription": "• Added the Installed tab you asked for, Bishop. Didn't forget about ya. It lives right in the Signer filter bar so I didn't have to cram another icon into the bottom bar, and tapping Open actually launches the app straight from there.\n• Library cards now show a little green dot when that app is already on your phone, so you don't have to play guessing games with your own Home Screen.\n• Gave the whole app a quiet glow-up without messing with NullSign's colors: crisp top-lit edges on cards, a cleaner rim around dark app icons so they stop camouflaging into the background, and a nicer ambient glow on the install card and overview headers.",
@@ -172,15 +181,6 @@
           "localizedDescription": "• Full screen on iPhone Duo. The tab bar sits on the right like the rest of the phone, next to your toolbar buttons when it's tucked away.\n• Switched to the regular iOS tab bar. Tap the tab you're already on to jump back to its first screen. The Signer badge still counts your waiting updates.\n• Installs finish on Completed with a checkmark, even when iOS stops reporting progress right at the end.\n• Deleting an app from your library happens right away, and you'll know if it didn't save. Imported apps show their real icons.\n• If an IPA from Files won't import, you'll see why instead of it just disappearing.\n• PPQ protection is gone. Apps are signed with their own bundle ID.\n• A source with a missing file tells you that, instead of a confusing invalid JSON error. GitHub sources can drop out for a minute while a new release uploads.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-43566275481/NullSign-1.5.2-52.ipa",
           "size": 18663484,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.5.1",
-          "buildVersion": "43",
-          "date": "2026-11-11T18:16:05Z",
-          "localizedDescription": "• Fixed a crash when installing imported apps with ElleKit enabled.\n• ElleKit is now enabled by default for new or reset signing settings. Your saved preference is kept.\n• Invalid or incomplete .deb tweaks now show an error instead of closing NullSign.",
-          "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-43075286483/NullSign-1.5.1-43.ipa",
-          "size": 19467054,
           "minOSVersion": "16.0"
         }
       ]
