@@ -177,6 +177,16 @@ class ReleaseNotesTests(unittest.TestCase):
         self.assertNotIn("error:", description)
         self.assertNotIn(self.metadata["Source-SHA"][:7], description)
 
+    def test_optional_header_renders_without_bullet_in_feed_and_centered_in_release(self):
+        notes = ["Fixed a real bug cleanly and reliably."]
+        header = "Happy Thanksgiving! 🦃"
+        desc = feed.format_localized_description(notes, header)
+        self.assertEqual(desc, "Happy Thanksgiving! 🦃\n\n• Fixed a real bug cleanly and reliably.")
+        body = feed.distribution_notes(self.app, self.release, self.metadata, notes, header=header)
+        self.assertTrue(body.startswith("## What's new\n\n<p align=\"center\"><strong>Happy Thanksgiving! 🦃</strong></p>\n\n- Fixed"))
+        with self.assertRaises(ValueError):
+            feed.checked_header("• Not allowed")
+
     def test_duplicate_commit_entries_are_rejected(self):
         record = feed.release_note_catalog()[0]
         with tempfile.TemporaryDirectory() as folder:

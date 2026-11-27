@@ -3,6 +3,7 @@
 
 import base64
 import hashlib
+import html
 import json
 import os
 import re
@@ -90,12 +91,32 @@ def checked_notes(notes) -> list[str]:
     return result
 
 
+def checked_header(header) -> str | None:
+    if header is None:
+        return None
+    if not isinstance(header, str) or not 3 <= len(header.strip()) <= 200:
+        raise ValueError("Release header must be a short, readable line.")
+    text = header.strip()
+    if re.search(r"[\r\n]|Source-[A-Za-z-]+:|Traceback \(|(?:fatal )?error:|xcodebuild|being prepared", text, re.I):
+        raise ValueError("Build metadata, compiler output and placeholders are not release headers.")
+    if re.match(r"^\s*[-*•]\s+", text):
+        raise ValueError("Release header must not start with a bullet character.")
+    return text
+
+
+def format_localized_description(notes: list[str], header: str | None = None) -> str:
+    bullets = "\n".join(f"• {note}" for note in checked_notes(notes))
+    clean_header = checked_header(header)
+    return f"{clean_header}\n\n{bullets}" if clean_header else bullets
+
+
 def release_note_catalog() -> list[dict]:
     catalog = json.loads(NOTES_PATH.read_text(encoding="utf-8"))
     if catalog.get("schemaVersion") != 1 or not isinstance(catalog.get("releases"), list):
         raise ValueError("Unsupported release-note catalog.")
     seen = set()
     for record in catalog["releases"]:
+        checked_header(record.get("header"))
         checked_notes(record.get("notes"))
         if not all(isinstance(record.get(field), str) and record[field] for field in ("bundleIdentifier", "version", "buildVersion")):
             raise ValueError("Release notes must identify their app, version and build.")
@@ -109,6 +130,16 @@ def release_note_catalog() -> list[dict]:
                 raise ValueError("Conflicting release notes for the same build and commit.")
             seen.add(key)
     return catalog["releases"]
+
+
+def human_release_header(app: dict, metadata: dict) -> str | None:
+    for record in release_note_catalog():
+        if (record["bundleIdentifier"] == app["bundle"]
+                and record["version"] == metadata["Source-Version"]
+                and record["buildVersion"] == metadata["Source-Build-Version"]
+                and metadata["Source-SHA"] in record["sourceSHAs"]):
+            return checked_header(record.get("header"))
+    return None
 
 
 def human_release_notes(app: dict, source_release: dict, metadata: dict) -> list[str]:
@@ -137,14 +168,17 @@ def human_release_notes(app: dict, source_release: dict, metadata: dict) -> list
     )
 
 
-def distribution_notes(app: dict, source_release: dict, metadata: dict, notes: list[str]) -> str:
+def distribution_notes(app: dict, source_release: dict, metadata: dict, notes: list[str],
+                       header: str | None = None) -> str:
     public_notes = "\n".join(f"- {note}" for note in checked_notes(notes))
+    clean_header = checked_header(header)
+    intro = f'<p align="center"><strong>{html.escape(clean_header)}</strong></p>\n\n' if clean_header else ""
     details = [f"Source-{field}: {metadata['Source-' + field]}" for field in
                ("App", "Bundle-Identifier", "Version", "Build-Version", "Branch", "SHA")]
     details.insert(4, f"Source-Minimum-OS-Version: {metadata.get('Source-Minimum-OS-Version', 'unknown')}")
     details += [f"Source-Origin-Repository: {OWNER}/{app['repo']}",
                 f"Source-Origin-Tag: {source_release['tag_name']}"]
-    return ("## What's new\n\n" + public_notes
+    return ("## What's new\n\n" + intro + public_notes
             + "\n\nSign this IPA with your preferred signer before installing."
             + "\n\n## Build details\n\n" + "\n".join(details) + "\n")
 
@@ -249,13 +283,13 @@ def mirrored_asset_name(app: dict, metadata: dict[str, str], release: dict) -> s
 
 
 def distribution_release(app: dict, source_release: dict, metadata: dict[str, str], asset: dict,
-                         notes: list[str]) -> dict:
+                         notes: list[str], header: str | None = None) -> dict:
     target_token = distribution_token()
     tag = f"dist-{app['repo'].lower()}-{source_release['tag_name']}"
     encoded_tag = urllib.parse.quote(tag, safe="")
     release_url = f"{API_ROOT}/repos/{DIST_REPO}/releases/tags/{encoded_tag}"
     release = maybe_json(release_url, token=target_token)
-    body = distribution_notes(app, source_release, metadata, notes)
+    body = distribution_notes(app, source_release, metadata, notes, header=header)
 
     if release is None:
         payload = {
@@ -321,6 +355,7 @@ def sync_latest_release(
     metadata: dict[str, str],
     asset: dict,
     notes: list[str],
+    header: str | None = None,
 ) -> None:
     """Keep a rolling release with a stable asset name (e.g. nullsign-latest/NullSign.ipa)
     pointing to the newest publishable build."""
@@ -334,7 +369,7 @@ def sync_latest_release(
     release_url = f"{API_ROOT}/repos/{DIST_REPO}/releases/tags/{encoded_tag}"
     release = maybe_json(release_url, token=target_token)
     title = f"{app['name']} Latest ({metadata['Source-Version']} build {metadata['Source-Build-Version']})"
-    body = distribution_notes(app, source_release, metadata, notes)
+    body = distribution_notes(app, source_release, metadata, notes, header=header)
 
     if release is None:
         payload = {
@@ -484,9 +519,10 @@ def app_versions(app: dict) -> list[dict]:
         except ReleaseNotesUnavailable as error:
             print(f"::warning::{error}")
             continue
-        mirrored = distribution_release(app, source_release, metadata, asset, notes)
+        header = human_release_header(app, metadata)
+        mirrored = distribution_release(app, source_release, metadata, asset, notes, header=header)
         if not latest_synced:
-            sync_latest_release(app, source_release, metadata, asset, notes)
+            sync_latest_release(app, source_release, metadata, asset, notes, header=header)
             latest_synced = True
         download_url = (
             f"https://github.com/{DIST_REPO}/releases/download/"
@@ -497,7 +533,7 @@ def app_versions(app: dict) -> list[dict]:
             "version": metadata["Source-Version"],
             "buildVersion": metadata["Source-Build-Version"],
             "date": published,
-            "localizedDescription": "\n".join(f"• {note}" for note in notes),
+            "localizedDescription": format_localized_description(notes, header),
             "downloadURL": download_url,
             "size": asset["size"],
         }
