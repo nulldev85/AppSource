@@ -280,8 +280,8 @@
         "276004208a4dad6713b1d11546c1c0ab294a7a0e"
       ],
       "notes": [
-        "Ate way too much food and got completely couch-locked, so instead of moving I pushed this small update.",
-        "Fixed the Installed tab acting like NullSign was the only app on your phone—your installed apps actually stick around now instead of ghosting after 15 seconds.",
+        "Ate way too much food and got completely couch locked, so instead of moving I pushed this small update.",
+        "Fixed the Installed tab acting like NullSign was the only app on your phone. Your installed apps actually stick around now instead of ghosting after 15 seconds.",
         "Added Notify for Updates in Settings › Sources › Updates, so NullSign actually pings you when new versions drop instead of just pretending notifications exist in iOS Settings."
       ]
     },
