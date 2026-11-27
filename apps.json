@@ -25,7 +25,7 @@
           "version": "2.0.0",
           "buildVersion": "85",
           "date": "2026-11-27T05:54:37Z",
-          "localizedDescription": "• Happy Thanksgiving! 🦃\n• Ate way too much food and got completely couch locked, so instead of moving I pushed this small update.\n• Fixed the Installed tab acting like NullSign was the only app on your phone. Your installed apps actually stick around now instead of ghosting after 15 seconds.\n• Added Notify for Updates in Settings › Sources › Updates, so NullSign actually pings you when new versions drop instead of just pretending notifications exist in iOS Settings.",
+          "localizedDescription": "Happy Thanksgiving! 🦃\n\n• Ate way too much food and got completely couch locked, so instead of moving I pushed this small update.\n• Fixed the Installed tab acting like NullSign was the only app on your phone. Your installed apps actually stick around now instead of ghosting after 15 seconds.\n• Added Notify for Updates in Settings › Sources › Updates, so NullSign actually pings you when new versions drop instead of just pretending notifications exist in iOS Settings.",
           "downloadURL": "https://github.com/nulldev85/AppSource/releases/download/dist-nullsign-source-45947543693/NullSign-2.0.0-85.ipa",
           "size": 22726956,
           "minOSVersion": "16.0"
