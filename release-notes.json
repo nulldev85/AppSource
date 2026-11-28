@@ -3,6 +3,37 @@
   "releases": [
     {
       "bundleIdentifier": "com.nulldev85.NullSports.iOS",
+      "version": "0.21.0",
+      "buildVersion": "1290",
+      "sourceSHAs": [
+        "5fd29a3a4ac3558fdd44e3ae5f4b71ab53d3ac44"
+      ],
+      "notes": [
+        "Sports Tab Overhaul: Replaced the lazy list with a horizontal league switcher, a featured matchup card, and head-to-head game cards with colliding team colors and ghosted logos.",
+        "Silo Audiobooks: Native audiobook support with its own player (chapters, speed, sleep timer, Continue Listening, and a mini-player that actually stays out of the way).",
+        "New Apple TV Remote: Burned the old generic one to the ground. Now has live artwork, a scrubbable progress bar, a glass touchpad, real buttons, and a Send to TV button right inside the iPhone player.",
+        "Player Options: Tucked the options menu cleanly right under the Dynamic Island so changing subtitles stops blocking half the screen.",
+        "Duplicate Channels: Show Duplicate Channels actually works now instead of gaslighting everyone who uses an IPTV editor.",
+        "Small Fixes: Fixed the Liquid Glass nav bar morphing weird, gave Lineup its proper red-and-black look, and added actual blue to Silo's buttons."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports",
+      "version": "0.21.0",
+      "buildVersion": "1032",
+      "sourceSHAs": [
+        "5fd29a3a4ac3558fdd44e3ae5f4b71ab53d3ac44"
+      ],
+      "notes": [
+        "Sports Tab Overhaul: Same big upgrade on TV—horizontal league bar up top, featured matchup banner, and head-to-head team-color cards with ghosted crests.",
+        "Caught Up to iOS: Silo Audiobooks with a full-screen player, Authors/Narrators/Series browsing, full Silo Search, and the Show Search Genres toggle.",
+        "Visible Focus: Added crisp glass edges and a proper lift so you don't have to squint from across the room guessing where the remote is.",
+        "TV Guide Cleanup: Toned down the dark fade hiding the first show, killed the weird hover brackets and snap-back jank, and stopped 4-minute shows from dumping their NEW badge onto the next title. Did not touch navigation—nobody panic.",
+        "Live Remote & Fixes: Streams live artwork to the new iPhone remote, fixed Show Duplicate Channels, and updated the Lineup and Silo library colors."
+      ]
+    },
+    {
+      "bundleIdentifier": "com.nulldev85.NullSports.iOS",
       "version": "0.20.1",
       "buildVersion": "1271",
       "sourceSHAs": [
